@@ -20,7 +20,7 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - Kubeflow
 - Tensorflow Serving
 - AWS SageMaker
-- GCP
+- GCP (Google Cloud Platform)
 
 ### DevOps
 - Git
