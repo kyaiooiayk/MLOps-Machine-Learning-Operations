@@ -36,6 +36,7 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - React
 
 ### Cloud computing
+Cloud computing is a name which refers to cluster machines on the cloud. AWS, seems to be the most popular. Maybe if one has to choose, one would look  at the one allowing more free computing hrs
 - WAS
 - Azuew
 - GCP
