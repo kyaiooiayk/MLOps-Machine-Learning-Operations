@@ -14,6 +14,8 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - DVC
 - Argo workflow
 - Azue databricks
+- Hadoop 
+- Apache Spark
 
 ### Model lifecycle
 - MLFlow
@@ -28,18 +30,20 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - Docker
 - Kubernets
 
-### Application Framework
+### Application Framework/Model Deployment
 - Django
 - Flask
 - Nodejs
 - Expressjs
 - React
+- Nginx
+- Redis
 
 ### Cloud computing
-Cloud computing is a name which refers to cluster machines on the cloud. AWS, seems to be the most popular. Maybe if one has to choose, one would look  at the one allowing more free computing hrs
-- WAS
-- Azuew
-- GCP
+Cloud computing is a name which refers to cluster machines on the cloud. AWS, seems to be the most popular. Maybe if one has to choose, one would look  at the one allowing more free computing hrs.
+- AWS (Amazon Web Server)
+- Microsoft Azure
+- GCP (Google Cloud Platform)
 
 ### Relational Database
 RDB (relational database) is a database that stores data into tables with rows and columns.
@@ -49,11 +53,29 @@ How to turn SQL-like into a map-reduce job that can run on a distributed file sy
 - Hive (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
 - Pig (less popular than Hive)
 
-
-## Non relational database
+### Non relational database
  - MongoDB
  - CosmosDB
 
+### Data warehouse tools
+- Looker
+- Stitch
+- DBT
+- Snowflake
+- Amazon redshift
+- Azure synapse
+- Google big query
+
+###  Management 
+It is an unified analytics platform.
+- Databricks 
+- AWS google
+- MS has its own alternative
+
+### Streaming
+- Apache Kafka
+- Apache Spark
+- Google Dataflow
 
 
 ## Links to useful resources
