@@ -10,7 +10,6 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - Apache Nifi
 - Apache Airflow
 - Spark
-- Hive
 - DVC
 - Argo workflow
 - Azue databricks
@@ -50,7 +49,7 @@ RDB (relational database) is a database that stores data into tables with rows a
 
 ### Relational database at scale
 How to turn SQL-like into a map-reduce job that can run on a distributed file system. This is essentiallu what we mean by relational database at scale.
-- Hive (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
+- [Hive | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
 - Pig (less popular than Hive)
 
 ### Non relational database
