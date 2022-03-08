@@ -40,6 +40,21 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - Azuew
 - GCP
 
+### Relational Database
+RDB (relational database) is a database that stores data into tables with rows and columns.
+
+### Relational database at scale
+How to turn SQL-like into a map-reduce job that can run on a distributed file system. This is essentiallu what we mean by relational database at scale.
+- Hive (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
+- Pig (less popular than Hive)
+
+
+## Non relational database
+ - MongoDB
+ - CosmosDB
+
+
+
 ## Links to useful resources
 - [A Full End-to-End Deployment of a Machine Learning Algorithm into a Live Production Environment](https://www.kdnuggets.com/2021/12/deployment-machine-learning-algorithm-live-production-environment.html)
 - [Guide to evaluating MLOps platforms *by thoughtworks*](https://www.thoughtworks.com/content/dam/thoughtworks/documents/whitepaper/tw_whitepaper_guide_to_evaluating_mlops_platforms_2021.pdf)
