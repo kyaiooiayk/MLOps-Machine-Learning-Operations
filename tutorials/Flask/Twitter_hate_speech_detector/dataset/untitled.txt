@@ -1,0 +1,1 @@
+This is used for training purpouses only. youi'll get your new message straight from your twitter API
