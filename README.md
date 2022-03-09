@@ -15,7 +15,7 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - Apache Spark
 
 ### Model serialisation
-- [Notes]https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialiation)
+- [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialiation)
 
 ### Model lifecycle
 - MLFlow
