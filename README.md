@@ -4,8 +4,6 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 ![image](https://user-images.githubusercontent.com/89139139/148684996-107b35e5-7136-4842-a132-119db6ee48ce.png)
 
 
-## Classification by area
-
 ### Data Engineering
 - Apache Nifi
 - Apache Airflow
@@ -15,6 +13,9 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - Azue databricks
 - Hadoop 
 - Apache Spark
+
+### Model serialisation
+- [Notes]https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialiation)
 
 ### Model lifecycle
 - MLFlow
