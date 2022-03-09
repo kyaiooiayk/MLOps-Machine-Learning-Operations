@@ -31,7 +31,7 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 
 ### Application Framework/Model Deployment
 - Django
-- Flask
+- [Flask | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Flask)]
 - Nodejs
 - Expressjs
 - React
