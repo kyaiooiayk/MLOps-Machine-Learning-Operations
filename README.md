@@ -37,6 +37,7 @@ How to create, deploy and managed your ML projects. This [Ref](https://neptune.a
 - React
 - Nginx
 - Redis
+- [Heroku | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku/Quora_insincere_questions_classification)]
 
 ### Cloud computing
 Cloud computing is a name which refers to cluster machines on the cloud. AWS, seems to be the most popular. Maybe if one has to choose, one would look  at the one allowing more free computing hrs.
