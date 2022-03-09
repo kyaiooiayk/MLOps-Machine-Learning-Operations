@@ -23,6 +23,28 @@
   - **Container image**: This is the easiest option. This allows every collaborator or a cluster management service, such as Kubernetes, to pull a container image, instantiate it, and execute training immediately.
   - **Dockerfile**: This is a lightweight option. Dockerfiles contain instructions on what dependencies to download, build, and compile to create a container image. Dockerfiles can be versioned along with your training code. You can automate the process of creating container images from Dockerfiles by using continuous integration services, such as AWS CodeBuild.
 
+## Step-by-step guide to create a Docker image
+- Step #1: Save all the packages in the file with: `pip freeze > requirements.txt`. It’s a good practice to list the exact version of the library rather than `><`, but this does not seem to have stuck among practioners. The file looks like something like this:
+```
+joblib==0.16.0
+numpy==1.19.1
+pandas==1.1.0
+pandas-profiling==2.8.0 ▪ scikit-learn==0.23.2
+streamlit==0.64.0
+```
+- Step #2: Write a Dockerfile file named `Dockerfile` that can be used to build the required virtual environment for our app to run on. Every Dockerfile has to start with a `FROM`. What follows FROM must be an already existing image (either locally on your machine or from the DockerHub repository). Since our environment is based on Python, we use python:3.7 as our base image and eventually create a new image using this Dockerfile. Streamlit runs on a default port of 8501. So for the app to run, it is important to expose that particular port. We use the EXPOSE command for that. WORKDIR sets the working directory for the application. The rest of the commands will be executed from this path. Here COPY command copies all of the files from your Docker client’s current directory to the working directory of the image. RUN command ensures that the libraries we defined in the requirements.txt are installed appropriately. CMD specifies what command to run within the container as it starts. Hence, streamlit run app.py ensures that the Streamlit app runs as soon as the container has spun up.
+```
+FROM python:3.7
+EXPOSE 8501
+WORKDIR /app
+COPY . .
+RUN pip install -r requirements.txt
+CMD streamlit run app.py
+```
+- Step #3: Build it and create an image. The idea is this image we create is the reproducible environment irrelevant to the underlying system. (The dot at the end signifies the path for the Dockerfile, which is the current directory.): `docker build --tag app:1.0 .`
+
+- Step #4: Run command runs the specified container on the host machine. `--publish 8501:8501` lets the port 8501 of the container to be mapped to the port 8501 of the host machine, while -it is needed for running interactive processes (like shell/terminal): `docker run --publish 8501:8501 -it app:1.0` What do I do with it? You can share the built images on DockerHub or deploy them on the cloud, and so on.
+
 ## List of commands
 - **Create a container**: `docker run CONTAINER --network NETWORK`
 - **Start a stopped container**: `docker start CONTAINER NAME`
