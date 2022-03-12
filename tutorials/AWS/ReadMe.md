@@ -11,7 +11,7 @@
 - **Amazon SageMaker Python SDK** SageMaker Python SDK provides several high-level abstractions for working with Amazon SageMaker.
 - **API vs. SDK** An API is simply an interface that allows software to interact with other software. If an API is a set of building blocks that allow for the creation of something, an SDK is a full-fledged workshop, facilitating creation far outside the scopes of what an API would allow. The same is true with APIs and SDKs. By definition, an SDK is a kit that includes instructions that allow developers to create systems and develop applications. APIs, on the other hand, are purpose-built for an express use — to allow communication between applications.
 
-## 4 ways to train and deploy ML models in SageMaker:
+## 4 ways to train and deploy ML models in SageMaker
   - Training and deploying inside SageMaker , both using SageMaker’s own built-in algorithm containers (pls note these are AWS managed containers).
   - Training our model locally/outside SageMaker and then use SageMaker’s built-in algorithm container to just deploy the locally trained model (Bring Your Own Model type ).
   - Use SageMaker’s (AWS managed) built-in algorithms containers, but customize the training as per needs with our own scripts ( Bring Your Own Model type).
