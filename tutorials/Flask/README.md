@@ -22,9 +22,13 @@
 
 ## Troubleshooting
 - If you get an erro like this: `OSError: [Errno 48] Address already in use` then follow this [link](https://ishaileshmishra.medium.com/the-python-flask-problem-socket-error-errno-48-address-already-in-use-4d074847587e) to resolve it. Essentially this appens, when you are the app for the first time, you kill the python thread and while relaunching it again.
-- Try to locate the PID of the process with: `ps -fA | grep python`
-- Then kill the PID with: `kill PID`
-- If the one above does not work try: `kill -s KILL <pid>` or `kill -9 <pid>`
+- Option #1:
+   - Try to locate the PID of the process with: `ps -fA | grep python`
+   - Then kill the PID with: `kill PID`
+   - If the one above does not work try: `kill -s KILL <pid>` or `kill -9 <pid>`
+- Option #2:
+   - Locate the PID with: `lsof -i:8050`
+   -  Then shut the process with: `kill PID`
 
 ## Resources
 - [list of resources](https://www.fullstackpython.com/flask.html)
