@@ -43,7 +43,7 @@ How to create, deploy and manage your ML projects. This [Ref](https://neptune.ai
 - 
 ### Cloud computing
 Cloud computing is a name which refers to cluster machines on the cloud. AWS, seems to be the most popular. Maybe if one has to choose, one would look  at the one allowing more free computing hrs.
-- AWS (Amazon Web Server)
+- [AWS (Amazon Web Server)| [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS)]
 - Microsoft Azure
 - GCP (Google Cloud Platform)
 
