@@ -3,6 +3,7 @@ How to create, deploy and manage your ML projects. This [Ref](https://neptune.ai
 
 ![image](https://user-images.githubusercontent.com/89139139/148684996-107b35e5-7136-4842-a132-119db6ee48ce.png)
 
+- **Model deployment** Training a machine learning model using a method of your choice [XGBoost, LightGBM.] Writing a service using FastAPI for exposing the model through a service endpoint. Packaging the service into a Docker container. Deploying the Docker container to (AWS) Kubernetes Cluster to scale up the service.
 
 ### Data Engineering
 - Apache Nifi
@@ -86,16 +87,8 @@ It is an unified analytics platform.
 - **APIs vs Microservices: How They Work Together?** Microservices function as the “building‐blocks” of the application by performing various services, while “RESTful APIs” function as the “glue” that integrates the microservices into an application.
 
 ## Version control system (VCS)
-- Version control system (VCS) also known as revision control or source control, records and manages changes to files and folders.
-- It is important to make the distinction between the following 3 concepts:
-   - **Continuous Integration (CI)**: The code is built and tested on a regular basis, i.e. daily, several times per day, or – even better – with every commit.
-   - **Continuous Delivery (CD)**: This is the next step, and its goal is to always have code available that can be released at any point. CD uses some automation (building and testing) but requires human intervention in the end when it comes to releasing to a productive environment.
-   - **Continuous Deployment (CD)**: All code changes are automatically built, tested, and released. It's similar to continuous delivery but also brings the new version to the production environment without human intervention.
-   - All three methods rely on a version control system – there is no way around it.
+- Version control system (VCS) also known as revision control or source control, records and manages changes to files and folders. [Notes]()
 
-- GIT stands for Global Information Tracker
- - The most significant difference between the GitHub and Git Lab is that while GitHub is a collaboration platform that helps review and manage codes remotely, GitLab is majorly focused on DevOps and CI/CD.
- - GitHub is more popular amongst the developers as it holds millions of repositories, but recently GitLab has been gaining popularity, as the company continues to add new features to make it more competitive and user-friendly
 
 ## Links to useful resources
 - [A Full End-to-End Deployment of a Machine Learning Algorithm into a Live Production Environment](https://www.kdnuggets.com/2021/12/deployment-machine-learning-algorithm-live-production-environment.html)
