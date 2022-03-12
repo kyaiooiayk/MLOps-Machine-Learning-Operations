@@ -87,7 +87,7 @@ It is an unified analytics platform.
 - **APIs vs Microservices: How They Work Together?** Microservices function as the “building‐blocks” of the application by performing various services, while “RESTful APIs” function as the “glue” that integrates the microservices into an application.
 
 ## Version control system (VCS)
-- Version control system (VCS) also known as revision control or source control, records and manages changes to files and folders. [Notes]()
+- Version control system (VCS) also known as revision control or source control, records and manages changes to files and folders. [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/VCS.md)
 
 
 ## Links to useful resources
