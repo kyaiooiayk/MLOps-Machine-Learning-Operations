@@ -88,11 +88,10 @@ It is an unified analytics platform.
 ## Version control system (VCS)
 - Version control system (VCS) also known as revision control or source control, records and manages changes to files and folders.
 - It is important to make the distinction between the following 3 concepts:
-
- - **Continuous Integration (CI)**: The code is built and tested on a regular basis, i.e. daily, several times per day, or – even better – with every commit.
- - **Continuous Delivery (CD)**: This is the next step, and its goal is to always have code available that can be released at any point. CD uses some automation (building and testing) but requires human intervention in the end when it comes to releasing to a productive environment.
- - **Continuous Deployment (CD)**: All code changes are automatically built, tested, and released. It's similar to continuous delivery but also brings the new version to the production environment without human intervention.
- - All three methods rely on a version control system – there is no way around it.
+   - **Continuous Integration (CI)**: The code is built and tested on a regular basis, i.e. daily, several times per day, or – even better – with every commit.
+   - **Continuous Delivery (CD)**: This is the next step, and its goal is to always have code available that can be released at any point. CD uses some automation (building and testing) but requires human intervention in the end when it comes to releasing to a productive environment.
+   - **Continuous Deployment (CD)**: All code changes are automatically built, tested, and released. It's similar to continuous delivery but also brings the new version to the production environment without human intervention.
+   - All three methods rely on a version control system – there is no way around it.
 
 ## Links to useful resources
 - [A Full End-to-End Deployment of a Machine Learning Algorithm into a Live Production Environment](https://www.kdnuggets.com/2021/12/deployment-machine-learning-algorithm-live-production-environment.html)
