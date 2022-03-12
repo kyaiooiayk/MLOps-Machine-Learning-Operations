@@ -32,6 +32,8 @@ pandas==1.1.0
 pandas-profiling==2.8.0 ▪ scikit-learn==0.23.2
 streamlit==0.64.0
 ```
+- Step #1.1 an alternative to `pip freeze` is `pipreqs`. The first outputs all the installed packages in that environment, whereas `pipreqs path/to/project` gives you only the ones actually imported by this project.
+
 - Step #2: Write a Dockerfile file named `Dockerfile` that can be used to build the required virtual environment for our app to run on. Every Dockerfile has to start with a `FROM`. What follows FROM must be an already existing image (either locally on your machine or from the DockerHub repository). Since our environment is based on Python, we use python:3.7 as our base image and eventually create a new image using this Dockerfile. Streamlit runs on a default port of 8501. So for the app to run, it is important to expose that particular port. We use the EXPOSE command for that. WORKDIR sets the working directory for the application. The rest of the commands will be executed from this path. Here COPY command copies all of the files from your Docker client’s current directory to the working directory of the image. RUN command ensures that the libraries we defined in the requirements.txt are installed appropriately. CMD specifies what command to run within the container as it starts. Hence, streamlit run app.py ensures that the Streamlit app runs as soon as the container has spun up.
 ```
 FROM python:3.7
