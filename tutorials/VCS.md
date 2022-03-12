@@ -17,5 +17,14 @@
   - `(0.19.2)` The second number is called the minor version. When backwards compatible changes. Functionality is added (or speed improvements) that does not break any existing functionality, at least the public API that end- users would use
   - `(0.19.2)` The third number is called the patch version. backwards compatible bug fixes
 
+## MLOps vs. DevOps
+- Traditional software development often relies on DevOps, which involves Continuous Integration (CI), Continuous Delivery (CD), and Continuous Testing (CT) to reduce development time while continuously delivering new releases and maintaining quality.
+- MLOps embraces DevOps’ continuous integration and continuous delivery, but replaces the *continuous testing* phase with *continuous training*. This continuous training of new models, which includes redeployment of those new models and all of the technical efforts that go along with it, aims to address three notable aspects of ML projects:
+  - The need for explainability especially for auditing purposes.
+  - Model decay, possibily due to data drifting.
+  - The continuous development and enhancements to the model driven by business requirements. 
+
+
 ## References
 - [DS is software](https://nbviewer.org/github/ethen8181/machine-learning/blob/master/data_science_is_software/notebooks/data_science_is_software.ipynb)
+- [Implementing MLOps on an Edge Device](https://www.kdnuggets.com/2020/08/implementing-mlops-edge-device.html)
