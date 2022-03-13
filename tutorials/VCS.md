@@ -13,9 +13,9 @@
 
 ## Semantic versioning of package
 - Let's say we donwload a python package named `ML_Mine` version `0.19.2`. What do those numbers really mean?
-  - `0.19.2` The first number in this chain is called the major version. when there's backwards incompatible changes, i.e. changes that break the old API are released. Usually, when major versions are released.
-  - `(0.19.2)` The second number is called the minor version. When backwards compatible changes. Functionality is added (or speed improvements) that does not break any existing functionality, at least the public API that end- users would use
-  - `(0.19.2)` The third number is called the patch version. backwards compatible bug fixes
+  - `0.19.2` The first number in this chain is called the **major** version. when there's backwards incompatible changes, i.e. changes that break the old API are released. Usually, when major versions are released.
+  - `(0.19.2)` The second number is called the **minor** version. When backwards compatible changes. Functionality is added (or speed improvements) that does not break any existing functionality, at least the public API that end- users would use
+  - `(0.19.2)` The third number is called the **patch** version. backwards compatible bug fixes
 
 ## MLOps vs. DevOps
 - Traditional software development often relies on DevOps, which involves Continuous Integration (CI), Continuous Delivery (CD), and Continuous Testing (CT) to reduce development time while continuously delivering new releases and maintaining quality.
