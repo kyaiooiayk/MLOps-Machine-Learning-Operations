@@ -1,9 +1,9 @@
 # VCS (Version Control System)
 
 ## CI vs. CD
-- **Continuous Integration (CI)**: The code is built and tested on a regular basis, i.e. daily, several times per day, or – even better – with every commit.
-- **Continuous Delivery (CD)**: This is the next step, and its goal is to always have code available that can be released at any point. CD uses some automation (building and testing) but requires human intervention in the end when it comes to releasing to a productive environment.
-- **Continuous Deployment (CD)**: All code changes are automatically built, tested, and released. It's similar to continuous delivery but also brings the new version to the production environment without human intervention.
+- **Continuous Integration (CI)**: The code is built and tested on a regular basis, i.e. daily, several times per day, or – even better – with every commit. It is the practice of merging all developers' working copies to a shared mainline several times a day.
+- **Continuous Delivery (CD)**: This is the next step, and its goal is to always have code available that can be released at any point. CD uses some automation (building and testing) but requires *human intervention* in the end when it comes to releasing to a productive environment. It is an approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time and, when releasing the software, without doing so manually.
+- **Continuous Deployment (CD)**: All code changes are automatically built, tested, and released. It's similar to continuous delivery but also brings the new version to the production environment *without human intervention*.
 - All three methods rely on a version control system – there is no way around it.
 
 ## GitHub vs. GitLab
@@ -23,8 +23,10 @@
   - The need for explainability especially for auditing purposes.
   - Model decay, possibily due to data drifting.
   - The continuous development and enhancements to the model driven by business requirements. 
+- Continuous training is a new property, unique to ML systems, that's concerned with automatically retraining and serving the models.
 
 
 ## References
 - [DS is software](https://nbviewer.org/github/ethen8181/machine-learning/blob/master/data_science_is_software/notebooks/data_science_is_software.ipynb)
 - [Implementing MLOps on an Edge Device](https://www.kdnuggets.com/2020/08/implementing-mlops-edge-device.html)
+- [MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning#mlops_level_2_cicd_pipeline_automation)
