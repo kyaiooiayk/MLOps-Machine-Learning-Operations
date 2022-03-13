@@ -23,7 +23,8 @@
   - The need for explainability especially for auditing purposes.
   - Model decay, possibily due to data drifting.
   - The continuous development and enhancements to the model driven by business requirements. 
-- Continuous training is a new property, unique to ML systems, that's concerned with automatically retraining and serving the models.
+- **Continuous training** is a new property, unique to ML systems, that's concerned with automatically retraining and serving the models.
+- There is another one called **Continuous Monitoring (CM)** which entitles to catching errors in production system, and monitoring production inference data and model performance metrics tied to business outcomes.
 
 ## 3 levels of MLOps processes
 - **MLOps level 0: Manual process**: Many teams have data scientists and ML researchers who can build state-of-the-art models, but their process for building and deploying ML models is entirely manual. This is considered the basic level of maturity, or level 0. Deployment refers to the prediction service where concern is only with deploying the trained model as a prediction service (microservice with a REST API). MLOps level 0 is common in many businesses that are beginning to apply ML to their use cases. *Challenges*: this manual, data-scientist-driven process might be sufficient when models are rarely changed or trained. In practice, models often break when they are deployed in the real world.
