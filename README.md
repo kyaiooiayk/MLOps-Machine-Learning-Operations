@@ -49,7 +49,7 @@ Cloud computing is a name which refers to cluster machines on the cloud. AWS, se
 - GCP (Google Cloud Platform)
 
 ### Edge computing
-- Edge computing referres to computation done on edge devices, meaning consumer devices. Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data.
+- Edge computing referes to computation done on edge devices, meaning consumer devices. Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data.
 
 ### Relational Database
 RDB (relational database) is a database that stores data into tables with rows and columns.
