@@ -25,6 +25,12 @@
   - The continuous development and enhancements to the model driven by business requirements. 
 - Continuous training is a new property, unique to ML systems, that's concerned with automatically retraining and serving the models.
 
+## 3 levels of MLOps processes
+- **MLOps level 0: Manual process**: Many teams have data scientists and ML researchers who can build state-of-the-art models, but their process for building and deploying ML models is entirely manual. This is considered the basic level of maturity, or level 0. Deployment refers to the prediction service where concern is only with deploying the trained model as a prediction service (microservice with a REST API). MLOps level 0 is common in many businesses that are beginning to apply ML to their use cases. *Challenges*: this manual, data-scientist-driven process might be sufficient when models are rarely changed or trained. In practice, models often break when they are deployed in the real world.
+
+- **MLOps level 1: ML pipeline automation**: The goal is to perform continuous training of the model by automating the ML pipeline; this lets you achieve continuous delivery of model prediction service. To automate the process of using new data to retrain models in production, you need to introduce automated data and model validation steps to the pipeline, as well as pipeline triggers and metadata management. In level 0, you deploy a trained model as a prediction service to production. For level 1, you deploy a whole training pipeline, which automatically and recurrently runs to serve the trained model as the prediction service. *Challenges*: If you manage many ML pipelines in production, you need a CI/CD setup to automate the build, test, and deployment of ML pipelines.
+ 
+- **MLOps level 2: CI/CD pipeline automation**: For a rapid and reliable update of the pipelines in production, you need a robust automated CI/CD system. This automated CI/CD system lets your data scientists rapidly explore new ideas around feature engineering, model architecture, and hyperparameters. They can implement these ideas and automatically build, test, and deploy the new pipeline components to the target environment.
 
 ## References
 - [DS is software](https://nbviewer.org/github/ethen8181/machine-learning/blob/master/data_science_is_software/notebooks/data_science_is_software.ipynb)
