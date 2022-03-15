@@ -1,9 +1,9 @@
 # MLOps (Machine Learning Operations)
-How to create, deploy and manage your ML projects. This [Ref](https://neptune.ai/blog/ml-experiment-tracking) offers a nice visualisation of what MLOps encompasses.
+How to create, deploy and manage your ML projects. But what do we mean when we talk about model deployment? Training a ML model using a method of your choice. Writing a service using FastAPI for exposing the model through a service endpoint. Packaging the service into a Docker container. Deploying the Docker container to (AWS) Kubernetes Cluster to scale up the service.
+
+This [Ref](https://neptune.ai/blog/ml-experiment-tracking) offers a nice visualisation of what MLOps encompasses.
 
 ![image](https://user-images.githubusercontent.com/89139139/148684996-107b35e5-7136-4842-a132-119db6ee48ce.png)
-
-- **Model deployment** Training a machine learning model using a method of your choice [XGBoost, LightGBM.] Writing a service using FastAPI for exposing the model through a service endpoint. Packaging the service into a Docker container. Deploying the Docker container to (AWS) Kubernetes Cluster to scale up the service.
 
 ### Data Engineering
 - Apache Nifi
@@ -39,6 +39,7 @@ How to create, deploy and manage your ML projects. This [Ref](https://neptune.ai
 - React
 - Nginx
 - Redis
+- [FastAPI |[Note]()]
 - [Heroku | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku/Quora_insincere_questions_classification)]
 - [Streamlit | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
 
