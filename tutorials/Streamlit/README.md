@@ -1,5 +1,8 @@
 # Note on streamlit
 
+## Introduction
+If you’re a data scientist or a machine learning engineer, you are probably reasonably confident in your ability to build models to solve real-world business problems. But how good are you at front-end web development? Can you build a visually appealing web application to showcase your models? Chances are, you may be a Python specialist, but not a front-end Javascript expert. This is where streamlit can help.
+
 ## Why streamlit?
 To build a web app you’d typically use such Python web frameworks as Django and Flask. But the steep learning curve and the big time investment for implementing these apps present a major hurdle. **Streamlit** makes the app creation process as simple as writing Python scripts! In short streamlit is a Python library you can use to build interactive data-driven web apps.
 
