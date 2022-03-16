@@ -2,6 +2,9 @@
 
 ## Other Concepts
 - **What is a client-server model?** In computing, a client can be a web browser or desktop application that a person interacts with to make requests to computer servers. A server can be services such as Amazon Elastic Compute Cloud (Amazon EC2), a type of virtual server.
+- **What is cloud computing?** Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing.
+- **Elasticity** With cloud computing, you don’t have to over-provision resources up front to handle peak levels of business activity in the future. Instead, you provision the amount of resources that you actually need. You can scale these resources up or down to instantly grow and shrink capacity as your business needs change.
+- **Types of cloud computing**: There are 3 types of them: Infrastructure or Platform or Software as a Service. Alternatively: Iaas, PaaS and SaaS. These are arranged from more to less flexibility.
 
 ## Quick references
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
@@ -28,3 +31,4 @@
 - [Python, Boto3, and AWS S3: Demystified](https://realpython.com/python-boto3-aws-s3/)
 - [SageMaker Example Notebooks](https://github.com/aws/amazon-sagemaker-examples)
 - [16 videos on Amazon SageMaker Technical Deep Dive Series](https://www.youtube.com/playlist?list=PLhr1KZpdzukcOr_6j_zmSrvYnLUtgqsZz)
+- [What is cloud computing?](https://aws.amazon.com/what-is-cloud-computing/)
