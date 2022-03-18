@@ -11,8 +11,23 @@
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
 - **S3 bucket** stand for Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics
 - **SageMaker** is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly. It provides the tools to build, train and deploy machine learning (ML) models for predictive analytics applications. The platform automates the tedious work of building a production-ready artificial intelligence (AI) pipeline. *Why would you use it?* AWS SageMaker provides more elegant ways to train, test and deploy models with tools like Inference pipelines, Batch transform, multi model endpoints, A/B testing with production variants, Hyper-parameter tuning, Auto scaling etc.
+
 - **EC2 (Amazon's Elastic Compute Cloud) instance** is a virtual server for running applications on the Amazon Web Services (AWS) infrastructure. It provides secure, resizable compute capacity in the cloud. 
 
+- **Amazon EC2 instance types**: 
+  - General purpose instances: balances compute, memory, and networking resources
+  - Compute optimized instances: compute-intensive tasks. Offers high-performance processors
+  - Memory optimized instances: memory-intensive task. Ideal for high-performance databases.
+  - Accelerated computing instances: GPUs? 
+  - Storage optimized instances: suitable for data warehousing applications
+
+- **Amazon EC2 pricing**
+  - On-Demand
+  - Amazon EC2 Savings Plans
+  - Reserved Instances
+  - Spot Instances: ideal for workloads that can withstand interruptions. Compute costs by up to 90% over On-Demand costs.  AWS can reclaim the resorces anytime with a 2 minutes warning.
+  - Dedicated Hosts: resources is not shared with anyone else.
+ 
 - **Lambda** is a serverless compute service that lets your code without provisioning or managing servers. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic.
 - **API Gateway** is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the “front door” for applications to access data, business logic, or functionality from your backend services. Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications.
 - **Boto3** is the name of the Python SDK(Software Development Kit) for AWS. It allows you to directly create, update, and delete AWS resources from your Python scripts. The same is true with APIs and SDKs. By definition, an SDK is a kit that includes instructions that allow developers to create systems and develop applications. APIs, on the other hand, are purpose-built for an express use — to allow communication between applications.
