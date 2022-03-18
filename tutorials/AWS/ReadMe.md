@@ -16,8 +16,6 @@
   - Upload your code.
   - Continue to manage the instances while your application is running.
 
-- **DNS** can be thought as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address. 
-
 ## Quick references
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
 
@@ -80,6 +78,10 @@
 - **Amazon CloudFront** is best described as a global content delivery service. Edge location are site that Amazon CloudFront use to cache copies of content for faster delivery to users at any location.
 
 - **Amazon Outpost** it is used to extend AWS infrastructure and services to your on-premises data center.
+
+- **DNS** can be thought as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address. 
+**Amazon Route 53** is a DNS web service. It gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. 
+
 
 ## Ways to interact with AWS services
   - Via the **AWS Management Console** which is a web-based interface for accessing and managing AWS services.
