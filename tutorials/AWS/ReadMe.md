@@ -95,6 +95,7 @@
 
 - **Amazon DynamoDB** is a key-value database service, thus NoSQL. It delivers single-digit millisecond performance at any scale. Nonrelational databases are sometimes referred to as “NoSQL databases” because they use structures other than rows and columns to organize data. One type of structural approach for nonrelational databases is key-value pairs. With key-value pairs, data is organized into items (keys), and items have attributes (values). You can think of attributes as being different features of your data. It is serveless which means you do not have to provision, patch and manage servers.
 
+- **Amazon Redshift** is a data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
 
 ## Ways to interact with AWS services
   - Via the **AWS Management Console** which is a web-based interface for accessing and managing AWS services.
