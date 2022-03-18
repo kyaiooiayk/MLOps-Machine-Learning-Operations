@@ -16,8 +16,6 @@
   - Upload your code.
   - Continue to manage the instances while your application is running.
 
-- **Instance store** is a store that provides temporary block-level storage for an Amazon EC2 instance. An instance store is disk storage that is physically attached to the host computer for an EC2 instance, and therefore has the same lifespan as the instance. When the instance is terminated, you lose any data in the instance store. Thus, instance stores for use cases that involve temporary data that you do not need in the long term.
-
 ## Quick references
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
 
@@ -83,6 +81,9 @@
 
 - **Amazon Route 53** is a DNS web service which gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. DNS can be thought as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address. 
 
+- **Instance store** is a store that provides temporary block-level storage for an Amazon EC2 instance. An instance store is disk storage that is physically attached to the host computer for an EC2 instance, and therefore has the same lifespan as the instance. When the instance is terminated, you lose any data in the instance store. Thus, instance stores for use cases that involve temporary data that you do not need in the long term.
+
+- **Amazon Elastic Block Store (Amazon EBS)** is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available. Because EBS volumes are for data that needs to persist, it’s important to back up the data. You can take incremental backups of EBS volumes by creating Amazon EBS snapshots.
 
 
 ## Ways to interact with AWS services
