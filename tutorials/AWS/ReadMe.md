@@ -16,8 +16,7 @@
   - Upload your code.
   - Continue to manage the instances while your application is running.
 
-- **Amazon CloudFront** is best described as a global content delivery service. Edge location are site that Amazon CloudFront use to cache copies of content for faster delivery to users at any location.
- 
+
 ## Quick references
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
 
@@ -76,6 +75,10 @@
   - Application health monitoring
 
 - **AWS CloudFormation** With AWS CloudFormation, you can treat your infrastructure as code. This means that you can build an environment by writing lines of code instead of using the AWS Management Console to individually provision resources.
+
+- **Amazon CloudFront** is best described as a global content delivery service. Edge location are site that Amazon CloudFront use to cache copies of content for faster delivery to users at any location.
+
+- **Amazon Outpost** it is used to extend AWS infrastructure and services to your on-premises data center.
 
 ## Ways to interact with AWS services
   - Via the **AWS Management Console** which is a web-based interface for accessing and managing AWS services.
