@@ -79,8 +79,8 @@
 
 - **Amazon Outpost** it is used to extend AWS infrastructure and services to your on-premises data center.
 
-- **DNS** can be thought as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address. 
-**Amazon Route 53** is a DNS web service. It gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. 
+- **Amazon Route 53** is a DNS web service which gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. DNS can be thought as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address. 
+
 
 
 ## Ways to interact with AWS services
