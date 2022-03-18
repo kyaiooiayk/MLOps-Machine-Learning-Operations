@@ -65,6 +65,11 @@
 
 - **AWS Fargate** AWS Fargate is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. When using AWS Fargate, you do not need to provision or manage servers. AWS Fargate manages your server infrastructure for you.
 
+## Ways to interact with AWS services:
+  - Via the **AWS Management Console** which is a web-based interface for accessing and managing AWS services.
+  - Via the **AWS Command Line Interface (AWS CLI)** To save time when making API requests, you can use the AWS CLI. AWS CLI enables you to control multiple AWS services directly from the command line within one tool. AWS CLI is available for users on Windows, macOS, and Linux. 
+  - Via **Software Development Kits (SDKs)** Another option for accessing and managing AWS services is the software development kits (SDKs). SDKs make it easier for you to use AWS services through an API designed for your programming language or platform. SDKs enable you to use AWS services with your existing applications or create entirely new applications that will run on AWS.
+
 ## 4 ways to train and deploy ML models in SageMaker
   - Training and deploying inside SageMaker , both using SageMaker’s own built-in algorithm containers (pls note these are AWS managed containers).
   - Training our model locally/outside SageMaker and then use SageMaker’s built-in algorithm container to just deploy the locally trained model (Bring Your Own Model type ).
