@@ -29,7 +29,7 @@
 
 - **Amazon EC2 instance types**: 
   - General purpose instances: balances compute, memory, and networking resources
-  - Compute optimized instances: compute-intensive tasks. Offers high-performance processors
+  - Compute optimized instances: compute-intensive tasks. Offers high-performance processors. Used for a batch processing workload.
   - Memory optimized instances: memory-intensive task. Ideal for high-performance databases.
   - Accelerated computing instances: GPUs? 
   - Storage optimized instances: suitable for data warehousing applications
@@ -80,3 +80,4 @@
 - [SageMaker Example Notebooks](https://github.com/aws/amazon-sagemaker-examples)
 - [16 videos on Amazon SageMaker Technical Deep Dive Series](https://www.youtube.com/playlist?list=PLhr1KZpdzukcOr_6j_zmSrvYnLUtgqsZz)
 - [What is cloud computing?](https://aws.amazon.com/what-is-cloud-computing/)
+- [Find the hands-on tutorials for your AWS needs](https://aws.amazon.com/getting-started/hands-on/?awsf.getting-started-category=category%23compute&awsf.getting-started-content-type=content-type%23hands-on&getting-started-all.sort-by=item.additionalFields.sortOrder&getting-started-all.sort-order=asc&awsf.getting-started-level=*all)
