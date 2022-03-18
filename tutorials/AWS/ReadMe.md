@@ -16,6 +16,7 @@
   - Upload your code.
   - Continue to manage the instances while your application is running.
 
+- **DNS** can be thought as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address. 
 
 ## Quick references
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
