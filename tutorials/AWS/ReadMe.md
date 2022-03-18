@@ -16,6 +16,8 @@
   - Upload your code.
   - Continue to manage the instances while your application is running.
 
+- **Amazon CloudFront** is best described as a global content delivery service.
+ 
 ## Quick references
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
 
