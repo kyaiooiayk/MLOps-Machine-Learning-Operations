@@ -34,7 +34,7 @@
   - Accelerated computing instances: GPUs? 
   - Storage optimized instances: suitable for data warehousing applications
 
-- **Elastic Load Balancing** Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. This means that as you add or remove Amazon EC2 instances in response to the amount of incoming traffic, these requests route to the load balancer first. Then, the requests spread across multiple resources that will handle them. Although Elastic Load Balancing and Amazon EC2 Auto Scaling are separate services, they work together to help ensure that applications running in Amazon EC2 can provide high performance and availability. 
+- **Elastic Load Balancing** Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. This means that as you add or remove Amazon EC2 instances in response to the amount of incoming traffic, these requests route to the load balancer first. Then, the requests spread across multiple resources that will handle them. Although Elastic Load Balancing and Amazon EC2 Auto Scaling are separate services, they work together to help ensure that applications running in Amazon EC2 can provide high performance and availability.  An example of Elastic Load Balancing Ensuring that no single Amazon EC2 instance has to carry the full workload on its own.
 
 - **Amazon EC2 pricing**
   - On-Demand
