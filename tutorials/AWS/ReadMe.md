@@ -93,7 +93,7 @@
 
 - **Amazon Elastic File System (Amazon EFS)** is a scalable file system used with AWS Cloud services and on-premises resources. As you add and remove files, Amazon EFS grows and shrinks automatically. It can scale on demand to petabytes without disrupting applications. It stores data in a *multiple* availability zone.
 
-- **Amazon DynamoDB** is a key-value database service, thus NoSQL. It delivers single-digit millisecond performance at any scale. Nonrelational databases are sometimes referred to as “NoSQL databases” because they use structures other than rows and columns to organize data. One type of structural approach for nonrelational databases is key-value pairs. With key-value pairs, data is organized into items (keys), and items have attributes (values). You can think of attributes as being different features of your data.
+- **Amazon DynamoDB** is a key-value database service, thus NoSQL. It delivers single-digit millisecond performance at any scale. Nonrelational databases are sometimes referred to as “NoSQL databases” because they use structures other than rows and columns to organize data. One type of structural approach for nonrelational databases is key-value pairs. With key-value pairs, data is organized into items (keys), and items have attributes (values). You can think of attributes as being different features of your data. It is serveless which means you do not have to provision, patch and manage servers.
 
 
 ## Ways to interact with AWS services
