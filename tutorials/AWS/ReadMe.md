@@ -14,12 +14,18 @@
 
 - **EC2 (Amazon's Elastic Compute Cloud) instance** is a virtual server for running applications on the Amazon Web Services (AWS) infrastructure. It provides secure, resizable compute capacity in the cloud. 
 
+- **Amazon EC2 Auto Scaling** enables you to automatically add or remove Amazon EC2 instances in response to changing application demand. By automatically scaling your instances in and out as needed, you are able to maintain a greater sense of application availability. Two approaches are available: 
+  - Dynamic scaling responds to changing demand. 
+  - Predictive scaling automatically schedules instances based on predicted demand.
+
 - **Amazon EC2 instance types**: 
   - General purpose instances: balances compute, memory, and networking resources
   - Compute optimized instances: compute-intensive tasks. Offers high-performance processors
   - Memory optimized instances: memory-intensive task. Ideal for high-performance databases.
   - Accelerated computing instances: GPUs? 
   - Storage optimized instances: suitable for data warehousing applications
+
+- **Elastic Load Balancing** Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. This means that as you add or remove Amazon EC2 instances in response to the amount of incoming traffic, these requests route to the load balancer first. Then, the requests spread across multiple resources that will handle them. Although Elastic Load Balancing and Amazon EC2 Auto Scaling are separate services, they work together to help ensure that applications running in Amazon EC2 can provide high performance and availability. 
 
 - **Amazon EC2 pricing**
   - On-Demand
