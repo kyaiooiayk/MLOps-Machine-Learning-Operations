@@ -108,6 +108,8 @@
 
 - **AWS CloudTrail** captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon S3 bucket that you specify. 
 
+- **AWS Glue or Amazon EMR** are ETL services. They both use Apache Spark for your ETL. ETL requires a lot of reading and writing which take a lot of memory and disk I/O. For this reason the services use a framework like Apache Spark, which can handle large amounts of data easily for ETL.
+
 ## Ways to interact with AWS services
   - Via the **AWS Management Console** which is a web-based interface for accessing and managing AWS services.
   - Via the **AWS Command Line Interface (AWS CLI)** To save time when making API requests, you can use the AWS CLI. AWS CLI enables you to control multiple AWS services directly from the command line within one tool. AWS CLI is available for users on Windows, macOS, and Linux. 
