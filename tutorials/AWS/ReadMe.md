@@ -20,6 +20,7 @@
 
 - **Caching** is applied to improve application performance. The cache is a piece of memory that has much faster read/write time (around an order of magnitude faster).
 
+- **AWS service endpoints** To connect programmatically to an AWS service, you use an endpoint. An endpoint is the URL of the entry point for an AWS web service. 
 
 ## Quick reference on AWS offers
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
@@ -56,7 +57,7 @@
   - Spot Instances: ideal for workloads that can withstand interruptions. Compute costs by up to 90% over On-Demand costs.  AWS can reclaim the resorces anytime with a 2 minutes warning.
   - Dedicated Hosts: resources is not shared with anyone else.
  
-- **Lambda** is a serverless compute service that lets your code without provisioning or managing servers. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. This is how AWS Lambda works:
+- **Lambda** is a serverless compute service that lets your code without provisioning or managing servers. “Serverless” doesn’t mean there is no server, it just means that you don’t care about the underlying infrastructure for your code and you only pay for what you use. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. This is how AWS Lambda works:
   - You upload your code to Lambda. 
   - You set your code to trigger from an event source, such as AWS services, mobile applications, or HTTP endpoints.
   -  Lambda runs your code only when triggered. The trigger part is key to understand how they work.
@@ -115,11 +116,19 @@
   - Via the **AWS Command Line Interface (AWS CLI)** To save time when making API requests, you can use the AWS CLI. AWS CLI enables you to control multiple AWS services directly from the command line within one tool. AWS CLI is available for users on Windows, macOS, and Linux. 
   - Via **Software Development Kits (SDKs)** Another option for accessing and managing AWS services is the software development kits (SDKs). SDKs make it easier for you to use AWS services through an API designed for your programming language or platform. SDKs enable you to use AWS services with your existing applications or create entirely new applications that will run on AWS.
 
+## I have an ML App in Flask and I want to deploy it via AWS
+I have a ML Flask app API capable to do some real-time inference. I'd like to deployt it to the internet via AWS. There are at least 5 ways (hence this list is not exhaustive):
+  - **Deploy it on an EC2 Instance** which the simplest but least robust. This entitles to acquire a virtual machine in the cloud, making it accessible to the internet, and starting your application on it. A tutorial is available [here](https://towardsdatascience.com/the-fastest-way-to-deploy-your-ml-app-on-aws-with-zero-best-practices-df15c09eead7). Ideal for quick showcase demos. If your app is small enough, it’ll cost you literally nothing to host and you can have it up in as little as 5 minutes. No need for a Docker image but just some simple linux command line. Requires lots of hacky manual setup not suitable for real production deployments.
+  - **Create an AWS Lambda Function** AWS Lambda is a service for deploying serverless functions. “Serverless” doesn’t mean there is no server, it just means that you don’t care about the underlying infrastructure for your code and you only pay for what you use. While not ideal for some more complex use cases, it is ideal for simple and repeatable code. It’s scalable, extremely cheap. It requires an API Gateway, but it is far more robust than a standalone EC2 machine. For production, this would probably be the cheapest option.
+  - **Containerize it and Deploy it with Elastic Container Service (ECS)** Like Kuberenetes, ECS is a container orchestration service for deploying applications. The difference is the distribution of responsibilities. Instead of the user being responsible for some lower-level infrastructure concerns you’d have to take care of in Kubernetes, you have AWS do it for you. ECS is similar to Lambda in that it abstracts away infrastructure concerns. In terms of flexibility, it sits in between Lambda and the highly flexible Kubernetes.  
+  - **Containerize it and Deploy it on Kubernetes (EKS)** Kubernetes is one of the go-to options for managing and scaling containerized applications nowadays. Unlike more managed container orchestration solutions like ECS, Kubernetes provides granular control of your machine learning app. However, it comes at a bit of a cost. Unlike requisitioning a single instance on which to deploy your app, you now have to manage an entire Kubernetes cluster. Deploying an application and managing a cluster can prove no simple task for new users.
+  - **Create a Sagemaker Endpoint** AWS Sagemaker is a first-class suite of ML tools for the cloud. From hosted to jupyter notebooks to easy model endpoints, the experience with Sagemaker will probably feel like creating deployments locally on your machine. Of course, the highly specific and managed nature of this solution could increase the cost.
+
 ## 4 ways to train and deploy ML models in SageMaker
   - Training and deploying inside SageMaker , both using SageMaker’s own built-in algorithm containers (pls note these are AWS managed containers).
   - Training our model locally/outside SageMaker and then use SageMaker’s built-in algorithm container to just deploy the locally trained model (Bring Your Own Model type ).
   - Use SageMaker’s (AWS managed) built-in algorithms containers, but customize the training as per needs with our own scripts ( Bring Your Own Model type).
-  - Train our model in whatever method / or our own algorithms as we want locally in our container (built and managed by us ) and then bring that container to SageMaker and deploy it for usage (BYOC: Bring Your Own Container).
+  - Train our model in whatever method and then bring your container to SageMaker and deploy it for usage (BYOC: Bring Your Own Container).
 
 
 ## Resources
