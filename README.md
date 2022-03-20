@@ -39,7 +39,7 @@ This [Ref](https://neptune.ai/blog/ml-experiment-tracking) offers a nice visuali
 - React
 - Nginx
 - Redis
-- [FastAPI |[Note]()]
+- [[FastAPI](https://fastapi.tiangolo.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/FastAPI)]
 - [Heroku | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku/Quora_insincere_questions_classification)]
 - [Streamlit | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
 
