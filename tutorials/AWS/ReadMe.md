@@ -13,7 +13,7 @@
 - **Shared responsibility model** is the idea that both customer and AWS is responsible for keeping resources secure. AWS is responsible for some parts of your environment and you (the customer) are responsible for other parts. The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).
 - **Caching** is applied to improve application performance. The cache is a piece of memory that has much faster read/write time (around an order of magnitude faster).
 - **AWS service endpoints** To connect programmatically to an AWS service, you use an endpoint. An endpoint is the URL of the entry point for an AWS web service. 
-- **AMI** is an Amazon Machine Image. 
+- **AMI** is an Amazon Machine Image. It is a frozen instance of a server that you can select and instantiate on a new virtual server.
 
 ## Quick reference on AWS offers
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
