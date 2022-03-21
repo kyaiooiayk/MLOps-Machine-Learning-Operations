@@ -2,25 +2,18 @@
 
 ## Good to know concepts
 - **What is a client-server model?** In computing, a client can be a web browser or desktop application that a person interacts with to make requests to computer servers. A server can be services such as Amazon Elastic Compute Cloud (Amazon EC2), a type of virtual server.
-
 - **What is cloud computing?** Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing.
-
 - **Elasticity** With cloud computing, you don’t have to over-provision resources up front to handle peak levels of business activity in the future. Instead, you provision the amount of resources that you actually need. You can scale these resources up or down to instantly grow and shrink capacity as your business needs change.
-
 - **Types of cloud computing**: There are 3 types of them: Infrastructure or Platform or Software as a Service. Alternatively: Iaas, PaaS and SaaS. These are arranged from more to less flexibility.
-
 - **Multitenancy**: the idea of sharing underlying hardware between virtual machines.
-
 - **Serverless** means that your code runs on servers, but you do not need to provision or manage these servers. With serverless computing, you can focus more on innovating new products and features instead of maintaining servers. The opposite of this way of working is the EC2 (i.e. virtual server) instance that lets you run virtual servers in the cloud. If you have applications that you want to run in Amazon EC2, you must do the following:
   - Provision instances (virtual servers).
   - Upload your code.
   - Continue to manage the instances while your application is running.
-
 - **Shared responsibility model** is the idea that both customer and AWS is responsible for keeping resources secure. AWS is responsible for some parts of your environment and you (the customer) are responsible for other parts. The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).
-
 - **Caching** is applied to improve application performance. The cache is a piece of memory that has much faster read/write time (around an order of magnitude faster).
-
 - **AWS service endpoints** To connect programmatically to an AWS service, you use an endpoint. An endpoint is the URL of the entry point for an AWS web service. 
+- **AMI** is an Amazon Machine Image. 
 
 ## Quick reference on AWS offers
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
