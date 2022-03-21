@@ -10,7 +10,10 @@ Lambda is a serverless compute service that lets your code without provisioning 
   - Lambda runs your code only when triggered. The trigger part is key to understand how they work.
   - You pay only for the compute time that you use. In the previous example of resizing images, you would pay only for the compute time that you use when uploading new images. Uploading the images triggers Lambda to run code for the image resizing function.
 
+**In conclusion**, since developers do not need to manage infrastructure, serverless implementation of code has the benefit of increasing productivity as developers can spend more time writing code. 
 
+## Step-by-step procedure
+- 
 
 ## References
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
