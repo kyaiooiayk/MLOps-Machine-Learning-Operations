@@ -11,7 +11,13 @@
 - If you want to kill a speicific job running under a `nohup` section use this: `ps -eaf | grep "nohup" | grep "your proc name/keyword".`
 
 ## Command Line Recipes
-
+- Log into your AWS server from your PC (Your SSH key must have the permissions 600): `ssh -i aws-keypair.pem ec2-<your_user_name>@<your_ip_address>`
+- Copy files from your PC AWS server: `scp -i aws-keypair.pem my_script.py ec2-<your_user_name>@<your_ip_address>:~/`
+- Download from AWS server to your PC: `scp -i aws-keypair.pem ec2-<your_user_name>@<your_ip_address>:~/*.png`
+- Run script as background process: `nohup python /home/ec2-user/my_script.py >/home/ec2-<your_user_name>/,y_script.py.log </dev/null 2>&1 &`
+- Run script on a specific GPU on the server (With CUDA, you can specify which GPU device to use with `CUDA_VISIBLE_DEVICES`): `CUDA_VISIBLE_DEVICES=0 python /home/ec2-<your)user_name>/my_script.py `
+- Monitor system and process performance on the server: for all the server `top -M` or for a single script if you know the PID `top -p <PID> -M`
+- Check what scripts are running on the server: `watch "ps -ef | grep python"`
 
 ## Reference
 - [The Fastest Way to Deploy Your ML App on AWS with Zero Best Practices](https://towardsdatascience.com/the-fastest-way-to-deploy-your-ml-app-on-aws-with-zero-best-practices-df15c09eead7)
