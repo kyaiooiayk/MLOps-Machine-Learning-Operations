@@ -28,7 +28,7 @@
 
 - **SageMaker** is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly. It provides the tools to build, train and deploy machine learning (ML) models for predictive analytics applications. The platform automates the tedious work of building a production-ready artificial intelligence (AI) pipeline. *Why would you use it?* AWS SageMaker provides more elegant ways to train, test and deploy models with tools like Inference pipelines, Batch transform, multi model endpoints, A/B testing with production variants, Hyper-parameter tuning, Auto scaling etc.
 
-- **EC2 (Amazon's Elastic Compute Cloud) instance** is a virtual server for running applications on the Amazon Web Services (AWS) infrastructure. It provides secure, resizable compute capacity in the cloud. 
+- [[Notes]](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS/AWS_EC2) **EC2 (Amazon's Elastic Compute Cloud) instance** is a virtual server for running applications on the Amazon Web Services (AWS) infrastructure. It provides secure, resizable compute capacity in the cloud. 
 
 - **Amazon EC2 Auto Scaling** enables you to automatically add or remove Amazon EC2 instances in response to changing application demand. By automatically scaling your instances in and out as needed, you are able to maintain a greater sense of application availability. Two approaches are available: 
   - Dynamic scaling responds to changing demand. 
@@ -50,7 +50,7 @@
   - Spot Instances: ideal for workloads that can withstand interruptions. Compute costs by up to 90% over On-Demand costs.  AWS can reclaim the resorces anytime with a 2 minutes warning.
   - Dedicated Hosts: resources is not shared with anyone else.
  
-- **Lambda** is a serverless compute service that lets your code without provisioning or managing servers. “Serverless” doesn’t mean there is no server, it just means that you don’t care about the underlying infrastructure for your code and you only pay for what you use. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. This is how AWS Lambda works:
+- [[Notes]]() **Lambda** is a serverless compute service that lets your code without provisioning or managing servers. “Serverless” doesn’t mean there is no server, it just means that you don’t care about the underlying infrastructure for your code and you only pay for what you use. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. This is how AWS Lambda works:
   - You upload your code to Lambda. 
   - You set your code to trigger from an event source, such as AWS services, mobile applications, or HTTP endpoints.
   -  Lambda runs your code only when triggered. The trigger part is key to understand how they work.
