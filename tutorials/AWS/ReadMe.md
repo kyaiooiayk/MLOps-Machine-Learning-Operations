@@ -50,7 +50,7 @@
   - Spot Instances: ideal for workloads that can withstand interruptions. Compute costs by up to 90% over On-Demand costs.  AWS can reclaim the resorces anytime with a 2 minutes warning.
   - Dedicated Hosts: resources is not shared with anyone else.
  
-- [[Notes]]() **Lambda** is a serverless compute service that lets your code without provisioning or managing servers. “Serverless” doesn’t mean there is no server, it just means that you don’t care about the underlying infrastructure for your code and you only pay for what you use. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. This is how AWS Lambda works:
+- [[Notes]](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS/Lambda) **Lambda** is a serverless compute service that lets your code without provisioning or managing servers. “Serverless” doesn’t mean there is no server, it just means that you don’t care about the underlying infrastructure for your code and you only pay for what you use. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. This is how AWS Lambda works:
   - You upload your code to Lambda. 
   - You set your code to trigger from an event source, such as AWS services, mobile applications, or HTTP endpoints.
   -  Lambda runs your code only when triggered. The trigger part is key to understand how they work.
