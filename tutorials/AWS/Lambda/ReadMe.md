@@ -34,15 +34,15 @@ EXPOSE 5000
 COPY . .
 CMD ["flask", "run"]
  ```
-  - **Step #3** Let’s initialise a S3 bucket with the code below. The bucket contains some data will be feeding the ML model with to make some inferences. To do so, we will be interacting with AWS using the AWS Python SDK boto3. This package contains all the dependencies we require to integrate Python projects with AWS.
+  - **Step #3** Let’s initialise a S3 bucket with the code below. The bucket contains some data will be feeding the ML model with to make some inferences. To do so, we will be interacting with AWS using the AWS Python SDK boto3. This package contains all the dependencies we require to integrate Python projects with AWS. 
 ```
 import boto3
 
-def create_bucket(region:str, bucket_name:str) -> dict:
+def create_bucket(region:str, my_bucket_name:str) -> dict:
 
     s3 = boto3.client('s3')
     response = s3.create_bucket(
-        Bucket=bucket_name,
+        Bucket=my_bucket_name,
         CreateBucketConfiguration={
             'LocationConstraint':region
         }
@@ -53,8 +53,44 @@ region = 'eu-west-2'
 bucket_name = 'lh-lambda-buckets-2022'
 create_bucket(region, bucket_name)
 ```
+  - **Step #4** We now have to write a function to upload to the S3 bucket the file object for inference. The bucket variable defines the destination S3 bucket and the key variable will define the file path in the bucket. The bucket and key variables will form part of the data payload in the POST HTTP request to our lambda function.
+```
+from io import BytesIO
+import joblib
+import boto3
 
+def UploadToS3(data, bucket:str, key:str):
 
+    with BytesIO() as f:
+        joblib.dump(data, f)
+        f.seek(0)
+        (
+            boto3
+            .client('s3')
+            .upload_fileobj(Bucket=bucket, Key=key, Fileobj=f)
+        )
+
+bucket_name = 'lh-lambda-buckets-202222'
+key =  'validation/test_features.joblib'
+UploadToS3(test_features, bucket_name, key)
+```
+
+  - **Step #5** We can check if the objects have been uploaded with the helper function which lists all objects in the bucket.
+```
+import boto3
+
+def listS3Objects(bucket:str) -> list:
+
+     # Connect to s3 resource
+    s3 = boto3.resource('s3')
+    my_bucket = s3.Bucket(bucket)
+
+    # List all object keys in s3 bucket
+    obj_list = [object_summary.key for object_summary in my_bucket.objects.all()]
+    return obj_list
+
+listS3Objects('lh-lambda-buckets-2022')
+```
 
 ## References
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
