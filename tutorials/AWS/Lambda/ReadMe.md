@@ -12,8 +12,27 @@ Lambda is a serverless compute service that lets your code without provisioning 
 
 **In conclusion**, since developers do not need to manage infrastructure, serverless implementation of code has the benefit of increasing productivity as developers can spend more time writing code. 
 
-## Step-by-step procedure
-- 
+## Step-by-step guide
+This main aim is the following: lay down the steps required to deploy a simple ML model as a Lambda function on AWS.
+  - **Step #1**: It assumed a ML was trained. The only extra step which is required here is to save the model locally. 
+  ```
+  import joblib
+  joblib.dump(my_ML_object, 'my_ML_name.joblib')
+  ```
+  - **Step #2** See my [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Docker) on how to Dockerise your ML. Since what goes inside a Docker file depends on the ML application, only a representative example (taken from [here](https://docs.docker.com/compose/gettingstarted/)) is here reported:
+ ```
+FROM python:3.7-alpine
+WORKDIR /code
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
+RUN apk add --no-cache gcc musl-dev linux-headers
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+EXPOSE 5000
+COPY . .
+CMD ["flask", "run"]
+ ```
 
 ## References
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
+- [Serverless Deployment of Machine Learning Models on AWS Lambda](https://towardsdatascience.com/serverless-deployment-of-machine-learning-models-on-aws-lambda-5bd1ca9b5c42)
