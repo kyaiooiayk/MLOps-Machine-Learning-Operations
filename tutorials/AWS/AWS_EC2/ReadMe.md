@@ -33,6 +33,15 @@
 - Select Your Key Pair. Restrict the access permissions on your key pair file with `chmod 600 aws-keypair.pem`
 - Click “View Instances” in your Amazon EC2 console and copy your `Public IP`.
 - Open a Terminal and and Login to your server using SSH, for example: `ssh -i aws-keypair.pem ec2-<your_user_name>@<your_ip_address>`
+- Activate the virutal environment available on this server: `source activate tensorflow_p36` and you are now ready to start.
+- Log out of your instance at the terminal: `exit`
+- Log in to your AWS account with your web browser.
+- Click EC2.
+- Click “Instances” from the left-hand side menu.
+- Select your running instance from the list (it may already be selected if you only have one running instance).
+- Select Your Running AWS Instance
+- Click the “Actions” button and select “Instance State” and choose “Terminate”. Confirm that you want to terminate your running instance.
+
 
 ## Reference
 - [The Fastest Way to Deploy Your ML App on AWS with Zero Best Practices](https://towardsdatascience.com/the-fastest-way-to-deploy-your-ml-app-on-aws-with-zero-best-practices-df15c09eead7)
