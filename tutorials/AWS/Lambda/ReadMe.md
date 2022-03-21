@@ -13,7 +13,9 @@ Lambda is a serverless compute service that lets your code without provisioning 
 **In conclusion**, since developers do not need to manage infrastructure, serverless implementation of code has the benefit of increasing productivity as developers can spend more time writing code. 
 
 ## Step-by-step guide
-This main aim is the following: lay down the steps required to deploy a simple ML model as a Lambda function on AWS.
+This main aim is the following: lay down the steps required to deploy a simple ML model as a Lambda function on AWS. Serverless deployment of ML models — 1) Test data is uploaded to a S3 bucket. 2) To initiate the lambda function, a POST HTTP request is sent through the Amazon API Gateway. 3) Initialisation of the lambda function executes code that downloads the data from the S3 bucket and performs predictions. 4) A HTTP response is returned to client with the predictions as a data payload. (Image by author)
+![image](https://user-images.githubusercontent.com/89139139/159281026-10f4b7d9-76f2-404a-a82e-79acce068cd3.png)
+
   - **Step #1**: It assumed a ML was trained. The only extra step which is required here is to save the model locally. 
   ```
   import joblib
