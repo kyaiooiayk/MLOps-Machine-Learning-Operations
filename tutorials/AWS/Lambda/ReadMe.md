@@ -34,6 +34,27 @@ EXPOSE 5000
 COPY . .
 CMD ["flask", "run"]
  ```
+  - **Step #3** Let’s initialise a S3 bucket with the code below. The bucket contains some data will be feeding the ML model with to make some inferences. To do so, we will be interacting with AWS using the AWS Python SDK boto3. This package contains all the dependencies we require to integrate Python projects with AWS.
+```
+import boto3
+
+def create_bucket(region:str, bucket_name:str) -> dict:
+
+    s3 = boto3.client('s3')
+    response = s3.create_bucket(
+        Bucket=bucket_name,
+        CreateBucketConfiguration={
+            'LocationConstraint':region
+        }
+    )
+    return response
+
+region = 'eu-west-2'
+bucket_name = 'lh-lambda-buckets-2022'
+create_bucket(region, bucket_name)
+```
+
+
 
 ## References
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
