@@ -222,8 +222,52 @@ COPY app ./
 # Set entry point
 CMD ["lambda_predict.lambda_handler"]
 ```
-  - **Step #9** 
-  
+  - **Step #9** AWS SAM provide functionality to build and locally test applications before deployment. After making sure your docker is running:
+    - Build the application in SAM: `sam build -t template_no_auth.yaml`
+    - Locally deploy the dockerised lambda function: `sam local start-api`
+    - On your local web browser type (your URL may differ): `http://127.0.0.1:3000/predict` 
+```
+import requests
+import json
+import numpy as np
+
+bucket_name = 'lh-lambda-buckets-202222'
+key =  'validation/test_features.joblib'
+
+data = {
+    'bucket':bucket_name,
+    'key':key,
+}
+
+headers = {
+    'Content-type': "application/json"
+}
+
+# Main code for post HTTP request
+url = "http://127.0.0.1:3000/predict"
+response = requests.request("POST", url, headers=headers, data=json.dumps(data))
+
+# Show confusion matrix and display accuracy
+lambda_predictions = np.array(response.json())
+show_cm(test_target, lambda_predictions, range(10))
+```
+  - **Step #10** Deploying on AWS Lambda. As easy as it was to deploy locally, SAM will also handle all the heavy lifting to deploy on AWS Lambda.
+    - Build the application in SAM: `sam build -t template_no_auth.yaml`
+    - Deploy the application: `sam deploy --guided` Follow the prompts that guides you through the deployment configurations. Most of the settings I used were the default value with a few exceptions.
+```
+Stack Name [sam-app]: predict-no-auth
+AWS Region [eu-west-2]:
+Parameter Stage [dev]: 
+Confirm changes before deploy [y/N]: 
+Allow SAM CLI IAM role creation [Y/n]: 
+Disable rollback [y/N]: y
+PredictFunction may not have authorization defined, Is this okay? [y/N]: y
+Save arguments to configuration file [Y/n]: 
+SAM configuration file [samconfig.toml]: 
+SAM configuration environment [default]:
+Create managed ECR repositories for all functions? [Y/n]:
+```
+
 ## References
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
 - [Serverless Deployment of Machine Learning Models on AWS Lambda](https://towardsdatascience.com/serverless-deployment-of-machine-learning-models-on-aws-lambda-5bd1ca9b5c42)
