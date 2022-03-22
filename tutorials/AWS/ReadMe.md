@@ -87,9 +87,10 @@
 - **AWS IAM** Amazon Identity and Access Management (IAM) lets you securely control who can access your AWS resources, what resources they can access, and what they can do with these resources.
 
 ## Ways to interact with AWS services
-  - Via the **AWS Management Console** which is a web-based interface for accessing and managing AWS services.
-  - Via the **AWS Command Line Interface (AWS CLI)** To save time when making API requests, you can use the AWS CLI. AWS CLI enables you to control multiple AWS services directly from the command line within one tool. AWS CLI is available for users on Windows, macOS, and Linux. 
-  - Via **Software Development Kits (SDKs)** Another option for accessing and managing AWS services is the software development kits (SDKs). SDKs make it easier for you to use AWS services through an API designed for your programming language or platform. SDKs enable you to use AWS services with your existing applications or create entirely new applications that will run on AWS.
+  - Via the **AWS Management Console** which is a web-based interface for accessing and managing AWS services. Used if you are are managing or administering services.
+  - Via the **AWS Command Line Interface (AWS CLI)** To save time when making API requests, you can use the AWS CLI. AWS CLI enables you to control multiple AWS services directly from the command line within one tool. AWS CLI is available for users on Windows, macOS, and Linux. Used if you are a DevOps.
+  - Via **Software Development Kits (SDKs)** Another option for accessing and managing AWS services is the software development kits (SDKs). SDKs make it easier for you to use AWS services through an API designed for your programming language or platform. SDKs enable you to use AWS services with your existing applications or create entirely new applications that will run on AWS. Used if you are an app developer.
+  - Via **RESTful** web services. Keep in mind that AWS is a collection of RESTful web services.
 
 ## I have an ML App in Flask and I want to deploy it via AWS
 I have a ML Flask app API capable to do some real-time inference. I'd like to deployt it to the internet via AWS. There are at least 5 ways (hence this list is not exhaustive):
