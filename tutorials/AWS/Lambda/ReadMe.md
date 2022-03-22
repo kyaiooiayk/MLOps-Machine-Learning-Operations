@@ -148,7 +148,7 @@ Outputs:
     Description: "API Gateway endpoint URL for Dev stage for Predict Lambda function"
     Value: !Sub "https://${LambdaAPI}.execute-api.${AWS::Region}.amazonaws.com/${Stage}/predict"
 ```
-  - **Step #7** 4.2. The lambda_predict.py file contains steps that perform the following steps:
+  - **Step #7** The `lambda_predict.py` file contains steps that perform the following steps:
     - Load the model
     - Download the test_features data set referenced by the bucket and key variable
     - Perform a prediction on the downloaded data set
@@ -203,8 +203,27 @@ def lambda_handler(event, context):
         'body': response
     }
 ```
-  
+  - **Step #8** The Dockerfile details the instructions required to containerised our lambda function as a docker image. I will be using Python 3.9 and installing the python dependencies using poetry. Key thing to note, the entry point for the docker image is set to the lamba_handler function which is declared in the lambda_predict.py file. This entry point defines the function to be executed during an event trigger, an event such as a HTTP POST request. Any code outside of the lambda_handler function that is within the same script will be executed when the container image is initialised. 
+```
+# Install python
+FROM public.ecr.aws/lambda/python:3.9
 
+# Install poetry
+RUN pip install "poetry==1.1.11"
+
+# Install dependencies, exclude dev dependencies
+COPY poetry.lock pyproject.toml ./
+RUN poetry config virtualenvs.create false
+RUN poetry install --no-dev
+
+# Copy required files
+COPY app ./
+
+# Set entry point
+CMD ["lambda_predict.lambda_handler"]
+```
+  - **Step #9** 
+  
 ## References
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
 - [Serverless Deployment of Machine Learning Models on AWS Lambda](https://towardsdatascience.com/serverless-deployment-of-machine-learning-models-on-aws-lambda-5bd1ca9b5c42)
