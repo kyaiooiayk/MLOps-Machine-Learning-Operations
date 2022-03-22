@@ -16,6 +16,7 @@
 - **AMI** is an Amazon Machine Image. It is a frozen instance of a server that you can select and instantiate on a new virtual server.
 - **Measured service** is the idea that a consumer should be able to use computing resources on a pay-as- you-use basis.
 - **Availability** is the idea that the time to provision a ready-to-use resource in the cloud is significantly lower than having to set up a similar resource in-house.
+- **Cloud computing** is defined ba model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.
 
 ## Quick reference on AWS offers
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
