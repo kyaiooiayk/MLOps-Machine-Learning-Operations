@@ -12,6 +12,12 @@ Lambda is a serverless compute service that lets your code without provisioning 
 
 **In conclusion**, since developers do not need to manage infrastructure, serverless implementation of code has the benefit of increasing productivity as developers can spend more time writing code. 
 
+## Cold start
+- It is important to understand the concept of cold start and how this impacts latency performance while deploying on a serverless lambda.
+- The first two steps of setting up the environment and the code are frequently referred to as a “cold start”. You are not charged for the time it takes for Lambda to prepare the function but it does add latency to the overall invocation duration.
+- After the execution completes, the execution environment is frozen. To improve resource management and performance, the Lambda service retains the execution environment for a non-deterministic period of time. During this time, if another request arrives for the same function, the service may reuse the environment. This second request typically finishes more quickly, since the execution environment already exists and it’s not necessary to download the code and run the initialization code. This is called a “warm start”.
+![image](https://user-images.githubusercontent.com/89139139/159456806-794382c7-4801-4121-bb7c-6df25976fe22.png)
+
 ## Step-by-step guide
 This main aim is the following: lay down the steps required to deploy a simple ML model as a Lambda function on AWS. Serverless deployment of ML models — 1) Test data is uploaded to a S3 bucket. 2) To initiate the lambda function, a POST HTTP request is sent through the Amazon API Gateway. 3) Initialisation of the lambda function executes code that downloads the data from the S3 bucket and performs predictions. 4) A HTTP response is returned to client with the predictions as a data payload. (Image by author)
 ![image](https://user-images.githubusercontent.com/89139139/159281026-10f4b7d9-76f2-404a-a82e-79acce068cd3.png)
@@ -142,8 +148,64 @@ Outputs:
     Description: "API Gateway endpoint URL for Dev stage for Predict Lambda function"
     Value: !Sub "https://${LambdaAPI}.execute-api.${AWS::Region}.amazonaws.com/${Stage}/predict"
 ```
+  - **Step #7** 4.2. The lambda_predict.py file contains steps that perform the following steps:
+    - Load the model
+    - Download the test_features data set referenced by the bucket and key variable
+    - Perform a prediction on the downloaded data set
+    - Return JSON object of the predictions as a numpy array
+```
+from io import BytesIO
+import json
+import boto3
+import joblib
+import logging
 
+# Define logger class
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+# Helper function to download object from S3 Bucket
+def DownloadFromS3(bucket:str, key:str):
+    s3 = boto3.client('s3')
+    with BytesIO() as f:
+        s3.download_fileobj(Bucket=bucket, Key=key, Fileobj=f)
+        f.seek(0)
+        test_features  = joblib.load(f)
+    return test_features
+
+# Load model into memory
+logger.info('Loading model from file...')
+knnclf = joblib.load('knnclf.joblib')
+logger.info('Model Loaded from file...')
+
+def lambda_handler(event, context):
+
+    # Read JSON data packet
+    data = json.loads(event['body'])
+    bucket = data['bucket']
+    key = data['key']
+
+    # Load test data from S3
+    logger.info(f'Loading data from {bucket}/{key}')
+    test_features = DownloadFromS3(bucket, key)
+    logger.info(f'Loaded {type(key)} from S3...')
+
+    #  Perform predictions and return predictions as JSON.
+    logger.info(f'Performing predictions...')
+    predictions = knnclf.predict(test_features)
+    response = json.dumps(predictions.tolist())
+
+    return {
+        'statusCode': 200,
+        'headers':{
+            'Content-type':'application/json'
+        },
+        'body': response
+    }
+```
+  
 
 ## References
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
 - [Serverless Deployment of Machine Learning Models on AWS Lambda](https://towardsdatascience.com/serverless-deployment-of-machine-learning-models-on-aws-lambda-5bd1ca9b5c42)
+- [Cold start and lambda](https://aws.amazon.com/blogs/compute/operating-lambda-performance-optimization-part-1/)
