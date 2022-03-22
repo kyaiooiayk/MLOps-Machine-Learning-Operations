@@ -86,7 +86,7 @@ It is an unified analytics platform.
 - **APIs vs Microservices: How They Work Together?** Microservices function as the “building‐blocks” of the application by performing various services, while “RESTful APIs” function as the “glue” that integrates the microservices into an application.
 - **Why were microservices created?** Suppose that you have an application with tightly coupled components comprising of databases, servers, the user interface, business logic, and so on. This type of architecture can be considered a monolithic application, but if a single component fails, other components fail, and possibly the entire application fails. In a microservices approach, application components are loosely coupled, thus if a single component fails, the other components continue to work. 
 - **HTTP vs. REST APIs** APIs can be categorised into various types based on application designs and other constraints, such as Web API, HTTP API, REST API, and many more.
-  - REST API is a Software Architectural Style that is used to guide the creation and design of the architecture of the World Wide Web. In other words, REST APIs establish a set of guidelines for how a distributed system’s architecture should function. REST APIs add no new capability to HTTP APIs. But it is an architectural style
+  - REST API is a Software Architectural Style that is used to guide the creation and design of the architecture of the World Wide Web. In other words, REST APIs establish a set of guidelines for how a distributed system’s architecture should function. REST APIs add no new capability to HTTP APIs. REST APIs are ideal for creating scalable general-purpose applications. 
   - On the other hand, HTTP API is an application that communicates between two systems using the Hypertext Transfer Protocol. HTTP APIs make endpoints available as API gateways, allowing HTTP queries to connect to a server. The majority of HTTP APIs are on the verge of becoming completely RESTful.
 
 - **When an API can be called REST API?** The requirements are:
@@ -106,3 +106,4 @@ It is an unified analytics platform.
 - [MLOps Is a Mess But That's to be Expected](https://www.mihaileric.com/posts/mlops-is-a-mess/)
 - [VCS](https://deploybot.com/blog/version-control-systems-and-continuous-deployment-tools-a-perfect-fit)
 - [ML Experiment Tracking: What It Is, Why It Matters, and How to Implement It](https://neptune.ai/blog/ml-experiment-tracking)
+- [HTTP vs. REST APIs](https://hevodata.com/learn/http-api-vs-rest-api/)
