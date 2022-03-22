@@ -272,3 +272,5 @@ Create managed ECR repositories for all functions? [Y/n]:
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
 - [Serverless Deployment of Machine Learning Models on AWS Lambda](https://towardsdatascience.com/serverless-deployment-of-machine-learning-models-on-aws-lambda-5bd1ca9b5c42)
 - [Cold start and lambda](https://aws.amazon.com/blogs/compute/operating-lambda-performance-optimization-part-1/)
+- [Serverless NLP Inference via HTTP API on AWS](https://towardsdatascience.com/serverless-nlp-inference-via-http-api-on-aws-e27ea41d122b)
+- [Serverless NLP Inference on Amazon SageMaker with Transformer Models from Hugging Face](https://towardsdatascience.com/serverless-nlp-inference-on-amazon-sagemaker-with-transformer-models-from-hugging-face-4843609a7451)
