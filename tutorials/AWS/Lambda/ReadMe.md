@@ -23,6 +23,9 @@ Lambda is a serverless compute service that lets your code without provisioning 
 - After the execution completes, the execution environment is frozen. To improve resource management and performance, the Lambda service retains the execution environment for a non-deterministic period of time. During this time, if another request arrives for the same function, the service may reuse the environment. This second request typically finishes more quickly, since the execution environment already exists and it’s not necessary to download the code and run the initialization code. This is called a “warm start”.
 ![image](https://user-images.githubusercontent.com/89139139/159456806-794382c7-4801-4121-bb7c-6df25976fe22.png)
 
+## Lambda application vs. function
+- A **lambda function** is a piece of code (managed by AWS) that is executed whenever it is triggered by an event from an event source. To create an AWS Lambda function, you first create a deployment package that contains the code you want to execute along with any dependencies. 
+- A **lambda application** is a cloud application that includes one ore more Lambda functions, as well as potentially other types of services.
 
 ## Step-by-step guide
 This main aim is the following: lay down the steps required to deploy a simple ML model as a Lambda function on AWS. Serverless deployment of ML models — 1) Test data is uploaded to a S3 bucket. 2) To initiate the lambda function, a POST HTTP request is sent through the Amazon API Gateway. 3) Initialisation of the lambda function executes code that downloads the data from the S3 bucket and performs predictions. 4) A HTTP response is returned to client with the predictions as a data payload. (Image by author)
