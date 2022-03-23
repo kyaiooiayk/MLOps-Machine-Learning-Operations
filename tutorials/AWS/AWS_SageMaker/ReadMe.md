@@ -8,6 +8,12 @@
 - A SageMaker notebook instances are EC2 instances in your account that come preconfigured with a Jupyter Notebook server, and a number of common Python libraries.
 - Training jobs create dedicated compute instances in the AWS cloud that contain model- building code, load your training data from Amazon S3, execute the model-building code on your training data, and save the trained model to Amazon S3.
 - When the training job is complete, the compute instances that were provisioned to support the training process will automatically be terminated.
+- Deploying a model into production involves creating one or more compute instances, deploying your model onto these instances, and providing an API that can be used to make predictions using the deployed model.
+- Prediction instances are not automatically terminated.
+- An endpoint configuration ties together information on the location of a trained machine
+learning model, type of compute instances, and an auto-scaling policy.
+- A prediction endpoint is an HTTPS REST API endpoint that can be used to get single predictions from a deployed model. The HTTP endpoint is secured using AWS Signature V4 authentication.
+- If you need to make predictions on an entire dataset, you can create use Amazon SageMaker Batch Transform to create a batch prediction job from a trained model
 
 
 ## References
