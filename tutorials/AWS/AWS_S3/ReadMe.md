@@ -8,5 +8,8 @@
 - Each object in Amazon S3 has a storage class associated with it. The storage class deter- mines how Amazon S3 stores the data for the object and if you will be charged additional costs to read the data.
 - Amazon S3 versioning allows you to save multiple versions of an object. You are charged for the combined space occupied by all versions of a document.
 
+## Accessign AWS S3 via AWS CLI
+- List the file in your S3 bucket: `aws s3 ls`
 
 ## References
+- Mishra, Abhishek. Machine Learning in the AWS Cloud: Add Intelligence to Applications with Amazon SageMaker and Amazon Rekognition. John Wiley & Sons, 2019.
