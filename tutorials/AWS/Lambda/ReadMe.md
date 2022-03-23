@@ -4,7 +4,6 @@
 AWS Lambda is the only Amazon compute option that remains free after one year. It’s also arguably the best option for a service that will scale smoothly to handle thousands, millions, or billions of requests. Choosing Lambda from the beginning sets your application up for success in the future. Pay attention that this is AWS services in the free tier come with a limit, usually enforced each month. Some of these seem impossibly large like AWS Lambda’s grant of one million function calls. A million can come pretty soon if you’re not careful, so make sure you actually monitor this.
 
 Lambda is a serverless compute service that lets your code without provisioning or managing servers. “Serverless” doesn’t mean there is no server, it just means that you don’t care about the underlying infrastructure for your code and you only pay for what you use. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. This is how AWS Lambda works:
-
   - You upload your code to Lambda.
   - You set your code to trigger from an event source, such as AWS services, mobile applications, or HTTP endpoints.
   - Lambda runs your code only when triggered. The trigger part is key to understand how they work.
@@ -12,11 +11,18 @@ Lambda is a serverless compute service that lets your code without provisioning 
 
 **In conclusion**, since developers do not need to manage infrastructure, serverless implementation of code has the benefit of increasing productivity as developers can spend more time writing code. 
 
+## Common use cases
+- **Serverless back end**: Using a combination of API Gateway and AWS Lambda, you can build a complete, highly scalable RESTful API to support an external application.
+- **Triggers**: You can use AWS Lambda to run code in response to changes in Amazon S3 buckets and Amazon DynamoDB tables. The code could perform a variety of tasks such as enforcing data integrity checks, firing emails, writing to queues, and interacting with other AWS services such as Amazon Machine Learning and AWS Rekognition, to name a few.
+- **Maintenance**: You can use AWS Lambda to run code in response to scheduled events. Such code could perform essential maintenance and cleanup of content in databases.
+- **Streams**: You can configure AWS Lambda code to run in response to new data arriving on Kinesis streams. Amazon Kinesis streams allow you to build applications that process streaming data from several sources such as social media streams, financial transactions, and IOT hardware.
+
 ## Cold start
 - It is important to understand the concept of cold start and how this impacts latency performance while deploying on a serverless lambda.
 - The first two steps of setting up the environment and the code are frequently referred to as a “cold start”. You are not charged for the time it takes for Lambda to prepare the function but it does add latency to the overall invocation duration.
 - After the execution completes, the execution environment is frozen. To improve resource management and performance, the Lambda service retains the execution environment for a non-deterministic period of time. During this time, if another request arrives for the same function, the service may reuse the environment. This second request typically finishes more quickly, since the execution environment already exists and it’s not necessary to download the code and run the initialization code. This is called a “warm start”.
 ![image](https://user-images.githubusercontent.com/89139139/159456806-794382c7-4801-4121-bb7c-6df25976fe22.png)
+
 
 ## Step-by-step guide
 This main aim is the following: lay down the steps required to deploy a simple ML model as a Lambda function on AWS. Serverless deployment of ML models — 1) Test data is uploaded to a S3 bucket. 2) To initiate the lambda function, a POST HTTP request is sent through the Amazon API Gateway. 3) Initialisation of the lambda function executes code that downloads the data from the S3 bucket and performs predictions. 4) A HTTP response is returned to client with the predictions as a data payload. (Image by author)
