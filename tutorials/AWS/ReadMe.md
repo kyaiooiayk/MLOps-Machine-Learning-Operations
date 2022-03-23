@@ -72,7 +72,7 @@
   - Automatic scaling
   - Application health monitoring
 - **AWS CloudFormation** With AWS CloudFormation, you can treat your infrastructure as code. This means that you can build an environment by writing lines of code instead of using the AWS Management Console to individually provision resources.
-- **Amazon CloudFront** is best described as a global content delivery service. Edge location are site that Amazon CloudFront use to cache copies of content for faster delivery to users at any location.
+- **Amazon CloudFront** is best described as a global content delivery service. Edge location are site that Amazon CloudFront use to cache copies of content for faster delivery to users at any location. An edge location is a content-distribution end point for CloudFront. Amazon CloudFront is a secure content delivery service that integrates with Amazon’s S3 and allows caching of frequently used media files closer to the point of consumption. 
 - **Amazon Outpost** it is used to extend AWS infrastructure and services to your on-premises data center.
 - **Amazon Route 53** is a DNS web service which gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. DNS can be thought as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address. 
 - **Instance store** is a store that provides temporary block-level storage for an Amazon EC2 instance. An instance store is disk storage that is physically attached to the host computer for an EC2 instance, and therefore has the same lifespan as the instance. When the instance is terminated, you lose any data in the instance store. Thus, instance stores for use cases that involve temporary data that you do not need in the long term.
@@ -84,7 +84,7 @@
 - **AWS Well-Architected Framework** helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement.
 - **AWS CloudTrail** captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon S3 bucket that you specify. 
 - **AWS Glue or Amazon EMR** are ETL services. They both use Apache Spark for your ETL. ETL requires a lot of reading and writing which take a lot of memory and disk I/O. For this reason the services use a framework like Apache Spark, which can handle large amounts of data easily for ETL.
-- **AWS IAM** Amazon Identity and Access Management (IAM) lets you securely control who can access your AWS resources, what resources they can access, and what they can do with these resources.
+- **AWS IAM** Amazon Identity and Access Management (IAM) lets you securely control who can access your AWS resources, what resources they can access, and what they can do with these resources. AWS account supports using multifactor authentication (MFA). A policy is a JSON document that grants permissions to a user, group, or role.
 
 ## Ways to interact with AWS services
   - Via the **AWS Management Console** which is a web-based interface for accessing and managing AWS services. Used if you are are managing or administering services.
@@ -131,3 +131,4 @@ What happens after the free-credit is exhausted? See [this](https://aws.amazon.c
 - [Find the hands-on tutorials for your AWS needs](https://aws.amazon.com/getting-started/hands-on/?awsf.getting-started-category=category%23compute&awsf.getting-started-content-type=content-type%23hands-on&getting-started-all.sort-by=item.additionalFields.sortOrder&getting-started-all.sort-order=asc&awsf.getting-started-level=*all)
 - [How to make the most of the AWS free tier](https://www.infoworld.com/article/3585757/how-to-make-the-most-of-the-aws-free-tier.html)
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
+- Mishra, Abhishek. Machine Learning in the AWS Cloud: Add Intelligence to Applications with Amazon SageMaker and Amazon Rekognition. John Wiley & Sons, 2019.
