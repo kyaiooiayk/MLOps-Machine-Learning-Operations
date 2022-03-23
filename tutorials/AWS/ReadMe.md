@@ -21,7 +21,7 @@
 
 ## Quick reference on AWS offers
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
-- **S3 bucket** stand for Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.  A bucket is nothing more than a folder. It cannot be used to install an operating system; thus, it cannot provide the storage for an EC2 instance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. There are 6 types:
+- [[Notes]](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS/AWS_S3) **S3 bucket** stand for Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.  A bucket is nothing more than a folder. It cannot be used to install an operating system; thus, it cannot provide the storage for an EC2 instance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. There are 6 types:
   - S3 Standard
   - S3 Standard-Infrequent Access (S3 Standard-IA)
   - S3 One Zone-Infrequent Access (S3 One Zone-IA)
