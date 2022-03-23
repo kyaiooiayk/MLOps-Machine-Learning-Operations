@@ -29,7 +29,8 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 
 ### DevOps
 - Git
-- [Jenkins](https://www.jenkins.io/): Jenkins is an open source continuous integration/continuous delivery and deployment (CI/CD) automation software DevOps tool written in the Java programming language. It is used to implement CI/CD workflows, called pipelines.
+- [[Jenkins](https://www.jenkins.io/)]: Jenkins is an open source continuous integration/continuous delivery and deployment (CI/CD) automation software DevOps tool written in the Java programming language. It is used to implement CI/CD workflows, called pipelines. It is used to create deployment package.
+- Maven : it is used to create deployment package.
 - [Docker | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Docker)]
 - [Kubernets | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Kubernetes)]
 
