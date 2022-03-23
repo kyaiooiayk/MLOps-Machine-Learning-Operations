@@ -17,10 +17,10 @@
 - **Measured service** is the idea that a consumer should be able to use computing resources on a pay-as- you-use basis.
 - **Availability** is the idea that the time to provision a ready-to-use resource in the cloud is significantly lower than having to set up a similar resource in-house.
 - **Cloud computing** is defined ba model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.
+- **Client** is a piece of computer hardware or software that accesses a service made available by a server as part of the client–server model of computer networks. The server is often (but not always) on another computer system, in which case the client accesses the service by way of a network. For example, web browsers are clients that connect to web servers and retrieve web pages for display. Email clients retrieve email from mail servers.
 
 ## Quick reference on AWS offers
 - **Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
-
 - **S3 bucket** stand for Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.  A bucket is nothing more than a folder. It cannot be used to install an operating system; thus, it cannot provide the storage for an EC2 instance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. There are 6 types:
   - S3 Standard
   - S3 Standard-Infrequent Access (S3 Standard-IA)
@@ -28,11 +28,9 @@
   - S3 Intelligent-Tiering
   - S3 Glacier
   - S3 Glacier Deep Archive 
-
+- **AWS Storage Gateway** AWS Storage Gateway is an virtual interface which enables you to read/write data from/to aws S3 (file system) or other aws storage services. You can relate S3 as dropbox itself, that you can access through web or api, and AWS Storage Gateway as the dropbox client on your pc, which simulate the dropbox as your local drive.
 - **SageMaker** is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly. It provides the tools to build, train and deploy machine learning (ML) models for predictive analytics applications. The platform automates the tedious work of building a production-ready artificial intelligence (AI) pipeline. *Why would you use it?* AWS SageMaker provides more elegant ways to train, test and deploy models with tools like Inference pipelines, Batch transform, multi model endpoints, A/B testing with production variants, Hyper-parameter tuning, Auto scaling etc.
-
 - [[Notes]](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS/AWS_EC2) **EC2 (Amazon's Elastic Compute Cloud) instance** is a virtual server for running applications on the Amazon Web Services (AWS) infrastructure. It provides secure, resizable compute capacity in the cloud. 
-
 - **Amazon EC2 Auto Scaling** enables you to automatically add or remove Amazon EC2 instances in response to changing application demand. By automatically scaling your instances in and out as needed, you are able to maintain a greater sense of application availability. Two approaches are available: 
   - Dynamic scaling responds to changing demand. 
   - Predictive scaling automatically schedules instances based on predicted demand.
