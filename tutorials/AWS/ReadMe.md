@@ -111,6 +111,15 @@ Before, we start read this: [Is the AWS Free Tier really free?](https://www.last
 
 What happens after the free-credit is exhausted? See [this](https://aws.amazon.com/premiumsupport/knowledge-center/stop-future-free-tier-charges/).
 
+## Installing and Configuring the AWS CLI (Command Line Interface) [Mac OS users]
+Following the [official AWS guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html):
+  - Step#1: `curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"`
+  - Step#2: `sudo installer -pkg AWSCLIV2.pkg -target /`
+  - Step#3: `curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"`
+  - Step#4: `sudo installer -pkg ./AWSCLIV2.pkg -target /`
+  - Step#5: verify installation by typing `which aws`
+  - Step#6: configure your AWS CLI: `aws configure`
+
 ## Resources
 - [Build, train, and deploy a machine learning model with Amazon SageMaker](https://aws.amazon.com/getting-started/hands-on/build-train-deploy-machine-learning-model-sagemaker/)
 - [Free Machine Learning Services on AWS](https://aws.amazon.com/free/machine-learning/?trk=a422f088-0a19-452b-80fd-deab1be2be30&sc_channel=ps&sc_campaign=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Machine%20Learning|Solution|GB|EN|Text&s_kwcid=AL!4422!3!474715178818!p!!g!!%2Bamazon%20%2Bweb%20%2Bservices%20%2Bmachine%20%2Blearning&ef_id=CjwKCAiAprGRBhBgEiwANJEY7BPfUexY9PSb8WzXUXRu25P9guBimJefMIOSkehzdo5wVx09Zm41DxoCZwMQAvD_BwE:G:s&s_kwcid=AL!4422!3!474715178818!p!!g!!%2Bamazon%20%2Bweb%20%2Bservices%20%2Bmachine%20%2Blearning)
