@@ -9,7 +9,8 @@
 - Amazon S3 versioning allows you to save multiple versions of an object. You are charged for the combined space occupied by all versions of a document.
 
 ## Accessign AWS S3 via AWS CLI
-- List the file in your S3 bucket: `aws s3 ls`
+- List all the buckets in your S3 bucket: `aws s3 ls`
 
 ## References
 - Mishra, Abhishek. Machine Learning in the AWS Cloud: Add Intelligence to Applications with Amazon SageMaker and Amazon Rekognition. John Wiley & Sons, 2019.
+- [Using high-level (s3) commands with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
