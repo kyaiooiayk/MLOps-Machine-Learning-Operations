@@ -5,13 +5,16 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 
 ### Data Engineering
 - Apache Nifi
-- **Apache Airflow** is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. However, Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. Amazon supports Amazon Managed Workflows for Apache Airflow to reduce the operational burden of running Airflow clusters on AWS.
 - Spark
 - DVC
 - Argo workflow
 - Azue databricks
 - Hadoop 
 - Apache Spark
+
+### Pipelines
+- **Apache Airflow** is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. However, Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. Amazon supports Amazon Managed Workflows for Apache Airflow to reduce the operational burden of running Airflow clusters on AWS.
+- **Kubeflow Pipelines** is an orchestration subsystem built on Kubernetes.
 
 ### Model serialisation
 - [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialiation)
