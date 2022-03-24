@@ -5,7 +5,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 
 ### Data Engineering
 - Apache Nifi
-- Apache Airflow
+- **Apache Airflow** is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. However, Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. Amazon supports Amazon Managed Workflows for Apache Airflow to reduce the operational burden of running Airflow clusters on AWS.
 - Spark
 - DVC
 - Argo workflow
