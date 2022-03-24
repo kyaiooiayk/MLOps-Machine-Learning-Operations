@@ -112,3 +112,4 @@ It is an unified analytics platform.
 - [VCS](https://deploybot.com/blog/version-control-systems-and-continuous-deployment-tools-a-perfect-fit)
 - [ML Experiment Tracking: What It Is, Why It Matters, and How to Implement It](https://neptune.ai/blog/ml-experiment-tracking)
 - [HTTP vs. REST APIs](https://hevodata.com/learn/http-api-vs-rest-api/)
+- [Awesome production machine learning](https://github.com/EthicalML/awesome-production-machine-learning#model-and-data-versioning)
