@@ -1,5 +1,10 @@
 # VCS (Version Control System)
 
+## Centralized VC vs. distributed VC
+There are two types of VC
+  - **Centralized VC** has a single server which is responsible for storing the history of the project. A user can “pull” the latest code, and “push” modifications to the server.
+  - **Distributed VC (aka DVC)** An example is GIT. Users that “clone” a project from a “repository” have access to the full history, and they become equal peers. The history of the project becomes a tree, which can easily branch, merge, ...
+
 ## CI vs. CD
 - **Continuous Integration (CI)**: The code is built and tested on a regular basis, i.e. daily, several times per day, or – even better – with every commit. It is the practice of merging all developers' working copies to a shared mainline several times a day.
 - **Continuous Delivery (CD)**: This is the next step, and its goal is to always have code available that can be released at any point. CD uses some automation (building and testing) but requires *human intervention* in the end when it comes to releasing to a productive environment. It is an approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time and, when releasing the software, without doing so manually.
@@ -7,7 +12,7 @@
 - All three methods rely on a version control system – there is no way around it.
 
 ## GitHub vs. GitLab
-- GIT stands for Global Information Tracker
+- GIT stands for Global Information Tracker. It was originally introduced by Linus Torvalds.
 - The most significant difference between the GitHub and Git Lab is that while GitHub is a collaboration platform that helps review and manage codes remotely, GitLab is majorly focused on DevOps and CI/CD.
 - GitHub is more popular amongst the developers as it holds millions of repositories, but recently GitLab has been gaining popularity, as the company continues to add new features to make it more competitive and user-friendly.
 
@@ -33,7 +38,11 @@
  
 - **MLOps level 2: CI/CD pipeline automation**: For a rapid and reliable update of the pipelines in production, you need a robust automated CI/CD system. This automated CI/CD system lets your data scientists rapidly explore new ideas around feature engineering, model architecture, and hyperparameters. They can implement these ideas and automatically build, test, and deploy the new pipeline components to the target environment.
 
+## Alternative to Git
+- [Mercurial](https://www.mercurial-scm.org/)
+
 ## References
 - [DS is software](https://nbviewer.org/github/ethen8181/machine-learning/blob/master/data_science_is_software/notebooks/data_science_is_software.ipynb)
 - [Implementing MLOps on an Edge Device](https://www.kdnuggets.com/2020/08/implementing-mlops-edge-device.html)
 - [MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning#mlops_level_2_cicd_pipeline_automation)
+- [Quick presentation of what VC really is](https://docs.google.com/presentation/d/1_AYIcCyVI59QiiXqU4Sn7VzwtVyfqv-lG36EPFzeSdY/edit#slide=id.gbfaca0b26c_0_6)
