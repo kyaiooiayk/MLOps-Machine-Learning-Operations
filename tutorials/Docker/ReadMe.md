@@ -23,7 +23,13 @@
   - **Container image**: This is the easiest option. This allows every collaborator or a cluster management service, such as Kubernetes, to pull a container image, instantiate it, and execute training immediately.
   - **Dockerfile**: This is a lightweight option. Dockerfiles contain instructions on what dependencies to download, build, and compile to create a container image. Dockerfiles can be versioned along with your training code. You can automate the process of creating container images from Dockerfiles by using continuous integration services, such as AWS CodeBuild.
 
-## Step-by-step guide to create a Docker image
+## General workflow
+The general workflow is:
+  - Build an image `docker build` or download it from a registry `docker pull`.
+  - Run a container from an image `docker run`.
+  - A running container can be transformed in a new image `docker commit` and pushed to the registry `docker push`.
+
+## Step-by-step guide to create your own Docker image
 - Step #1: Save all the packages in the file with: `pip freeze > requirements.txt`. It’s a good practice to list the exact version of the library rather than `><`, but this does not seem to have stuck among practioners. The file looks like something like this:
 ```
 joblib==0.16.0
@@ -43,7 +49,7 @@ CMD streamlit run app.py
 ```
 - Step #3: Build it and create an image. The idea is this image we create is the reproducible environment irrelevant to the underlying system. (The dot at the end signifies the path for the Dockerfile, which is the current directory.): `docker build --tag app:1.0 .`
 
-- Step #4: Run command runs the specified container on the host machine. `--publish 8501:8501` lets the port 8501 of the container to be mapped to the port 8501 of the host machine, while -it is needed for running interactive processes (like shell/terminal): `docker run --publish 8501:8501 -it app:1.0` What do I do with it? You can share the built images on DockerHub or deploy them on the cloud, and so on.
+- Step #4: Run command runs the specified container on the host machine. `--publish 8501:8501` lets the port 8501 of the container to be mapped to the port 8501 of the host machine, while `-it` is needed for running interactive processes (like shell/terminal): `docker run --publish 8501:8501 -it app:1.0` What do I do with it? You can share the built images on DockerHub or deploy them on the cloud, and so on. The syntax `8501:8501` means `Host port:Container port`.
 
 ## Python dependencies
 - An alternative to `pip freeze` is `pipreqs`. The first outputs all the installed packages in that environment, whereas `pipreqs path/to/project` gives you only the ones actually imported by this project.
@@ -51,20 +57,33 @@ CMD streamlit run app.py
   - `-r` tells pip that the next name is a requirements file
   - `--no-cache-dir` is used if you don't have space on your hard drive or you previously run pip install with unexpected settings which you do not want to include anymore and finall if you want to keep a Docker image as small as possible. What is cache directory used for? It used to store the installation files(.whl, etc) of the modules that you install through pip and to store the source files (.tar.gz, etc) to avoid re-download when not expired 
 
-## List of commands
-- **Create a container**: `docker run CONTAINER --network NETWORK`
-- **Start a stopped container**: `docker start CONTAINER NAME`
-- **Stop a running container**: `docker stop`
-- **List all running containers**: `docker ps`
-- **List all containers including stopped ones**: do`cker ps -a`
-- **Inspect the container configuration. For instance network settings and so on**: `docker inspect CONTAINER`
-- **List all available virtual networks**: `docker network ls`
-- **Create a new network**: `docker network create NETWORK --driver bridge`
-- **Connect a running container to a network**: `docker network connect NETWORK CONTAINER`
-- **Disconnect a running container from a network**: `docker network disconnect NETWORK CONTAINER`
-- **Remove a network**: `docker network rm NETWOR`
+## Docker flags
+When running a container, three flags that you should keep in mind are:
+  - `--rm` will remove the container as soon as it is stopped;
+  - `-d` will run the container in the background (docker run exits immediately);
+  - `-it` will run the container in an interactive mode (you can use a terminal inside the container).
 
+## List of commands
+- List all images in your system: `docker images`
+- Create a container: `docker run CONTAINER --network NETWORK`
+- Start a stopped container: `docker start CONTAINER NAME`
+- Stop a running container: `docker stop`
+- List all running containers: `docker ps`
+- List all containers including stopped ones: do`cker ps -a`
+- Inspect the container configuration. For instance network settings and so on: `docker inspect CONTAINER`
+- List all available virtual networks: `docker network ls`
+- Create a new network: `docker network create NETWORK --driver bridge`
+- Connect a running container to a network: `docker network connect NETWORK CONTAINER`
+- Disconnect a running container from a network: `docker network disconnect NETWORK CONTAINER`
+- Remove a network: `docker network rm NETWOR`
+- Remove a container, or remove an image: `docker rm <id>` or `docker rmi <id> (or name)`
+- Remove all unused containers / images: ```docker container prune``` or ```docker system prune```
+
+## Docker image vs. container
+- Docker images are read-only templates used to build containers. 
+- Docker Containers are deployed instances created from those templates.
 
 ## References
 - [How to Dockerize Any Machine Learning Application](https://towardsdatascience.com/how-to-dockerize-any-machine-learning-application-f78db654c601)
 - [Why use Docker containers for machine learning development?](https://aws.amazon.com/blogs/opensource/why-use-docker-containers-for-machine-learning-development/)
+- [Bried presentation on what Docker is](https://docs.google.com/presentation/d/1r7SbbajL-UnYHOeY9fQ9YtoJdu9Q70U5M_11E68K1Rg/edit#slide=id.gbd509e17c2_0_807)
