@@ -29,6 +29,10 @@ The general workflow is:
   - Run a container from an image `docker run`.
   - A running container can be transformed in a new image `docker commit` and pushed to the registry `docker push`.
 
+## Installation
+- Follow [this](https://docs.docker.com/desktop/mac/install/) instruction for MacOS.
+- Validation the installation of Docker on your workstation with the following command: `docker --version`
+
 ## Step-by-step guide to create your own Docker image
 - Step #1: Save all the packages in the file with: `pip freeze > requirements.txt`. It’s a good practice to list the exact version of the library rather than `><`, but this does not seem to have stuck among practioners. The file looks like something like this:
 ```
