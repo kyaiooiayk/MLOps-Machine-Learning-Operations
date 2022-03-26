@@ -1,6 +1,7 @@
 # AWS S3
 
 ## What is AWS S3?
+- S3 stands for Simple Storage Service.
 -  Amazon S3 is a key-value, object-based storage service.
 - Amazon S3 organizes objects into buckets; bucket names must be globally unique.
 - Objects can be uploaded to Amazon S3 buckets using the AWS management console or the AWS CLI.
@@ -14,3 +15,4 @@
 ## References
 - Mishra, Abhishek. Machine Learning in the AWS Cloud: Add Intelligence to Applications with Amazon SageMaker and Amazon Rekognition. John Wiley & Sons, 2019.
 - [Using high-level (s3) commands with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
+- [YouTube vide | Tutorial 1- Cloud Computing-AWS-Introduction To S3(Simple Storage Services)](https://www.youtube.com/watch?v=G3adspFQ59I)
