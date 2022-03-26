@@ -18,6 +18,11 @@
 - Due to the complexity of a typical machine learning stack, a large part of framework dependencies, such as hardware libraries, are outside the scope of virtual environments. 
 - Conclusion? Containers can fully encapsulate not just your training code, but the entire dependency stack down to the hardware libraries.
 
+## Containers and state
+- As cloud computing and microservices grow in popularity, so too has containerization of applications, whether stateful or stateless. Containers are units of code for an application that are packaged up, together with their libraries and dependencies, so that they’re able to be moved easily and can run in any environment, whether on a desktop, traditional IT infrastructure, or on a cloud. 
+- Originally, containers were built to be stateless, as this suited their portable, flexible nature. But as containers have come into more widespread use, people began containerizing (redesigning and repackaging for the purposes of running from containers) existing stateful apps. This gave them the flexibility and speed of using containers, but with the storage and context of statefulness.
+- Because of this, stateful applications can look a lot like stateless ones and vice versa. For example, you might have an app that is stateless, requiring no long-term storage, but that allows the server to track requests originating from the same client by using cookies. 
+
 ## Sharing your container
 - You have two options:
   - **Container image**: This is the easiest option. This allows every collaborator or a cluster management service, such as Kubernetes, to pull a container image, instantiate it, and execute training immediately.
@@ -91,3 +96,4 @@ When running a container, three flags that you should keep in mind are:
 - [How to Dockerize Any Machine Learning Application](https://towardsdatascience.com/how-to-dockerize-any-machine-learning-application-f78db654c601)
 - [Why use Docker containers for machine learning development?](https://aws.amazon.com/blogs/opensource/why-use-docker-containers-for-machine-learning-development/)
 - [Bried presentation on what Docker is](https://docs.google.com/presentation/d/1r7SbbajL-UnYHOeY9fQ9YtoJdu9Q70U5M_11E68K1Rg/edit#slide=id.gbd509e17c2_0_807)
+- [Stateful and stateless](https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless)
