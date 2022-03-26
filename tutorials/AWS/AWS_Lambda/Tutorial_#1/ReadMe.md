@@ -93,19 +93,6 @@ Outputs:
   - **Step #10** Deploying on AWS Lambda. As easy as it was to deploy locally, SAM will also handle all the heavy lifting to deploy on AWS Lambda.
     - Build the application in SAM: `sam build -t template_no_auth.yaml`
     - Deploy the application: `sam deploy --guided` Follow the prompts that guides you through the deployment configurations. Most of the settings I used were the default value with a few exceptions.
-```
-Stack Name [sam-app]: predict-no-auth
-AWS Region [eu-west-2]:
-Parameter Stage [dev]: 
-Confirm changes before deploy [y/N]: 
-Allow SAM CLI IAM role creation [Y/n]: 
-Disable rollback [y/N]: y
-PredictFunction may not have authorization defined, Is this okay? [y/N]: y
-Save arguments to configuration file [Y/n]: 
-SAM configuration file [samconfig.toml]: 
-SAM configuration environment [default]:
-Create managed ECR repositories for all functions? [Y/n]:
-```
 
 ## References
 - [Serverless Deployment of Machine Learning Models on AWS Lambda](https://towardsdatascience.com/serverless-deployment-of-machine-learning-models-on-aws-lambda-5bd1ca9b5c42)
