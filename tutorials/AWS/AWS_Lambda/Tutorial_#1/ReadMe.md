@@ -1,7 +1,8 @@
-# Tutorial #1
+# Tutorial #1 
+How to deploy a ML model on AWS Lambda.
 
 ## Introduction
-Serverless Deployment of Machine Learning Models on AWS Lambda
+- How to deploy a ML model on AWS as a lambda function which is the AWS serverless offering. First a AWS CLI is set up locally. Next, we will train a K-nearest neighbour classifier which is then deploy via a Docker container.
 
 ## Step-by-step guide
 This main aim is the following: lay down the steps required to deploy a simple ML model as a Lambda function on AWS. Serverless deployment of ML models — 1) Test data is uploaded to a S3 bucket. 2) To initiate the lambda function, a POST HTTP request is sent through the Amazon API Gateway. 3) Initialisation of the lambda function executes code that downloads the data from the S3 bucket and performs predictions. 4) A HTTP response is returned to client with the predictions as a data payload. (Image by author)
