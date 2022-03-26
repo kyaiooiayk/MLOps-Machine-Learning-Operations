@@ -1,13 +1,13 @@
 # Tutorial #1 
 ![](https://img.shields.io/badge/-Docker-blue?style=plastic&logo=Docker) ![](https://img.shields.io/badge/-AWS-orange?style=plastic&logo=Amazon-AWS)
-
 How to deploy a ML model on AWS Lambda.
+<hr>
 
 ## Introduction
 How to deploy a ML model on AWS as a lambda function which is the AWS serverless offering. First a AWS CLI is set up locally. Next, we will train a K-nearest neighbour classifier which is then deploy via a Docker container.
 
 ## Setting up your workspace
-- Sign up to the [AWS free tier account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all).
+- Sign up for a [AWS free tier account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all).
 - Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - Setup [AWS CLI](https://medium.com/@lloyd.hamilton/setting-up-aws-cli-credentials-65d0a5fc0c4e)
 - Install [AWS Serverless Application Model (SAM) CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
