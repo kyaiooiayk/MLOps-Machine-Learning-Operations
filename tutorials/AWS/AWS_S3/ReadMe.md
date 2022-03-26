@@ -15,4 +15,5 @@
 ## References
 - Mishra, Abhishek. Machine Learning in the AWS Cloud: Add Intelligence to Applications with Amazon SageMaker and Amazon Rekognition. John Wiley & Sons, 2019.
 - [Using high-level (s3) commands with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
-- [YouTube vide | Tutorial 1- Cloud Computing-AWS-Introduction To S3(Simple Storage Services)](https://www.youtube.com/watch?v=G3adspFQ59I)
+- [YouTube video | Tutorial 1- Cloud Computing-AWS-Introduction To S3(Simple Storage Services)](https://www.youtube.com/watch?v=G3adspFQ59I)
+- [YouTube video | Tutorial 3- Deployment Of ML Models In AWS EC2 Instance](https://www.youtube.com/watch?v=JKlOlDFwsao)
