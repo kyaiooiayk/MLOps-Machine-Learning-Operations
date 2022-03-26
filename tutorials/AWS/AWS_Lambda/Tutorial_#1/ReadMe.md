@@ -5,7 +5,7 @@ How to deploy a ML model on AWS Lambda.
 <hr>
 
 ## Introduction
-How to deploy a ML model on AWS as a lambda function which is the AWS serverless offering. First a AWS CLI is set up locally. Next, we will train a K-nearest neighbour classifier which is then deploy via a Docker container.
+How to deploy a ML model on AWS as a lambda function which is the AWS serverless offering. First a AWS CLI is set up locally. Next, we will train a k-NN classifier which is then deploy via a Docker container.
 
 ## Setting up your workspace
 - Sign up for a [AWS free tier account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all).
@@ -25,74 +25,25 @@ How to deploy a ML model on AWS as a lambda function which is the AWS serverless
 
   - **Step #5** We can check if the objects have been uploaded with the helper function which lists all objects in the bucket. This step is implemented in the notebookd called `Step_2_Deploying k-NN model on AWS.ipynb`.
 
-  - **Step #6** Deploying and Testing AWS Lambda Functions with SAM. AWS SAM is an open source framework used to build serverless applications. It streamlines the build and deploy a serverless architecture by unifying all the tools all within a YAML configuration file. There is another packaged called [serverless](https://www.serverless.com/) which works with AWS, Azure and Google. Amazon provides an [official guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification.html) on how to configure a AWS SAM yaml file. Here is what goes into `template_no_auth.yaml`. As the name suggests it does not include resources that performs server side authentication of API requests. Therefore, deployment of our lambda function at its current state will allow anyone with the URL to make a request to your function.
+  - **Step #6** Deploying and Testing AWS Lambda Functions with SAM. AWS SAM is an open source framework used to build serverless applications. It streamlines the build and deploy a serverless architecture by unifying all the tools all within a YAML configuration file. There is another packaged called [serverless](https://www.serverless.com/) which works with AWS, Azure and Google. Amazon provides an [official guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification.html) on how to configure a AWS SAM yaml file. Here is what goes into `template_no_auth.yaml`. As the name suggests it does not include resources that performs server side authentication of API requests. Therefore, deployment of our lambda function at its current state will allow anyone with the URL to make a request to your function. There are 6 important points store in the `.yaml` file.
     - [AWSTemplateFormatVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html) where you specified the latest template available.
     - [Transform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html) which identifies an AWS CloudFormation template file as an AWS SAM template file and is a requirement for SAM template files.
     - [Globals](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-template-anatomy-globals.html) variables to be used by specific resources can be defined here. Function timeout and the memory size is set to 50 and 5000 MB respectively. When the specified timeout is reached, the function will stop execution.
     - [Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) sets the default staging value to dev. You can define parameter values which can be referenced in the yaml file.
     - [Resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html) is used to declare the specific AWS resources we require for our application: API gateway and lambda function.
     - In the outputs section we declared a set of outputs to return after deploying the application with SAM. In this case the output returns the URL of the API endpoint to invoke the lambda function.
-```
-AWSTemplateFormatVersion: "2010-09-09"
-Transform: AWS::Serverless-2016-10-31
-Globals:
-  Function:
-    Timeout: 50
-    MemorySize: 5000
-  Api:
-    OpenApiVersion: 3.0.1
-Parameters:
-  Stage:
-    Type: String
-    Default: dev
-Resources:
-  # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
-  LambdaAPI:
-    Type: AWS::Serverless::Api
-    Properties:
-      StageName: !Ref Stage
-  # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
-  PredictFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      PackageType: Image
-      Architectures:
-        - x86_64
-      Events:
-        Predict:
-          Type: Api
-          Properties:
-            RestApiId: !Ref LambdaAPI
-            Path: /predict
-            Method: POST
-      Policies:
-        - AmazonS3FullAccess
-    Metadata:
-      Dockerfile: Dockerfile
-      DockerContext: ./
-      DockerTag: python3.9-v1
-Outputs:
-  LambdaApi:
-    Description: "API Gateway endpoint URL for Dev stage for Predict Lambda function"
-    Value: !Sub "https://${LambdaAPI}.execute-api.${AWS::Region}.amazonaws.com/${Stage}/predict"
-```
 
-  - **Step #7** The `lambda_predict.py` file contains steps which:
+  - **Step #7** The `lambda_predict.py` in `tutorial_1_files/app` implements 4 steps:
     - Load the model
     - Download the test_features data set referenced by the bucket and key variable
     - Perform a prediction on the downloaded data set
     - Return JSON object of the predictions as a numpy array
   
-  - **Step #8** The Dockerfile details the instructions required to containerised our lambda function as a docker image. I will be using Python 3.9 and installing the python dependencies using poetry. Key thing to note, the entry point for the docker image is set to the lamba_handler function which is declared in the lambda_predict.py file. This entry point defines the function to be executed during an event trigger, an event such as a HTTP POST request. Any code outside of the lambda_handler function that is within the same script will be executed when the container image is initialised. 
+  - **Step #8** The Dockerfile located at `tutorial_1_files/Dockerfile` details the instructions required to containerised our lambda function as a docker image. I will be using Python 3.9 and installing the python dependencies using poetry. Key thing to note, the entry point for the docker image is set to the lamba_handler function which is declared in the lambda_predict.py file. This entry point defines the function to be executed during an event trigger, an event such as a HTTP POST request. Any code outside of the lambda_handler function that is within the same script will be executed when the container image is initialised. 
 
-  - **Step #9** AWS SAM provide functionality to build and locally test applications before deployment. After making sure your docker is running:
-    - Build the application in SAM: `sam build -t template_no_auth.yaml`
-    - Locally deploy the dockerised lambda function: `sam local start-api`
-    - On your local web browser type (your URL may differ): `http://127.0.0.1:3000/predict` 
+  - **Step #9** AWS SAM provide functionality to build and locally test applications before deployment. This will allow you to see the output on a browser on a URL like this `http://127.0.0.1:3000/predict`.
 
   - **Step #10** Deploying on AWS Lambda. As easy as it was to deploy locally, SAM will also handle all the heavy lifting to deploy on AWS Lambda.
-    - Build the application in SAM: `sam build -t template_no_auth.yaml`
-    - Deploy the application: `sam deploy --guided` Follow the prompts that guides you through the deployment configurations. Most of the settings I used were the default value with a few exceptions.
 
 ## References
 - [Serverless Deployment of Machine Learning Models on AWS Lambda](https://towardsdatascience.com/serverless-deployment-of-machine-learning-models-on-aws-lambda-5bd1ca9b5c42)
