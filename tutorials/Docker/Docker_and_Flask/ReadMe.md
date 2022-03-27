@@ -15,7 +15,7 @@ The main goal of the tutorial is to see how a Docker image is built. The ML mode
 - **Step #3** Copy and past this address on the browser `http://192.168.1.15:8000/predict_file?file_name=TestFile.csv` which will then returns the predicted class for the instances listed in the .csv file.
 Creation of a front end
 - **Step #4** Write a Docker file. This is called `Dockerfile`. Build with: `docker built -t money_api .` which essentially create a Docker image called `money_api` locally, meaning for where you ae running the command line.
-- **Step #5** Load the Docker image as: `docker run -p 8000:8000 money_api` and it will give you a message like this `Running on http://172.17.0.2:8000/ (Press CTRL+C to quit)`. Now if you copy and paste this it will not work. What you have to do is past this instead `http://localhost:8000/`. If you are on a MacOS PC and you have installed Docker, click on `OPEN IN BROWSER` one the Docker image shown.
+- **Step #5** Load the Docker image as: `docker run -p 8000:8000 money_api` and it will give you a message like this `Running on http://172.17.0.2:8000/ (Press CTRL+C to quit)`. Now if you copy and paste this it will not work. What you have to do is paste this instead `http://localhost:8000/`. If you are on a MacOS PC and you have installed Docker, click on `OPEN IN BROWSER` one the Docker image shown.
 
 ## Troubleshooting
 - If you get an erro like this: `OSError: [Errno 48] Address already in use` then follow this [link](https://ishaileshmishra.medium.com/the-python-flask-problem-socket-error-errno-48-address-already-in-use-4d074847587e) to resolve it. Essentially this appens, when you are the app for the first time, you kill the python thread and while relaunching it again.
