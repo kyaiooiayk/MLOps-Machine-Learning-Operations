@@ -70,11 +70,11 @@ How to turn SQL-like into a map-reduce job that can run on a distributed file sy
 - [Hive | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
 - Pig (less popular than Hive)
 ***
-### Non relational database
- - MongoDB
- - CosmosDB
-***
+
 ### Data warehouse tools
+A **data warehouse*** stores data in files or folders in a hierarchical manner whereas a **data lake** uses a flat architecture. Every bit of data in the lake has a unique ID and is tagged with sets of extended metadata tags. When you need information, the data lake can be queried for relevant data, and that smaller set of data can be accessed to get the data you need. The ability to append your own metadata enables you to make it very easy to search your data.
+- MongoDB
+- CosmosDB
 - Looker
 - Stitch
 - DBT
