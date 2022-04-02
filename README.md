@@ -40,7 +40,7 @@ You essentially have two options:
 ***
 ### DevOps
 - [ Git | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
-- [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]: Jenkins is an open source continuous integration/continuous delivery and deployment (CI/CD) automation software DevOps tool written in the Java programming language. It is used to implement CI/CD workflows, called pipelines. It is also used to create deployment package. Jenkins provides mechanisms to restart any failed components and keep the pipeline running. Human intervention is often required, however. Jenkins supports manual, human-in-the-loop feedback as well.
+- [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]
 - Maven : it is used to create deployment package.
 - [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Docker)]
 - [Kubernets | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Kubernetes)]
