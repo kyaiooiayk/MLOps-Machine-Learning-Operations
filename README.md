@@ -14,7 +14,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ***
 
 ### Pipelines
-- **Apache Airflow** is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. However, Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. Amazon supports Amazon Managed Workflows for Apache Airflow to reduce the operational burden of running Airflow clusters on AWS.
+- [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)]
 - **Kubeflow Pipelines** is an orchestration subsystem built on Kubernetes.
 - [MLeap](https://github.com/combust/mleap) It allows data scientists and engineers to deploy machine learning pipelines from Spark and Scikit-learn to a portable format and execution engine. MLeap is a common serialization format and execution engine for machine learning pipelines. 
 ***
