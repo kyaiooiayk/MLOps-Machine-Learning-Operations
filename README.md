@@ -48,8 +48,8 @@ You essentially have two options:
 ### Application Framework/Model Deployment
 - Django
 - [[Flask](https://flask.palletsprojects.com/en/2.1.x/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Flask)]
-- Nodejs
-- Expressjs
+- [[Node.js]() | [Notes]()]
+- [[Express.js]() | [Notes]()]
 - [ [React](https://reactjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/React)]
 - Nginx
 - Redis
