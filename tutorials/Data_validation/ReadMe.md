@@ -1,5 +1,5 @@
 # Data validation
 ***
 
-- [Pandera]()
-- []()
+- [[Pandera]() | [Notes]()]
+- [[Great Expectations]() | [Notes]()]
