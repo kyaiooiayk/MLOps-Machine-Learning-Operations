@@ -110,7 +110,7 @@ It is an unified analytics platform.
 - **HTTP vs. REST APIs** APIs can be categorised into various types based on application designs and other constraints, such as Web API, HTTP API, REST API, and many more.
   - REST API is a Software Architectural Style that is used to guide the creation and design of the architecture of the World Wide Web. In other words, REST APIs establish a set of guidelines for how a distributed system’s architecture should function. REST APIs add no new capability to HTTP APIs. REST APIs are ideal for creating scalable general-purpose applications. 
   - On the other hand, HTTP API is an application that communicates between two systems using the Hypertext Transfer Protocol. HTTP APIs make endpoints available as API gateways, allowing HTTP queries to connect to a server. The majority of HTTP APIs are on the verge of becoming completely RESTful.
-***
+
 - **When an API can be called REST API?** The requirements are:
    - Client-Server: A server oversees the application’s data and state in REST applications. The server connects with a client, which is responsible for handling user interactions. The two components are separated by a clear separation of responsibilities. As a result, you’ll be able to update and upgrade them in separate tracks.
    - Stateless: Client state is not maintained by servers; instead, clients handle their own application state. All of the information needed to process the client’s requests are contained in the requests to the server.
