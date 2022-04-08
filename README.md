@@ -13,6 +13,9 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - Apache Spark
 ***
 
+## Data validation
+
+
 ### Pipelines
 - [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)]
 - **Kubeflow Pipelines** is an orchestration subsystem built on Kubernetes.
