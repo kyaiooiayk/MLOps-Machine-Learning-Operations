@@ -45,6 +45,7 @@ You essentially have two options:
  - For **less-latency-sensitive** applications that require high throughput, we should deploy our model as a batch job to perform batch predictions on large amounts of data in S3, for example. We will use SageMaker Batch Transform to perform the batch predic‐ tions along with a data store like Amazon RDS or DynamoDB to productionize the predictions,
 ***
 ### DevOps
+DevOps is a role that integrates the job scope of software developers and operations teams to automate workflows.
 - [ Git | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
 - [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]
 - Maven : it is used to create deployment package.
