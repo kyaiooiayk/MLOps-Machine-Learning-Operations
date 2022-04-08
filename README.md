@@ -14,8 +14,8 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ***
 
 ## Data validation
-- [[Pandera](https://pandera.readthedocs.io/en/stable/) | [Notes]()]
-- [[Great Expectations](https://greatexpectations.io/) | [Notes]()]
+- [[Pandera](https://pandera.readthedocs.io/en/stable/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Data_validation/Pandera)]
+- [[Great Expectations](https://greatexpectations.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Data_validation/Great_expectations)]
 ***
 
 ### Pipelines
