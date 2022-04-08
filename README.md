@@ -14,7 +14,9 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ***
 
 ## Data validation
-
+- [[Pandera](https://pandera.readthedocs.io/en/stable/) | [Notes]()]
+- [[Great Expectations](https://greatexpectations.io/) | [Notes]()]
+***
 
 ### Pipelines
 - [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)]
