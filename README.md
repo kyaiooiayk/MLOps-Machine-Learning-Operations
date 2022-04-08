@@ -133,3 +133,4 @@ It is an unified analytics platform.
 - [Awesome production machine learning](https://github.com/EthicalML/awesome-production-machine-learning#model-and-data-versioning)
 - [MLOps Is a Mess But That’s to be Expected](https://www.kdnuggets.com/2022/03/mlops-mess-expected.html)
 - [MLOps Principles](https://ml-ops.org/content/mlops-principles)
+- [What is an MLOps Engineer?](https://www.kdnuggets.com/2022/03/mlops-engineer.html)
