@@ -6,6 +6,17 @@
 - It is open-source and essentially a container file format. It automates the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises.
 - A container is a standardized software unit, in simple terms — nothing but a packaged bundle of application code and required libraries and other dependencies.
 - A **Docker Image** is an executable software package that includes everything needed to run an application and becomes a Container at runtime.
+- Docker is like a virtual machine!
+- It has its own filesystem and the files from your local machine are not shared to the docker container. 
+- If you want to use a path from your local machine and want to modify it too, you would need to mount it to the docker container when running it. 
+***
+
+## Motivation
+- So, let’s say you have learned git and formatted the code properly, have written proper documentation and have open-sourced your project. Is that enough? No. It’s not. 
+- It’s because you wrote code on your computer and that might not work on someone else’s computer because of many different reasons. 
+- So, it would be nice if when you distribute the code, you could replicate your computer and others can too when they install your software or run your code. 
+- To do this, the most popular way these days is to use Docker Containers 
+- Docker containers can be considered as **small virtual machines**. You can create a container for your code, and then everyone will be able to use it and access it. 
 ***
 
 ## Docker (Docker Swarm!) vs. Kubernets
@@ -43,6 +54,14 @@ The general workflow is:
 
 ## Installation
 - Follow [this](https://docs.docker.com/desktop/mac/install/) instruction for MacOS.
+- Alternatively follows this:
+```
+$ sudo apt install docker.io
+$ sudo systemctl start docker
+$ sudo systemctl enable docker 
+$ sudo groupadd docker
+$ sudo usermod -aG docker $USER 
+```
 - Validation the installation of Docker on your workstation with the following command: `docker --version`
 ***
 
@@ -67,6 +86,11 @@ CMD streamlit run app.py
 - Step #3: Build it and create an image. The idea is this image we create is the reproducible environment irrelevant to the underlying system. (The dot at the end signifies the path for the Dockerfile, which is the current directory.): `docker build --tag app:1.0 .`
 
 - Step #4: Run command runs the specified container on the host machine. `--publish 8501:8501` lets the port 8501 of the container to be mapped to the port 8501 of the host machine, while `-it` is needed for running interactive processes (like shell/terminal): `docker run --publish 8501:8501 -it app:1.0` What do I do with it? You can share the built images on DockerHub or deploy them on the cloud, and so on. The syntax `8501:8501` means `Host port:Container port`.
+
+- A slightly different procedures is this:
+  - Once we have created the docker file, we need to build it. Building the docker container is a very simple command: `docker build -f Dockerfile -t yourNameForTheDockerContainer`
+  - Now, you can log into the container using the following command: `docker run -ti yourNameForTheDockerContainer /bin/bash`
+  - You need to remember that whatever you do in this shell will be lost once you exit the shell. And you can run the training inside the docker container using: `docker run -ti yourNameForTheDockerContainer python3 nameOfYourPythonFile`
 ***
 
 ## Python dependencies
