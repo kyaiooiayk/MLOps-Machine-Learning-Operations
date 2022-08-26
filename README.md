@@ -31,7 +31,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ### Model lifecycle
 - MLFlow
 - Kubeflow
-- Tensorflow Serving
+- [Tensorflow Serving | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFlowServing.md)]
 - AWS SageMaker
 - GCP (Google Cloud Platform)
 ***
