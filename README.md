@@ -141,3 +141,4 @@ It is an unified analytics platform.
 - [MLOps Is a Mess But That’s to be Expected](https://www.kdnuggets.com/2022/03/mlops-mess-expected.html)
 - [MLOps Principles](https://ml-ops.org/content/mlops-principles)
 - [What is an MLOps Engineer?](https://www.kdnuggets.com/2022/03/mlops-engineer.html)
+- [Google Rules of Machine Learning: Best Practices for ML Engineering](https://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)
