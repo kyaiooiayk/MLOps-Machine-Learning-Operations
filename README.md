@@ -23,6 +23,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - **Kubeflow Pipelines** is an orchestration subsystem built on Kubernetes.
 - [MLeap](https://github.com/combust/mleap) allows data scientists and engineers to deploy machine learning pipelines from Spark and Scikit-learn to a portable format and execution engine. MLeap is a common serialisation format and execution engine for machine learning pipelines. 
 - [How to Build MLOps Pipelines with GitHub Actions [Step by Step Guide]](https://neptune.ai/blog/build-mlops-pipelines-with-github-actions-guide)
+- [[Prefect](https://www.prefect.io/) | [Notes]()]
 ***
 
 ### Model serialisation
