@@ -4,7 +4,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ![image](https://user-images.githubusercontent.com/89139139/148684996-107b35e5-7136-4842-a132-119db6ee48ce.png)
 ***
 
-### Data Engineering
+## Data Engineering
 - Apache Nifi
 - Spark
 - Argo workflow
@@ -18,7 +18,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - [[Great Expectations](https://greatexpectations.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Data_validation/Great_expectations)]
 ***
 
-### Pipelines
+## Pipelines
 - [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)]
 - **Kubeflow Pipelines** is an orchestration subsystem built on Kubernetes.
 - [MLeap](https://github.com/combust/mleap) allows data scientists and engineers to deploy machine learning pipelines from Spark and Scikit-learn to a portable format and execution engine. MLeap is a common serialisation format and execution engine for machine learning pipelines. 
@@ -26,7 +26,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - [[Prefect](https://www.prefect.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Prefect)]
 ***
 
-### Model serialisation
+## Model serialisation
 - [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialisation)
 ***
 ### Model lifecycle
@@ -36,7 +36,8 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - AWS SageMaker
 - GCP (Google Cloud Platform)
 ***
-### Dashboard
+
+## Dashboard
 - Bokeh
 - Plotly
 ***
@@ -45,7 +46,8 @@ You essentially have two options:
  - If our application requires **low latency**, then we should deploy the model as a real- time API to provide super-fast predictions on single prediction requests over HTTPS, for example. We can deploy, scale, and compare our model prediction servers with SageMaker Endpoints using the REST API protocol with HTTPS and JSON.
  - For **less-latency-sensitive** applications that require high throughput, we should deploy our model as a batch job to perform batch predictions on large amounts of data in S3, for example. We will use SageMaker Batch Transform to perform the batch predic‐ tions along with a data store like Amazon RDS or DynamoDB to productionize the predictions,
 ***
-### DevOps
+
+## DevOps
 DevOps is a role that integrates the job scope of software developers and operations teams to automate workflows.
 - [ Git | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
 - [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]
@@ -53,7 +55,8 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Docker)]
 - [Kubernets | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Kubernetes)]
 ***
-### Application Framework/Model Deployment
+
+## Application Framework/Model Deployment
 - Django
 - [[Flask](https://flask.palletsprojects.com/en/2.1.x/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Flask)]
 - [[Node.js]() | [Notes]()]
@@ -66,29 +69,29 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [Streamlit | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
 ***
 
-### Cloud computing
+## Cloud computing
 Cloud computing is a name which refers to cluster machines on the cloud. AWS, seems to be the most popular. Maybe if one has to choose one while trying to learn something about it, one would look  at the one allowing more free computing hrs.
 - [[AWS (Amazon Web Services)](https://aws.amazon.com/?nc2=h_lg) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS)]
 - Microsoft Azure
 - GCP (Google Cloud Platform)
 ***
 
-### Edge computing
+## Edge computing
 - Edge computing referes to computation done on edge devices, meaning consumer devices. Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data.
 - [TensorFlow Lite | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFLowLite.md)]
 ***
 
-### Relational Database
+## Relational Database
 RDB (relational database) is a database that stores data into tables with rows and columns.
 ***
 
-### Relational database at scale
+## Relational database at scale
 How to turn SQL-like into a map-reduce job that can run on a distributed file system. This is essentiallu what we mean by relational database at scale.
 - [Hive | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
 - Pig (less popular than Hive)
 ***
 
-### Data warehouse tools
+## Data warehouse tools
 A **data warehouse*** stores data in files or folders in a hierarchical manner whereas a **data lake** uses a flat architecture. Every bit of data in the lake has a unique ID and is tagged with sets of extended metadata tags. When you need information, the data lake can be queried for relevant data, and that smaller set of data can be accessed to get the data you need. The ability to append your own metadata enables you to make it very easy to search your data.
 - MongoDB
 - CosmosDB
@@ -100,17 +103,24 @@ A **data warehouse*** stores data in files or folders in a hierarchical manner w
 - Azure synapse
 - Google big query
 ***
-###  Management 
-It is an unified analytics platform.
+
+##  Management 
+Unified analytics platform.
 - Databricks 
 - AWS google
 - MS has its own alternative
 ***
-### Streaming
+
+## Streaming
 - Apache Kafka
 - Apache Spark
 - Google Dataflow
 ***
+
+## Schedulers
+- [5 ways to schedule Jupyter Notebook](https://mljar.com/blog/schedule-jupyter-notebook/)
+***
+
 ## APIs & Microservices
 - **APIs vs Microservices: How They Work Together?** Microservices function as the “building‐blocks” of the application by performing various services, while “RESTful APIs” function as the “glue” that integrates the microservices into an application.
 - **Why were microservices created?** Suppose that you have an application with tightly coupled components comprising of databases, servers, the user interface, business logic, and so on. This type of architecture can be considered a monolithic application, but if a single component fails, other components fail, and possibly the entire application fails. In a microservices approach, application components are loosely coupled, thus if a single component fails, the other components continue to work. 
