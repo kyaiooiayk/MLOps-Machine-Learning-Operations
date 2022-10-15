@@ -12,7 +12,7 @@
   - Crete a web app via Flask
   - Commit code to github
   - Create an account with Heroku
-  - Linkgithub to Heroku
+  - Link github to Heroku
   - Deploy the mode
   - Web is ready to use
 
