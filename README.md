@@ -6,7 +6,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 
 ## Data Engineering
 - Apache Nifi
-- Spark
+- [[Spark](https://spark.apache.org/) | [Notes](https://github.com/kyaiooiayk/pySpark-Notes)]
 - Argo workflow
 - Azue databricks
 - Hadoop 
