@@ -40,6 +40,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - Bokeh
 - Plotly
 ***
+
 ## Deployment options
 You essentially have two options:
  - If our application requires **low latency**, then we should deploy the model as a real- time API to provide super-fast predictions on single prediction requests over HTTPS, for example. We can deploy, scale, and compare our model prediction servers with SageMaker Endpoints using the REST API protocol with HTTPS and JSON.
@@ -65,14 +66,14 @@ DevOps is a role that integrates the job scope of software developers and operat
 - Redis
 - [[FastAPI](https://fastapi.tiangolo.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/FastAPI)]
 - [[Heroku](https://www.heroku.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku)]
-- [Streamlit | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
+- [[Streamlit](https://streamlit.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
 ***
 
 ## Cloud computing
-Cloud computing is a name which refers to cluster machines on the cloud. AWS, seems to be the most popular. Maybe if one has to choose one while trying to learn something about it, one would look  at the one allowing more free computing hrs.
+Cloud computing is a name which refers to cluster machines on the cloud.
 - [[AWS (Amazon Web Services)](https://aws.amazon.com/?nc2=h_lg) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS)]
-- Microsoft Azure
-- GCP (Google Cloud Platform)
+- [[Microsoft Azure](https://azure.microsoft.com/en-gb/) | Notes]
+- [[GCP (Google Cloud Platform)](https://cloud.google.com/) | Notes]
 ***
 
 ## Edge computing
@@ -81,11 +82,8 @@ Cloud computing is a name which refers to cluster machines on the cloud. AWS, se
 ***
 
 ## Relational Database
-RDB (relational database) is a database that stores data into tables with rows and columns.
-***
-
-## Relational database at scale
-How to turn SQL-like into a map-reduce job that can run on a distributed file system. This is essentiallu what we mean by relational database at scale.
+- RDB (relational database) is a database that stores data into tables with rows and columns.
+- How to turn SQL-like into a map-reduce job that can run on a distributed file system. This is essentially what we mean by relational database at scale.
 - [Hive | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
 - Pig (less popular than Hive)
 ***
@@ -106,13 +104,10 @@ A **data warehouse*** stores data in files or folders in a hierarchical manner w
 ##  Management 
 Unified analytics platform.
 - Databricks 
-- AWS google
-- MS has its own alternative
 ***
 
 ## Streaming
 - Apache Kafka
-- Apache Spark
 - Google Dataflow
 ***
 
@@ -120,20 +115,11 @@ Unified analytics platform.
 - [5 ways to schedule Jupyter Notebook](https://mljar.com/blog/schedule-jupyter-notebook/)
 ***
 
-## APIs & Microservices
-- **APIs vs Microservices: How They Work Together?** Microservices function as the “building‐blocks” of the application by performing various services, while “RESTful APIs” function as the “glue” that integrates the microservices into an application.
-- **Why were microservices created?** Suppose that you have an application with tightly coupled components comprising of databases, servers, the user interface, business logic, and so on. This type of architecture can be considered a monolithic application, but if a single component fails, other components fail, and possibly the entire application fails. In a microservices approach, application components are loosely coupled, thus if a single component fails, the other components continue to work. 
-- **HTTP vs. REST APIs** APIs can be categorised into various types based on application designs and other constraints, such as Web API, HTTP API, REST API, and many more.
-  - REST API is a Software Architectural Style that is used to guide the creation and design of the architecture of the World Wide Web. In other words, REST APIs establish a set of guidelines for how a distributed system’s architecture should function. REST APIs add no new capability to HTTP APIs. REST APIs are ideal for creating scalable general-purpose applications. 
-  - On the other hand, HTTP API is an application that communicates between two systems using the Hypertext Transfer Protocol. HTTP APIs make endpoints available as API gateways, allowing HTTP queries to connect to a server. The majority of HTTP APIs are on the verge of becoming completely RESTful.
-
-- **When an API can be called REST API?** The requirements are:
-   - Client-Server: A server oversees the application’s data and state in REST applications. The server connects with a client, which is responsible for handling user interactions. The two components are separated by a clear separation of responsibilities. As a result, you’ll be able to update and upgrade them in separate tracks.
-   - Stateless: Client state is not maintained by servers; instead, clients handle their own application state. All of the information needed to process the client’s requests are contained in the requests to the server.
-   - Cacheable: Servers must indicate whether or not their responses are cacheable. To boost performance, systems and clients might cache replies when it is convenient. They also get rid of non-cacheable data, so no client has to deal with stale data.
-   - Uniform Interface: REST’s most well-known characteristics are that the emphasis on a uniform interface between components is the primary aspect that distinguishes the REST architectural style from other network-based approaches. Data is provided as resources through REST services, which have a consistent namespace.
-   - Layered System: The system’s components can’t look beyond their own layer. This limited scope makes it simple to add load-balancers and proxies to increase authentication security and performance
+## RESTful APIs & Microservices
+- **Microservices** function as the “building‐blocks” of the application by performing various services.
+- **RESTful APIs** function as the “glue” that integrates the microservices into an application.
 ***
+
 ## Version control system (VCS)
 - Version control system (VCS) also known as revision control or source control, records and manages changes to files and folders. [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/VCS.md)
 - [[Hydra](https://hydra.cc/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/VCS/Hydra)]
