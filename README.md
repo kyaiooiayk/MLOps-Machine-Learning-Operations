@@ -28,12 +28,12 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ## Model serialisation
 - [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialisation)
 ***
-### Model lifecycle
+
+## Model lifecycle
 - MLFlow
 - Kubeflow
-- [Tensorflow Serving | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFlowServing.md)]
+- [[Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFlowServing.md)]
 - AWS SageMaker
-- GCP (Google Cloud Platform)
 ***
 
 ## Dashboard
