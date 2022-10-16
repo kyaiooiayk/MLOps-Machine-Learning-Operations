@@ -134,4 +134,4 @@ When running a container, three flags that you should keep in mind are:
 - [Why use Docker containers for machine learning development?](https://aws.amazon.com/blogs/opensource/why-use-docker-containers-for-machine-learning-development/)
 - [Bried presentation on what Docker is](https://docs.google.com/presentation/d/1r7SbbajL-UnYHOeY9fQ9YtoJdu9Q70U5M_11E68K1Rg/edit#slide=id.gbd509e17c2_0_807)
 - [Stateful and stateless](https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless)
-- [Docker cheatsheete](https://dockerlabs.collabnix.com/docker/cheatsheet/)
+- [Docker cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)

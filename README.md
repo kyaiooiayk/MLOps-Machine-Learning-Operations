@@ -117,6 +117,7 @@ Unified analytics platform.
 ## RESTful APIs & Microservices
 - **Microservices** function as the “building‐blocks” of the application by performing various services.
 - **RESTful APIs** function as the “glue” that integrates the microservices into an application.
+- [NOTES](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/RESTful%20APIs%20%26%20Microservices)
 ***
 
 ## Version control system (VCS)
