@@ -26,6 +26,8 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ***
 
 ## Model serialisation
+- Serialisation is the process of translating a data structure or object state into a format that can be stored or transmitted and reconstructed later. 
+- Common formats: hdf5, json, pickle, joblib, dill, ONNX
 - [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialisation)
 ***
 
