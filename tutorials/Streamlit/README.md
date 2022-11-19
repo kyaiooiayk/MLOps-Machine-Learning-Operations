@@ -41,4 +41,5 @@ Model deployment is the endpoint of a data science workflow. Models can be deplo
 - A nice example on how to buil an app leveraging the pandas profiling tool can be found [here](https://github.com/dataprofessor/eda-app)
 
 ## References
-- https://blog.streamlit.io/how-to-master-streamlit-for-data-science/
+- [How to master streamlit for data science](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/)
+- [Build a Data-Annotation Pipeline with Less than Fifty Lines of Code with Streamlit](https://towardsdatascience.com/build-a-data-annotation-pipeline-with-less-than-fifty-lines-of-code-with-streamlit-e72a3a84e259)
