@@ -90,8 +90,13 @@ Cloud computing is a name which refers to cluster machines on the cloud.
 ***
 
 ## Data warehouse tools
-A **data warehouse*** stores data in files or folders in a hierarchical manner whereas a **data lake** uses a flat architecture. Every bit of data in the lake has a unique ID and is tagged with sets of extended metadata tags. When you need information, the data lake can be queried for relevant data, and that smaller set of data can be accessed to get the data you need. The ability to append your own metadata enables you to make it very easy to search your data.
+**Databases** are typically structured with a defined schema. Items are organized as a set of tables with columns and rows. Columns include attributes and rows indicate an object or entity. Database is typically designed to be transactional and they are not designed to perform data analytics. 
+
+**Data warehouse** exists on top of several databases and used for business intelligence. Data warehouse consumes data from all these databases and creates a layer optimized to perform data analytics. 
+
+**Data lake** uses a flat architecture. Every bit of data in the lake has a unique ID and is tagged with sets of extended metadata tags. A data lake is a centralized repository for structured and unstructured data storage.  Data lakes could be used to store raw data as is without any structure (schema).  There is no need to perform any ETL or transformation jobs on it.  You can store many types of data such images, text, files, videos. 
 - MongoDB
+
 - CosmosDB
 - Looker
 - Stitch
