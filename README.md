@@ -51,7 +51,7 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [ Git | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
 - [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]
 - Maven : it is used to create deployment package.
-- [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Docker)]
+- [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/Docker-Notes)]
 - [Kubernets | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Kubernetes)]
 - [Packaging | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Packaging)]
 ***
