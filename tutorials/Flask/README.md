@@ -1,4 +1,4 @@
-# Flask microframework
+# Flask
 ***
 
 ## What is it?
@@ -35,6 +35,10 @@
 - Option #2:
    - Locate the PID with: `lsof -i:8050`
    -  Then shut the process with: `kill PID`
+***
+
+## Flask and scaling up
+- Flask’s built-in server is not suitable for production as it doesn’t scale well. For some small project is fine but if you want to see how to deploy a Flask application properly see [this](https://flask.palletsprojects.com/en/1.1.x/deploying/)
 ***
 
 ## Resources
