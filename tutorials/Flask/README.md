@@ -6,7 +6,6 @@
 - Flask microframework is an easy-to-use microframework that can be used to build RESTful microservices, it is a very popular framework, and it is well documented.
 - Essentially, Flask is used to create the web app.
 - One of the most popular types of APIs for building microservices applications is known as “RESTful API” or “REST API.” REST API is a popular standard among developers because it uses HTTP commands, which most developers are familiar with.
-- **ATTENTION**: The Flask server is not powerful enough to support production loads. Instead, you should use gunicorn and nginx for proper deployment.
 ***
 
 ## Flask vs. Django
@@ -22,7 +21,7 @@
 ***
 
 ## How to run
-- Step #1: run this code as: python `my_app_name.py`
+- Step #1: run your code containing your flask API call as: `python my_app_name.py`
 - Step #2: copy and past in the browser this `http://127.0.0.1:5000/`
 ***
 
@@ -39,6 +38,7 @@
 
 ## Flask and scaling up
 - Flask’s built-in server is not suitable for production as it doesn’t scale well. 
+- The Flask server is not powerful enough to support production loads. Instead, you should use gunicorn and nginx for proper deployment.
 - For some small project is fine but if you want to see how to deploy a Flask application properly see [this](https://flask.palletsprojects.com/en/1.1.x/deploying/)
 ***
 
