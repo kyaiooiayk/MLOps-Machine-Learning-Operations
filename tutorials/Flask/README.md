@@ -22,7 +22,7 @@
 ***
 
 ## How to run
-- Step #1: run this code as: python `my_app_name.py1
+- Step #1: run this code as: python `my_app_name.py`
 - Step #2: copy and past in the browser this `http://127.0.0.1:5000/`
 ***
 
@@ -38,12 +38,14 @@
 ***
 
 ## Flask and scaling up
-- Flask’s built-in server is not suitable for production as it doesn’t scale well. For some small project is fine but if you want to see how to deploy a Flask application properly see [this](https://flask.palletsprojects.com/en/1.1.x/deploying/)
+- Flask’s built-in server is not suitable for production as it doesn’t scale well. 
+- For some small project is fine but if you want to see how to deploy a Flask application properly see [this](https://flask.palletsprojects.com/en/1.1.x/deploying/)
 ***
 
 ## Resources
 - [list of resources](https://www.fullstackpython.com/flask.html)
-- [article + code](https://towardsdatascience.com/model-deployment-using-flask-c5dcbb6499c9)
-- [article + code + flask + rect](https://towardsdatascience.com/build-deploy-a-react-flask-app-47a89a5d17d9)
+- [Model Deployment using Flask](https://towardsdatascience.com/model-deployment-using-flask-c5dcbb6499c9)
+- [How To Build & Deploy a React + Flask](https://towardsdatascience.com/build-deploy-a-react-flask-app-47a89a5d17d9)
 - [Flask Django a thorough comparison](https://codesource.io/flask-vs-django-an-in-depth-comparison/)
+***
  
