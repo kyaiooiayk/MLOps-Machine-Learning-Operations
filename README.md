@@ -57,9 +57,9 @@ DevOps is a role that integrates the job scope of software developers and operat
 
 ## Application Framework/Model Deployment
 - Django
-- [[Flask](https://flask.palletsprojects.com/en/2.1.x/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Flask)]
-- [[Node.js]() | [Notes]()]
-- [[Express.js]() | [Notes]()]
+- [[Flask](https://flask.palletsprojects.com/en/2.1.x/) | [Notes](https://github.com/kyaiooiayk/Flask-Notes)]
+- [[Node.js]() | Notes]
+- [[Express.js]() | Notes]
 - [[React](https://reactjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/React)]
 - Nginx
 - Redis
