@@ -53,6 +53,7 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/Docker-Notes)]
 - [[Kubernets](https://kubernetes.io/) | [Notes](https://github.com/kyaiooiayk/Kubernetes-Notes)]
 - [Packaging | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Packaging)]
+- [[Apache Jmeter](https://jmeter.apache.org/) |[Notes](https://github.com/ethen8181/machine-learning/tree/master/model_deployment/fastapi_kubernetes)]
 ***
 
 ## Application Framework/Model Deployment
