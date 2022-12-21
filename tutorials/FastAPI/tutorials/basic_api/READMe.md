@@ -50,7 +50,7 @@ def hello_name(name : str):
 *** 
 
 ## Troubleshooting
-- If you get an erro like this: `OSError: [Errno 48] Address already in use` then follow this [link](https://ishaileshmishra.medium.com/the-python-flask-problem-socket-error-errno-48-address-already-in-use-4d074847587e) to resolve it. Essentially this appens, when you are the app for the first time, you kill the python thread and while relaunching it again.
+- If you get an erro like this: `OSError: [Errno 48] Address already in use` then follow this [link](https://ishaileshmishra.medium.com/the-python-flask-problem-socket-error-errno-48-address-already-in-use-4d074847587e) to resolve it. Essentially this appens, when you fire the app for the first time, you kill the python thread and relaunching it again.
 - Option #1:
    - Try to locate the PID of the process with: `ps -fA | grep python`
    - Then kill the PID with: `kill PID`
