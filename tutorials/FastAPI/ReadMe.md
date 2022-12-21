@@ -30,6 +30,11 @@
 - Install can be done with: `pip install fastapi uvicorn`
 ***
 
+## Available tutorials
+- [Basic FastAPI app](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/FastAPI/tutorials/basic_api/READMe.md)
+- [Basic ML model deployed via FastAPI app](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/FastAPI/tutorials/simple_ML_model)
+***
+
 ## References
 - [FastAPI wiki](https://en.wikipedia.org/wiki/FastAPI)
 - [FastAPI official website](https://fastapi.tiangolo.com/)
