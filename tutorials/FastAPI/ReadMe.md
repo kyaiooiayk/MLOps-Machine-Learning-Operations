@@ -15,11 +15,19 @@
 - Django is usually used for large scale application and takes quite a bit time to set up that.
 - Flask is usually your go-to for quickly deploying your model on a web app. 
 - FastAPI is lighter weight than Django, offers similar features (along with API style) to Flask but was built with async in mind. 
+- FastAPI is way faster than Flask, not just that it’s also one of the fastest python modules out there.
+- Unlike Flask, FastAPI provides an easier implementation for Data Validation to define the specific data type of the data you send.
+- Automatic Docs to call and test your API(Swagger UI and Redoc).
+- FastAPI comes with built-in support for Asyncio, GraphQL and Websockets.
 ***
 
 ## What is uvicorn and gunicorn?
 - Gunicorn is a mature, fully featured server and process manager. 
 - Uvicorn includes a Gunicorn worker class allowing you to run ASGI applications, with all of Uvicorn's performance benefits, while also giving you Gunicorn's fully-featured process management.
+***
+
+## Installation
+- Install can be done with: `pip install fastapi uvicorn`
 ***
 
 ## References
