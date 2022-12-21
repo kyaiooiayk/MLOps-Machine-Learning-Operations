@@ -31,7 +31,7 @@ def hello_name(name : str):
 
 ```
 
-## Firying your app
+## Firing your app
 - Run your app with: `uvicorn basic-app:app --reload`
 - `basic-app` refers to the name of the the `*.py` file
 - `app` refers to the FastAPI instantiation name.
