@@ -72,7 +72,8 @@ DevOps is a role that integrates the job scope of software developers and operat
 ***
 
 ## Cloud computing
-Cloud computing is a name which refers to cluster machines on the cloud. **Bare-metal** cloud is a public cloud service where the customer rents dedicated hardware resources from a remote service provider, without (hence bare) any installed operating systems or virtualization infrastructure.
+- Cloud computing is a name which refers to cluster machines on the cloud. 
+- **Bare-metal** cloud is a public cloud service where the customer rents dedicated hardware resources from a remote service provider, without (hence bare) any installed operating systems or virtualization infrastructure.
 - [[AWS (Amazon Web Services)](https://aws.amazon.com/?nc2=h_lg) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS)]
 - [[Microsoft Azure](https://azure.microsoft.com/en-gb/) | Notes]
 - [[GCP (Google Cloud Platform)](https://cloud.google.com/) | Notes]
