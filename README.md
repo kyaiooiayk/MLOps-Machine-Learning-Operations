@@ -10,8 +10,8 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - Argo workflow
 - Azue databricks
 - Hadoop 
-- [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)]
-- **Kubeflow Pipelines** is an orchestration subsystem built on Kubernetes.
+- [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)] Apache is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. 
+- **Kubeflow Pipelines** is an orchestration subsystem built on Kubernetes that includes an orchestration subsystem called Kubeflow Pipelines. 
 - [[MLeap](https://github.com/combust/mleap) | Notes] It allows data scientists and engineers to deploy machine learning pipelines from Spark and Scikit-learn to a portable format and execution engine. MLeap is a common serialisation format and execution engine for machine learning pipelines. 
 - [[Prefect](https://www.prefect.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Prefect)]
 ***
