@@ -28,10 +28,11 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ***
 
 ## Model lifecycle
-- MLFlow
+- MLFlow is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice.
 - Kubeflow
 - [[Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFlowServing.md)]
 - AWS SageMaker
+- Tensor Floe Extended (TFX) is an open source collection of Python libraries used within a pipeline orchestrator such as Kubeflow Pipelines, Apache Airflow, and MLflow. To scale, tune, and manage TFX beyond a single node, we should understand Apache Beam, which powers TFX’s distributed data processing.
 ***
 
 ## Dashboard
