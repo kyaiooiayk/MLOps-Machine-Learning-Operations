@@ -3,6 +3,8 @@
 
 ## What is it?
 - Heroku is **PaaS** (Platform as a service app) which enables developers to deploy their applications on the web and it does offer a free plan!
+- Heroku prices its services in “dynos,” containers that run and scale Heroku apps. Your cost increases as the app scales vertically or horizontally with more dynos. Most applications running on Heroku require more than one dyno to run flawlessly.
+- Even though Heroku has been around for a long time, it is not as large as Google and its other competitors.
 ***
 
 ## Heroku vs. AWS
