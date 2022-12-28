@@ -7,6 +7,7 @@
 
 ## Heroku vs. AWS
 - Heroku is based on AWS and its services are simpler to use than those offered by AWS. AWS offers Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Heroku offers only Platform as a service (PaaS).
+- Heroku uses AWS infrastructure, which costs lots of money to deploy its apps.
 ***
 
 ## When to use Heroku over AWS?
@@ -31,4 +32,5 @@
 - [Model deployment using flask and heroku](https://towardsdatascience.com/model-deployment-using-flask-c5dcbb6499c9)
 - [Difference between AWS and Heroku](https://www.geeksforgeeks.org/difference-between-aws-and-heroku/)
 - [Heroku announces plans to eliminate free plans, blaming ‘fraud and abuse’](https://techcrunch.com/2022/08/25/heroku-announces-plans-to-eliminate-free-plans-blaming-fraud-and-abuse/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvLnVrLw&guce_referrer_sig=AQAAAF3Oihid3WMeeS7rIr6OqgHh3V-BfrTGPLglf5WPDNJZ-Kscxy4ui1MYiGJGURia936WAassVrQO26h6BiX2kB_jOh82AwtO5TxHDfRsQeKm_QOXMNa0t_pUOfs9Zg4mSDcp2ysvOSpCEaIT0uzF4V0pvXG8Q-Y1pgE1xKeEQGzF)
+- [Heroku alternatives](https://blog.back4app.com/heroku-alternatives/)
 ***
