@@ -4,16 +4,26 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ![image](https://user-images.githubusercontent.com/89139139/148684996-107b35e5-7136-4842-a132-119db6ee48ce.png)
 ***
 
+## Big data
+- Hadoop
+- [[Apache Spark](https://spark.apache.org/) | [Notes](https://github.com/kyaiooiayk/pySpark-Notes)]
+***
+
 ## Data Engineering - Pipelines
 - Apache Nifi
-- [[Apache Spark](https://spark.apache.org/) | [Notes](https://github.com/kyaiooiayk/pySpark-Notes)]
 - Argo workflow
-- Azue databricks
-- Hadoop 
+- Azure databricks 
 - [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)] Apache is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. 
+- Apache Beam
 - **Kubeflow Pipelines** is an orchestration subsystem built on Kubernetes that includes an orchestration subsystem called Kubeflow Pipelines. 
 - [[MLeap](https://github.com/combust/mleap) | Notes] It allows data scientists and engineers to deploy machine learning pipelines from Spark and Scikit-learn to a portable format and execution engine. MLeap is a common serialisation format and execution engine for machine learning pipelines. 
 - [[Prefect](https://www.prefect.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Prefect)]
+
+- MLFlow is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice.
+- Kubeflow
+- [[Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFlowServing.md)]
+- AWS SageMaker
+- Tensor Flow Extended (TFX) is an open source collection of Python libraries used within a pipeline orchestrator such as Kubeflow Pipelines, Apache Airflow, and MLflow. To scale, tune, and manage TFX beyond a single node, we should understand Apache Beam, which powers TFX’s distributed data processing.
 ***
 
 ## Data validation
@@ -25,14 +35,6 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - Serialisation is the process of translating a data structure or object state into a format that can be stored or transmitted and reconstructed later. 
 - Common formats: hdf5, json, pickle, joblib, dill, ONNX
 - [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialisation)
-***
-
-## Model lifecycle | ML pipelines
-- MLFlow is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice.
-- Kubeflow
-- [[Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFlowServing.md)]
-- AWS SageMaker
-- Tensor Floe Extended (TFX) is an open source collection of Python libraries used within a pipeline orchestrator such as Kubeflow Pipelines, Apache Airflow, and MLflow. To scale, tune, and manage TFX beyond a single node, we should understand Apache Beam, which powers TFX’s distributed data processing.
 ***
 
 ## Dashboard
@@ -108,11 +110,6 @@ DevOps is a role that integrates the job scope of software developers and operat
 - Amazon redshift
 - Azure synapse
 - Google big query
-***
-
-##  Management 
-Unified analytics platform.
-- Databricks 
 ***
 
 ## Streaming
