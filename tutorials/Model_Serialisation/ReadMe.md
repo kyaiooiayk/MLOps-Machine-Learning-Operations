@@ -24,6 +24,7 @@ Serialisation is the process of translating a data structure or object state int
 - [How to save your model with ONNX](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Model_Serialisation/tutorials/GitHub_MD_rendering/How%20to%20save%20your%20model%20with%20ONNX.ipynb)
 - [Model serialisation with dill](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Model_Serialisation/tutorials/GitHub_MD_rendering/Model%20serialisation%20with%20dill.ipynb)
 - [Save and load ML models](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Model_Serialisation/tutorials/GitHub_MD_rendering/Save%20and%20load%20ML%20models.ipynb)
+- [Model serialisation with pickle, joblib, skops]()
 ***
 
 ## References
