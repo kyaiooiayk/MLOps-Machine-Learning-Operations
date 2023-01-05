@@ -144,4 +144,5 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [What is an MLOps Engineer?](https://www.kdnuggets.com/2022/03/mlops-engineer.html)
 - [Google Rules of Machine Learning: Best Practices for ML Engineering](https://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)
 - [Top 10 MLOps Tools to Optimize & Manage Machine Learning Lifecycle](https://www.kdnuggets.com/2022/10/top-10-mlops-tools-optimize-manage-machine-learning-lifecycle.html)
+- [The MLOps Blog run by neptune.ai](https://neptune.ai/blog)
 ***
