@@ -151,4 +151,5 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [Top 10 MLOps Tools to Optimize & Manage Machine Learning Lifecycle](https://www.kdnuggets.com/2022/10/top-10-mlops-tools-optimize-manage-machine-learning-lifecycle.html)
 - [The MLOps Blog run by neptune.ai](https://neptune.ai/blog)
 - [Awesome production machine learning](https://github.com/EthicalML/awesome-production-machine-learning/blob/master/README.md)
+- [Best End-to-End MLOps Platforms comparison](https://neptune.ai/blog/end-to-end-mlops-platforms)
 ***
