@@ -46,8 +46,8 @@ Model deployment is the endpoint of a data science workflow. Models can be deplo
 ***
 
 ## Available tutorials
-- [k-means app]()
-- [Diabete prediction app]()
+- [k-means app](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit/tutorials/K-means_app)
+- [Diabete prediction app](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit/tutorials/Diabete_prediction_app)
 ****
 
 ## References
