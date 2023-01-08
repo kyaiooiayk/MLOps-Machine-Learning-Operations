@@ -1,4 +1,0 @@
-pandas==1.2.4
-joblib==0.17.0
-streamlit==0.87.0
-Pillow==8.3.1
