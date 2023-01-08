@@ -49,13 +49,19 @@ You essentially have two options:
 
 ## DevOps
 DevOps is a role that integrates the job scope of software developers and operations teams to automate workflows.
-- [ Git | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
-- [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]
+
 - Maven : it is used to create deployment package.
 - [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/Docker-Notes)]
 - [[Kubernets](https://kubernetes.io/) | [Notes](https://github.com/kyaiooiayk/Kubernetes-Notes)]
 - [Packaging | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Packaging)]
 - [[Apache Jmeter](https://jmeter.apache.org/) |[Notes](https://github.com/ethen8181/machine-learning/tree/master/model_deployment/fastapi_kubernetes)]
+***
+
+## CI/CD
+In modern software development teams, continuous integration (CI) and continuous deployment (CD) are standard practices.  CI is about how the project should be built and tested in various runtimes, automatically and continuously. CD is needed so that every new bit of code that passes automated testing can be released into production with no extra effort. 
+- [ Git | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
+- [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]
+- [CI/CD tools comparison](https://neptune.ai/blog/continuous-integration-continuous-deployment-tools-for-machine-learning)
 ***
 
 ## Application Framework/Model Deployment
