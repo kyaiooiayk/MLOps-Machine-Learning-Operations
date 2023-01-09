@@ -2,12 +2,15 @@
 ***
 
 ## What is model serialisation?
-Serialisation is the process of translating a data structure or object state into a format that can be stored (for example, in a file or memory data buffer) or transmitted (for example, over a computer network) and reconstructed later (possibly in a different computer environment). In other words, serializing is a way to write a python object on the disk that can be transferred anywhere and later de-serialized (read) back by a python script.
+- Serialisation is the process of translating a data structure or object state into a format that can be stored (for example, in a file or memory data buffer) or transmitted (for example, over a computer network) and reconstructed later (possibly in a different computer environment).
+- In other words, serializing is a way to write a python object on the disk that can be transferred anywhere and later de-serialized (read) back by a python script.
+- The reason for that is that the ML model iself should be rendered executable as an independent asset: a Scikit-learn model shoudl be run in a Spark job.  - Essentially, serialisation rended the model language-trained-agnostic and not vendor-specific.
 ***
 
 ## Available formats
 - **Sklearn** recommends using the `joblib` package
-- **Pytorch**'s load and save methods use python’s built-in `pickle` module, 
+- **Pytorch**'s load and save methods by using their proprietary Torch Script as a `.pt` file. 
+- **TensorFlow** saves models as `.pb` files; which is the protocol buffer files extension.
 - **Keras** supports exporting in `hdf5` format. 
 - There is also an alternative serialization package `dill` which generalizes pickle at the cost of performance.
 ***
@@ -30,5 +33,6 @@ Serialisation is the process of translating a data structure or object state int
 ## References
 - [Machine Learning Model Serialization](https://flynn.gg/blog/machine-learning-model-serialization/)
 - [Serialization Wiki](https://en.wikipedia.org/wiki/Serialization)
-- [How to easily deploy machine learning models using flask](https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4) 
+- [How to easily deploy machine learning models using flask](https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4)
+- [Three Levels of ML Software](https://ml-ops.org/content/three-levels-of-ml-software)
 ***
