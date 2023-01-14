@@ -78,6 +78,7 @@ In modern software development teams, continuous integration (CI) and continuous
 - [[Streamlit](https://streamlit.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
 - [[Electron](https://www.electronjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Electron.md)]
 - [[Dash](https://plotly.com/building-machine-learning-web-apps-in-python/)]
+- [[Gradio](https://github.com/gradio-app/gradio)]
 ***
 
 ## Cloud computing
