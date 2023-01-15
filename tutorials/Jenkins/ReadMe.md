@@ -19,6 +19,8 @@
 ***
 
 ## GitHub Actions vs. Jenkins
+- Since GitHub Actions is a fully managed service by GitHub, you don’t need to know how to scale and operate the infrastructure to run it, whereas with Jenkins you have to manage it.
+- If you already use Github, never used Jenkins before and you are about to lean about CI/CD then GitHub Actions seems to be a natural choice.
 ***
 
 ## References
