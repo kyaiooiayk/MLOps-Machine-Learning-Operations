@@ -18,7 +18,11 @@
 - "Distributed version control system", "Efficient branching and merging" and "Fast" are the key factors why developers consider Git; whereas "Hosted internally", "Free open source" and "Great to build, deploy or launch anything async" are the primary reasons why Jenkins is favored.
 ***
 
+## GitHub Actions vs. Jenkins
+***
+
 ## References
 - [GitLab Differentiators](https://about.gitlab.com/devops-tools/jenkins-vs-gitlab/gitlab-differentiators/)
 - [Git vs Jenkins](https://stackshare.io/stackups/git-vs-jenkins)
+- [Github Actions or Jenkins?](https://blog.bitsrc.io/github-actions-or-jenkins-making-the-right-choice-for-you-9ac774684c8)
 ***
