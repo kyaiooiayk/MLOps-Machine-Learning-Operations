@@ -60,7 +60,7 @@ DevOps is a role that integrates the job scope of software developers and operat
 
 ## CI/CD
 In modern software development teams, continuous integration (CI) and continuous deployment (CD) are standard practices.  CI is about how the project should be built and tested in various runtimes, automatically and continuously. CD is needed so that every new bit of code that passes automated testing can be released into production with no extra effort. 
-- [[GitHub Actions](https://github.com/features/actions) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials)]
+- [[GitHub Actions](https://github.com/features/actions) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/GitHub_Actions.md)]
 - [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]
 - [CI/CD tools comparison](https://neptune.ai/blog/continuous-integration-continuous-deployment-tools-for-machine-learning)
 ***
