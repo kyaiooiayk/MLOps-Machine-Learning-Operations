@@ -82,7 +82,7 @@ In modern software development teams, continuous integration (CI) and continuous
 
 ## Public server deployment
 - [[Heroku](https://www.heroku.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku)]
-- [[PythonAnywhere](https://www.pythonanywhere.com/) | [Notes]()]
+- [[PythonAnywhere](https://www.pythonanywhere.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials)]
 ***
 
 ## Cloud computing
