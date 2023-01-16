@@ -6,6 +6,15 @@
 - In this respository most of the topics are related to ML models deployment.
 ***
 
+### CPU-only
+- If you are planning to use pythonanywhere to host your ML application, keep in mind that inference must be done on CPU-only as GPU-inferece are not offered at the time of writing.
+***
+
+## Available tutorials
+- [Bitcoint price predictor](https://medium.com/analytics-vidhya/how-to-deploy-simple-machine-learning-models-for-free-56cdccc62b8d)
+- [Salary regressor](https://medium.com/@kaustuv.kunal/how-to-deploy-and-host-machine-learning-model-de8cfe4de9c5)
+***
+
 ## References
 - [pythonanywhere official website](https://www.pythonanywhere.com/)
 ***
