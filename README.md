@@ -74,11 +74,15 @@ In modern software development teams, continuous integration (CI) and continuous
 - [[React](https://reactjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/React)]
 - Redis
 - [[FastAPI](https://fastapi.tiangolo.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/FastAPI)]
-- [[Heroku](https://www.heroku.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku)]
 - [[Streamlit](https://streamlit.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
 - [[Electron](https://www.electronjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Electron.md)]
 - [[Dash](https://plotly.com/building-machine-learning-web-apps-in-python/)]
 - [[Gradio](https://github.com/gradio-app/gradio)]
+***
+
+## Public server deployment
+- [[Heroku](https://www.heroku.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku)]
+- [[PythonAnywhere](https://www.pythonanywhere.com/) | [Notes]()]
 ***
 
 ## Cloud computing
