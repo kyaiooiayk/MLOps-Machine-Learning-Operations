@@ -12,7 +12,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ## Data Engineering - Pipelines
 - Apache Nifi
 - Argo workflow
-- Azure databricks 
+- [Azure databricks](https://azure.microsoft.com/en-us/products/databricks/) is a fast, easy, and collaborative Apache Spark-based big data analytics service designed for data science and data engineering.
 - [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)] Apache is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. 
 - [Apache Beam](https://beam.apache.org/) is an open source tool for defining and executing data-processing jobs. Apache Beam can be used to describe batch processes, streaming operations, and data pipelines. In fact, TFX relies on Apache Beam and uses it under the hood for a variety of components (e.g., TensorFlow Transform or TensorFlow Data Validation). You can run the same data pipeline on Apache Spark or Google Cloud Dataflow without a single change in the pipeline description. Also, Apache Beam was not just developed to describe batch processes but to support streaming operations seamlessly.  
 - **[Kubeflow](https://www.kubeflow.org/) Pipelines** is an orchestration subsystem built on Kubernetes that includes an orchestration subsystem called Kubeflow Pipelines. 
@@ -114,10 +114,10 @@ In modern software development teams, continuous integration (CI) and continuous
 - Looker
 - Stitch
 - DBT
-- Snowflake
+- [Snowflake](https://www.snowflake.com/en/) - offers a cloud-based data storage and analytics service, generally termed "data-as-a-service".
 - Amazon redshift
 - Azure synapse
-- Google big query
+- [Google bigquery](https://cloud.google.com/bigquery/?utm_source=google&utm_medium=cpc&utm_campaign=emea-gb-all-en-dr-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_253506573802-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Data%20Analytics%20~%20BigQuery%23v7-KWID_43700053283817151-kwd-63326440124-userloc_9045312&utm_term=KW_google%20bigquery-NET_g-PLAC_&gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT9ZSudPHNYsr7-5adSmRpuTJFpoQjr1_MfOWqoObOa8cA-6KXYMlzgaApS5EALw_wcB&gclsrc=aw.ds) is a fully managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service
 ***
 
 ## Streaming
