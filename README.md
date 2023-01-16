@@ -21,7 +21,8 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - MLFlow is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice.
 - Kubeflow
 - [[Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFlowServing.md)]
-- AWS SageMaker
+- AWS SageMaker - Amazon SageMaker is a cloud machine-learning platform that was launched in November 2017. SageMaker enables developers to create, train, and deploy machine-learning models in the cloud. SageMaker also enables developers to deploy ML models on embedded systems and edge-devices.
+- Google Vertex AI - diret competitor of AWS SageMaker
 - [Tensor Flow Extended (TFX)](https://www.tensorflow.org/tfx) is an open source collection of Python libraries used within a pipeline orchestrator such as Kubeflow Pipelines, Apache Airflow, and MLflow.
 ***
 
