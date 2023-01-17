@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base ML model</title>
+     <style>
+        body {
+            background-color: #E6E6FA
+            }
+    </style>
+</head>
+<body>
+        <h1> Predict standard salary from candidate  experience </h1>
+         <form action = {{ url_for('make_prediction')}} method = "post">
+          <p>Enter candidate experience (in yrs):</p>
+         <p><input type="float" name = "exp" pattern="[+-]?([0-9]*[.])?[0-9]+" oninvalid="setCustomValidity('Plz enter a valid experience value')"
+    onchange="try{setCustomValidity('')}catch(e){}" /></p>
+         <p><input type = "submit" value="predict"/>   </p>
+      </form>
+
+        <br></br>
+        <h3>{{ prediction_text }} </h3>
+
+</body>
+</html>
+
