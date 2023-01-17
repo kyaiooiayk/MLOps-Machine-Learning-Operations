@@ -83,7 +83,7 @@ In modern software development teams, continuous integration (CI) and continuous
 ## Public server deployment
 - [[Heroku](https://www.heroku.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku)] - allows access directly to your GitHub account
 - [[PythonAnywhere](https://www.pythonanywhere.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/pythonanywhere)] - does not allow access directly to your GitHub account
-- [[Netlify](https://www.netlify.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials)] - allows access directly to your GitHub account
+- [[Netlify](https://www.netlify.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Netlify.md)] - allows access directly to your GitHub account
 ***
 
 ## Cloud computing
