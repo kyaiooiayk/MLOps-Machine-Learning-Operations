@@ -11,10 +11,11 @@
 ***
 
 ## Available tutorials
-- [Bitcoin price predictor](https://medium.com/analytics-vidhya/how-to-deploy-simple-machine-learning-models-for-free-56cdccc62b8d)
-- [Salary regressor](https://medium.com/@kaustuv.kunal/how-to-deploy-and-host-machine-learning-model-de8cfe4de9c5)
+- [Salary regressor](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/pythonanywhere/tutorials/Salary%20regressor)
 ***
 
 ## References
 - [pythonanywhere official website](https://www.pythonanywhere.com/)
+- [Bitcoin price predictor](https://medium.com/analytics-vidhya/how-to-deploy-simple-machine-learning-models-for-free-56cdccc62b8d)
+- [Salary regressor](https://medium.com/@kaustuv.kunal/how-to-deploy-and-host-machine-learning-model-de8cfe4de9c5)
 ***
