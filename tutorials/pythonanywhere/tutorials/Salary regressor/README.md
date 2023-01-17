@@ -1,10 +1,9 @@
 # Basic ML Model deployment using Flask
 Tutorial for Deploying a Basic ML model using flask
-
-### Hosted Application: http://kaustuv.pythonanywhere.com/
+***
 
 ## Steps #1 - Install package locally
-- Create a clean new virutal environment:
+- Create a clean new virtual environment:
 - `pip install joblib`
 - `pip install Flask`
 - `pip install numpy`
