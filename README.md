@@ -146,7 +146,7 @@ In modern software development teams, continuous integration (CI) and continuous
 ***
 
 ## Servers
-- [[uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/)] is an application server that aims to provide a full stack for developing and deploying web applications and services. It is named after the Web Server Gateway Interface, which was the first plugin supported by the project.
+- [[uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/)] stands for Web Server Gateway Interface and is an application server that aims to provide a full stack for developing and deploying web applications and services. It is named after the Web Server Gateway Interface, which was the first plugin supported by the project.
 - [[Nginx](https://www.nginx.com/)] is a web server that can also be used as a reverse proxy (which provides a more robust connection handling), load balancer, mail proxy and HTTP cache.
 ***
 
