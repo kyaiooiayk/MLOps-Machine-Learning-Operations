@@ -4,15 +4,16 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ![image](https://user-images.githubusercontent.com/89139139/148684996-107b35e5-7136-4842-a132-119db6ee48ce.png)
 ***
 
-<details open>
-<summary> Want to ruin the surprise?</summary>
-
-Well, you asked for it!
-</details>
-
 ## Big data
+<details>
+<summary> See tools</summary>
+<br>
+ 
 - Hadoop
 - [[Apache Spark](https://spark.apache.org/) | [Notes](https://github.com/kyaiooiayk/pySpark-Notes)]
+
+</details>
+
 ***
 
 ## Data Engineering - Pipelines
