@@ -6,7 +6,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 
 ## Big data
 <details>
-<summary> See tools</summary>
+<summary> See tools/options</summary>
 <br>
  
 - Hadoop
