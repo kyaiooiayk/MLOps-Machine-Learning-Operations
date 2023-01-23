@@ -107,10 +107,10 @@ In modern software development teams, continuous integration (CI) and continuous
 ***
 
 ## Relational Database
-- RDB (relational database) is a database that stores data into tables with rows and columns.
-- How to turn SQL-like into a map-reduce job that can run on a distributed file system. This is essentially what we mean by relational database at scale.
-- [Hive | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
-- Pig (less popular than Hive)
+- RDB (relational database) is a database that stores data into tables with rows and columns. To be able to process SQL queries on huge volumes of data that is stored in Hadoop cluster, specialised tools are needed. Here are some option for massive parallel processing.
+- [[Hive](https://hive.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
+- [Pig](https://pig.apache.org/) (less popular than Hive)
+- [Impala](https://impala.apache.org/docs/build/html/topics/impala_langref.html)
 ***
 
 ## Data warehouse tools
