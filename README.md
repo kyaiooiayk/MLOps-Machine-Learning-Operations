@@ -51,8 +51,8 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 
 ## Deployment options
 You essentially have two options:
- - If our application requires **low latency**, then we should deploy the model as a real- time API to provide super-fast predictions on single prediction requests over HTTPS, for example. We can deploy, scale, and compare our model prediction servers with SageMaker Endpoints using the REST API protocol with HTTPS and JSON.
- - For **less-latency-sensitive** applications that require high throughput, we should deploy our model as a batch job to perform batch predictions on large amounts of data in S3, for example. We will use SageMaker Batch Transform to perform the batch predictions along with a data store like Amazon RDS or DynamoDB to productionize the predictions,
+ - If our application requires **low latency**, then we should deploy the model as a real-time API to provide super-fast predictions on single prediction requests over HTTPS.
+ - For **less-latency-sensitive** applications that require high throughput, we should deploy our model as a batch job to perform batch predictions on large amounts of data.
 ***
 
 ## DevOps
@@ -62,7 +62,7 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/Docker-Notes)]
 - [[Kubernets](https://kubernetes.io/) | [Notes](https://github.com/kyaiooiayk/Kubernetes-Notes)]
 - [Packaging | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Packaging)]
-- [[Apache Jmeter](https://jmeter.apache.org/) |[Notes](https://github.com/ethen8181/machine-learning/tree/master/model_deployment/fastapi_kubernetes)]
+- [Apache Jmeter](https://jmeter.apache.org/)
 - [ Git | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
 ***
 
