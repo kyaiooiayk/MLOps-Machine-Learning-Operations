@@ -121,8 +121,7 @@ In modern software development teams, continuous integration (CI) and continuous
 **Data warehouse** exists on top of several databases and used for business intelligence. Data warehouse consumes data from all these databases and creates a layer optimized to perform data analytics. 
 
 **Data lake** uses a flat architecture. Every bit of data in the lake has a unique ID and is tagged with sets of extended metadata tags. A data lake is a centralized repository for structured and unstructured data storage.  Data lakes could be used to store raw data as is without any structure (schema).  There is no need to perform any ETL or transformation jobs on it.  You can store many types of data such images, text, files, videos. 
-- MongoDB
-
+- [MongoDB](https://www.mongodb.com/) is classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. 
 - CosmosDB
 - Looker
 - Stitch
