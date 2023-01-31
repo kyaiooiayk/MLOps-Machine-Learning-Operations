@@ -6,17 +6,20 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 
 ## Big data
 <details>
-<summary> See tools/options</summary>
+<summary>Expand ⬇️</summary>
 <br>
  
 - Hadoop
 - [[Apache Spark](https://spark.apache.org/) | [Notes](https://github.com/kyaiooiayk/pySpark-Notes)]
-
 </details>
 
 ***
 
 ## Data Engineering - Pipelines
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - Apache Nifi
 - Argo workflow
 - [Databricks](https://www.databricks.com/) develops a web-based platform for working with Spark, that provides automated cluster management and IPython-style notebooks. | [Databricks vs. Azure databricks](https://www.websitebuilderinsider.com/is-azure-databricks-same-as-databricks/)
@@ -33,32 +36,61 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - AWS SageMaker - Amazon SageMaker is a cloud machine-learning platform that was launched in November 2017. SageMaker enables developers to create, train, and deploy machine-learning models in the cloud. SageMaker also enables developers to deploy ML models on embedded systems and edge-devices.
 - Google Vertex AI - diret competitor of AWS SageMaker
 - [Tensor Flow Extended (TFX)](https://www.tensorflow.org/tfx) is an open source collection of Python libraries used within a pipeline orchestrator such as Kubeflow Pipelines, Apache Airflow, and MLflow.
+</details>
+
 ***
 
 ## Data validation
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - [[Pandera](https://pandera.readthedocs.io/en/stable/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Data_validation/Pandera)]
 - [[Great Expectations](https://greatexpectations.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Data_validation/Great_expectations)]
+</details>
+
 ***
 
 ## Model serialisation
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - Serialisation is the process of translating a data structure or object state into a format that can be stored or transmitted and reconstructed later. 
 - Common formats: hdf5, json, pickle, joblib, dill, ONNX
 - [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialisation)
+</details>
+
 ***
 
 ## Dashboard
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - Bokeh
 - Plotly
+</details>
+
 ***
 
 ## Deployment options
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 You essentially have two options:
  - If our application requires **low latency**, then we should deploy the model as a real-time API to provide super-fast predictions on single prediction requests over HTTPS.
  - For **less-latency-sensitive** applications that require high throughput, we should deploy our model as a batch job to perform batch predictions on large amounts of data.
+</details>
+
 ***
 
 ## DevOps
 DevOps is a role that integrates the job scope of software developers and operations teams to automate workflows.
+<details>
+<summary>Expand ⬇️</summary>
+<br>
 
 - Maven : it is used to create deployment package.
 - [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/Docker-Notes)]
@@ -66,16 +98,28 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [Packaging | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Packaging)]
 - [Apache Jmeter](https://jmeter.apache.org/)
 - [ Git | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
+</details>
+
 ***
 
 ## CI/CD
 In modern software development teams, continuous integration (CI) and continuous deployment (CD) are standard practices.  CI is about how the project should be built and tested in various runtimes, automatically and continuously. CD is needed so that every new bit of code that passes automated testing can be released into production with no extra effort. 
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - [[GitHub Actions](https://github.com/features/actions) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/GitHub_Actions.md)]
 - [[Jenkins](https://www.jenkins.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Jenkins)]
 - [CI/CD tools comparison](https://neptune.ai/blog/continuous-integration-continuous-deployment-tools-for-machine-learning)
+</details>
+
 ***
 
 ## Application Framework/Model Deployment
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - Django
 - [[Flask](https://flask.palletsprojects.com/en/2.1.x/) | [Notes](https://github.com/kyaiooiayk/Flask-Notes)]
 - [[Node.js]() | Notes]
@@ -87,32 +131,58 @@ In modern software development teams, continuous integration (CI) and continuous
 - [[Electron](https://www.electronjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Electron.md)]
 - [[Dash](https://plotly.com/building-machine-learning-web-apps-in-python/)]
 - [[Gradio](https://github.com/gradio-app/gradio)]
+</details>
+
 ***
 
 ## Public server deployment
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - [[Heroku](https://www.heroku.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Heroku)] - allows access directly to your GitHub account
 - [[PythonAnywhere](https://www.pythonanywhere.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/pythonanywhere)] - does not allow access directly to your GitHub account
 - [[Netlify](https://www.netlify.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Netlify.md)] - allows access directly to your GitHub account
+</details>
+
 ***
 
 ## Cloud computing
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - Cloud computing is a name which refers to cluster machines on the cloud. 
 - **Bare-metal** cloud is a public cloud service where the customer rents dedicated hardware resources from a remote service provider, without (hence bare) any installed operating systems or virtualization infrastructure.
 - [[AWS (Amazon Web Services)](https://aws.amazon.com/?nc2=h_lg) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/AWS)]
 - [[Microsoft Azure](https://azure.microsoft.com/en-gb/) | Notes]
 - [[GCP (Google Cloud Platform)](https://cloud.google.com/) | Notes]
+</details>
+
 ***
 
 ## Edge computing
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - Edge computing referes to computation done on edge devices, meaning consumer devices. Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data.
 - [TensorFlow Lite | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFLowLite.md)]
+</details>
+
 ***
 
 ## Relational Database
 - RDB (relational database) is a database that stores data into tables with rows and columns. To be able to process SQL queries on huge volumes of data that is stored in Hadoop cluster, specialised tools are needed. Here are some option for massive parallel processing.
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - [[Hive](https://hive.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
 - [Pig](https://pig.apache.org/) (less popular than Hive)
 - [Impala](https://impala.apache.org/docs/build/html/topics/impala_langref.html)
+</details>
+
 ***
 
 ## Data warehouse tools
@@ -121,6 +191,10 @@ In modern software development teams, continuous integration (CI) and continuous
 **Data warehouse** exists on top of several databases and used for business intelligence. Data warehouse consumes data from all these databases and creates a layer optimized to perform data analytics. 
 
 **Data lake** uses a flat architecture. Every bit of data in the lake has a unique ID and is tagged with sets of extended metadata tags. A data lake is a centralized repository for structured and unstructured data storage.  Data lakes could be used to store raw data as is without any structure (schema).  There is no need to perform any ETL or transformation jobs on it.  You can store many types of data such images, text, files, videos. 
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - [MongoDB](https://www.mongodb.com/) is classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. 
 - CosmosDB
 - Looker
@@ -130,32 +204,64 @@ In modern software development teams, continuous integration (CI) and continuous
 - Amazon redshift
 - Azure synapse
 - [Google bigquery](https://cloud.google.com/bigquery/?utm_source=google&utm_medium=cpc&utm_campaign=emea-gb-all-en-dr-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_253506573802-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Data%20Analytics%20~%20BigQuery%23v7-KWID_43700053283817151-kwd-63326440124-userloc_9045312&utm_term=KW_google%20bigquery-NET_g-PLAC_&gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT9ZSudPHNYsr7-5adSmRpuTJFpoQjr1_MfOWqoObOa8cA-6KXYMlzgaApS5EALw_wcB&gclsrc=aw.ds) is a fully managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service
+</details>
+
 ***
 
 ## Streaming
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - [Apache Kafka](https://kafka.apache.org/) is a distributed event store and stream-processing platform. It is an open-source system developed by the Apache Software Foundation written in Java and Scala. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds. 
 - Google Dataflow
+</details>
+
 ***
 
 ## Schedulers
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - [5 ways to schedule Jupyter Notebook](https://mljar.com/blog/schedule-jupyter-notebook/)
+</details>
+
 ***
 
 ## RESTful APIs & Microservices
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - **Microservices** function as the “building‐blocks” of the application by performing various services.
 - **RESTful APIs** function as the “glue” that integrates the microservices into an application.
 - [NOTES](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/RESTful%20APIs%20%26%20Microservices)
+</details>
+
 ***
 
 ## Version control system (VCS)
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - Version control system (VCS) also known as revision control or source control, records and manages changes to files and folders. [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/VCS/VCS.md)
 - [[Hydra](https://hydra.cc/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/VCS/Hydra)]
 - [[DVC](https://dvc.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/VCS/DVC)]
+</details>
+
 ***
 
 ## Servers
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
 - [[uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/)] stands for Web Server Gateway Interface and is an application server that aims to provide a full stack for developing and deploying web applications and services. It is named after the Web Server Gateway Interface, which was the first plugin supported by the project.
 - [[Nginx](https://www.nginx.com/)] is a web server that can also be used as a reverse proxy (which provides a more robust connection handling), load balancer, mail proxy and HTTP cache.
+</details>
+
 ***
 
 ## References
