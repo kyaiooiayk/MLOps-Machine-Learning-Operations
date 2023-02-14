@@ -193,7 +193,7 @@ RDB (relational database) is a database that stores data into tables with rows a
 <br>
 
 - Document:
-  - [MongoDB](https://www.mongodb.com/) is an open-source, document database designed for ease of development and scaling. 
+  - [MongoDB](https://www.mongodb.com/) is an open-source, document database designed for ease of development and scaling. It is classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. 
   - [Elastic](https://www.elastic.co/) search & analyze data in real time.
 - Wide column:
   - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is the right choice when you need scalability and high availability without compromising performance.
@@ -218,19 +218,15 @@ RDB (relational database) is a database that stores data into tables with rows a
 <details>
 <summary>Expand ⬇️</summary>
 <br>
-
-- [MongoDB](https://www.mongodb.com/) is classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. 
-- CosmosDB
-- Looker
-- Stitch
-- DBT
+ 
 - [Snowflake](https://www.snowflake.com/en/) - offers a cloud-based data storage and analytics service, generally termed "data-as-a-service".
-- Amazon redshift
-- Azure synapse
+- [Presto](https://prestodb.io/) is an open source SQL query engine that's fast, reliable, and efficient at scale. Use Presto to run interactive/ad hoc queries at sub-second performance for your high volume apps.
+- [Amazon Redshift](https://aws.amazon.com/redshift/) uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.
+- [Azure Synapse](https://azure.microsoft.com/en-us/products/synapse-analytics/) is a limitless analytics service that brings together data integration, enterprise data warehousing, and big data analytics. It gives you the freedom to query data on your terms, using either serverless or dedicated options—at scale
 - [Google bigquery](https://cloud.google.com/bigquery/?utm_source=google&utm_medium=cpc&utm_campaign=emea-gb-all-en-dr-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_253506573802-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Data%20Analytics%20~%20BigQuery%23v7-KWID_43700053283817151-kwd-63326440124-userloc_9045312&utm_term=KW_google%20bigquery-NET_g-PLAC_&gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT9ZSudPHNYsr7-5adSmRpuTJFpoQjr1_MfOWqoObOa8cA-6KXYMlzgaApS5EALw_wcB&gclsrc=aw.ds) is a fully managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service
-- [[Hive](https://hive.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
+- [[Apache Hive](https://hive.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
 - [Pig](https://pig.apache.org/) (less popular than Hive)
-- [Impala](https://impala.apache.org/docs/build/html/topics/impala_langref.html)
+- [Apache Impala](https://impala.apache.org/docs/build/html/topics/impala_langref.html)
 </details>
 
 ***
