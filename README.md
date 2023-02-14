@@ -188,6 +188,8 @@ RDB (relational database) is a database that stores data into tables with rows a
 ***
 
 ## Non-relational Database
+Nonrelational “NoSQL” databases or also "not only SQL" represent data in tables, instead data is stored as key value pairs, wide-columns or graphs. The need for NoSQL databases is especially prevalent when you have a real-time system. NoSQL databases perform and scale best when your schema is designed to model the application’s access patterns, the frequency with which those patterns are called, and the velocity of access. The goal should be to precompute the answers to these access patterns, and only rarely ask questions of the data (ad hoc querying). This is true whether the data is key/value, wide column, or JSON document store. 
+
 <details>
 <summary>Expand ⬇️</summary>
 <br>
