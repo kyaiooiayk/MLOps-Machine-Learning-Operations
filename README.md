@@ -186,6 +186,20 @@ In modern software development teams, continuous integration (CI) and continuous
 
 ***
 
+## Non-relational Database
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
+- Document
+- Wide column
+- Graph
+- Key-value
+</details>
+
+***
+
+
 ## Data warehouse tools
 **Databases** are typically structured with a defined schema. Items are organized as a set of tables with columns and rows. Columns include attributes and rows indicate an object or entity. Database is typically designed to be transactional and they are not designed to perform data analytics. 
 
@@ -205,6 +219,18 @@ In modern software development teams, continuous integration (CI) and continuous
 - Amazon redshift
 - Azure synapse
 - [Google bigquery](https://cloud.google.com/bigquery/?utm_source=google&utm_medium=cpc&utm_campaign=emea-gb-all-en-dr-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_253506573802-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Data%20Analytics%20~%20BigQuery%23v7-KWID_43700053283817151-kwd-63326440124-userloc_9045312&utm_term=KW_google%20bigquery-NET_g-PLAC_&gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT9ZSudPHNYsr7-5adSmRpuTJFpoQjr1_MfOWqoObOa8cA-6KXYMlzgaApS5EALw_wcB&gclsrc=aw.ds) is a fully managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service
+</details>
+
+***
+
+## Object storage
+<details>
+<summary>Expand ⬇️</summary>
+<br>
+
+- AWS S3
+- Azure Blob Storage
+- Google Cloud Storage
 </details>
 
 ***
