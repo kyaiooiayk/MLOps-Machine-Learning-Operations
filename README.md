@@ -174,14 +174,15 @@ In modern software development teams, continuous integration (CI) and continuous
 ***
 
 ## Relational Database
-- RDB (relational database) is a database that stores data into tables with rows and columns. To be able to process SQL queries on huge volumes of data that is stored in Hadoop cluster, specialised tools are needed. Here are some option for massive parallel processing.
+RDB (relational database) is a database that stores data into tables with rows and columns. To be able to process SQL queries on huge volumes of data that is stored in Hadoop cluster, specialised tools are needed.
 <details>
 <summary>Expand ⬇️</summary>
 <br>
 
-- [[Hive](https://hive.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
-- [Pig](https://pig.apache.org/) (less popular than Hive)
-- [Impala](https://impala.apache.org/docs/build/html/topics/impala_langref.html)
+- [MySQL](https://www.mysql.com/) is the world's most popular open source database.
+- [PostgreSQL](https://www.postgresql.org/) is the world's most advanced open source database.
+- [MariaDB](https://mariadb.org/) is an enhanced, drop-in replacement for MySQL.
+- [Amazon RDS](https://aws.amazon.com/rds/) makes it easy to set up, operate, and scale a relational database in the cloud.
 </details>
 
 ***
@@ -191,14 +192,22 @@ In modern software development teams, continuous integration (CI) and continuous
 <summary>Expand ⬇️</summary>
 <br>
 
-- Document
-- Wide column
+- Document:
+  - [MongoDB](https://www.mongodb.com/) is an open-source, document database designed for ease of development and scaling. 
+  - [Elastic](https://www.elastic.co/) search & analyze data in real time.
+- Wide column:
+  - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is the right choice when you need scalability and high availability without compromising performance.
+  - [Apache HBase](https://hbase.apache.org/) is the Hadoop database, a distributed, scalable, big data store.
+  - [Google Bigtable](https://cloud.google.com/bigtable) is a fully managed wide-column and key-value NoSQL database service for large analytical and operational workloads
 - Graph
+  - [Neo4j](https://neo4j.com/) is the world’s leading graph database.
 - Key-value
+  - [Redis](https://redis.io/) is an open source, BSD licensed, advanced key-value cache and store.
+  - [Google Bigtable](https://cloud.google.com/bigtable) is a fully managed wide-column and key-value NoSQL database service for large analytical and operational workloads
+   - [AWS DynamoDB](https://aws.amazon.com/dynamodb/) is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale.
 </details>
 
 ***
-
 
 ## Data warehouse tools
 **Databases** are typically structured with a defined schema. Items are organized as a set of tables with columns and rows. Columns include attributes and rows indicate an object or entity. Database is typically designed to be transactional and they are not designed to perform data analytics. 
@@ -219,6 +228,9 @@ In modern software development teams, continuous integration (CI) and continuous
 - Amazon redshift
 - Azure synapse
 - [Google bigquery](https://cloud.google.com/bigquery/?utm_source=google&utm_medium=cpc&utm_campaign=emea-gb-all-en-dr-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_253506573802-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Data%20Analytics%20~%20BigQuery%23v7-KWID_43700053283817151-kwd-63326440124-userloc_9045312&utm_term=KW_google%20bigquery-NET_g-PLAC_&gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT9ZSudPHNYsr7-5adSmRpuTJFpoQjr1_MfOWqoObOa8cA-6KXYMlzgaApS5EALw_wcB&gclsrc=aw.ds) is a fully managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service
+- [[Hive](https://hive.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
+- [Pig](https://pig.apache.org/) (less popular than Hive)
+- [Impala](https://impala.apache.org/docs/build/html/topics/impala_langref.html)
 </details>
 
 ***
