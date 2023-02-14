@@ -237,7 +237,7 @@ Nonrelational “NoSQL” databases or also "not only SQL" represent data in tab
 <summary>Expand ⬇️</summary>
 <br>
 
-- AWS S3
+- [AWS S3](https://aws.amazon.com/s3/)
 - Azure Blob Storage
 - Google Cloud Storage
 </details>
