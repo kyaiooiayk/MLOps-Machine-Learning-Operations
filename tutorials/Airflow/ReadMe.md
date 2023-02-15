@@ -18,13 +18,14 @@ Apache Airflow is a very mature and popular option initially developed to orches
 ***
 
 ## Weakness
-- No versioning of your data pipelines. ... 
-- Not intuitive for new users. ... 
-- Configuration overload right from the start + hard to use locally. ... 
-- Setting up Airflow architecture for production is NOT easy. ... 
-- Lack of data sharing between tasks encourages not-atomic tasks. ... 
+- No versioning of your data pipelines.
+- Not intuitive for new users.
+- Configuration overload right from the start + hard to use locally. 
+- Setting up Airflow architecture for production is NOT easy.
+- Lack of data sharing between tasks encourages not-atomic tasks.
 - Scheduler as a bottleneck.
 ***
 
 ## References
 - https://www.techtimes.com/articles/256141/20210120/what-is-apache-airflow-and-why-should-you-use-it-in-your-company.htm 
+***
