@@ -4,13 +4,18 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ![image](https://user-images.githubusercontent.com/89139139/148684996-107b35e5-7136-4842-a132-119db6ee48ce.png)
 ***
 
-## Big data
+## XaaS and the likes
+**as a Service** is a licensing model which allows access to services on a subscription basis using external servers.
 <details>
 <summary>Expand ⬇️</summary>
 <br>
- 
-- Hadoop
-- [[Apache Spark](https://spark.apache.org/) | [Notes](https://github.com/kyaiooiayk/pySpark-Notes)]
+
+- **IaaS** (Infrastructure as a Service) - base hardware and operating system. It is a method to create virtualized computing environments and rapidly scale infrastructure to meet specific organizational needs.
+- **PaaS** (Platform as a Service) - infrastructure, development tools (Node.JS, Java Git)
+- **SaaS** (Software as a Service) - infrastructure, operating system, and ready-to-use end-user applications. SaaS has many business applications, including file sharing, email, calendars, customer retention management, and human resources. SaaS  has at least have lower up-front costs) since users pay for SaaS as they go instead of purchasing multiple software licenses for multiple computers. Drawbacks to the adoption of SaaS center around data security, speed of delivery, and lack of control.
+- **IaC** (Infrastructure as a Code) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. It is a tool for provisioning and managing infrastructure and configurations for those resources. Examples: [Terraform](https://www.terraform.io/)
+- **BPaaS** (Business Process as a Service) - SaaS + business process (Accounting, Auditing)
+- **MLaaS** (Machine Learning as a Service) - SaaS + ML specific applications. Examples: [Amazon Sagemaker](https://aws.amazon.com/sagemaker/?nc=sn&loc=0&refid=811736de-a95f-4b18-b2e9-a2bad5c010f3) | [Microsoft Azure Machine Learning Studio](https://studio.azureml.net/) | [IBM Watson Machine Learning](https://www.ibm.com/cloud/watson-studio?mhsrc=ibmsearch_a&mhq=watson%20studio)
 </details>
 
 ***
@@ -258,7 +263,7 @@ Hybrid means they are able to process data in batches or continuous streaming. B
   - [Apache Pig](https://pig.apache.org/) is a high-level platform for creating programs that run on Apache Hadoop. The language for this platform is called Pig Latin. Pig can execute its Hadoop jobs in MapReduce, Apache Tez, or Apache Spark. Less popular than Hive.
   - [Apache Arrow](https://arrow.apache.org/) is a language-agnostic software framework for developing data analytics applications that process columnar data. It contains a standardized column-oriented memory format that is able to represent flat and hierarchical data for efficient analytic operations on modern CPU and GPU hardware
 - Hybrid
-  - Apache Spark
+  - [[Apache Spark](https://spark.apache.org/) | [Notes](https://github.com/kyaiooiayk/pySpark-Notes)]
   - Apache Beam
   - Apache Flink
   - Apache NiFi
