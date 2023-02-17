@@ -16,6 +16,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ***
 
 ## Data Engineering - Pipelines
+Workflow orchestration is a set of tools for scheduling and monitoring work that you want to complete. Ex: Scheduling ML models training. The purpose of workflow orchestration is to reduce mistakes and gently fail.
 <details>
 <summary>Expand ⬇️</summary>
 <br>
