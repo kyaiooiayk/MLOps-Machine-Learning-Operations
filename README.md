@@ -40,7 +40,6 @@ Workflow orchestration is a set of tools for scheduling and monitoring work that
 - **[Kubeflow](https://www.kubeflow.org/) Pipelines** is an orchestration subsystem built on Kubernetes that includes an orchestration subsystem called Kubeflow Pipelines. 
 - [[MLeap](https://github.com/combust/mleap) | Notes] It allows data scientists and engineers to deploy machine learning pipelines from Spark and Scikit-learn to a portable format and execution engine. MLeap is a common serialisation format and execution engine for machine learning pipelines. 
 - [[Prefect](https://www.prefect.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Prefect)] is an open-source data flow automation platform that aims to decrease negative engineering and simplify workflow orchestration when compared to existing products like Airflow.
-- MLFlow is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice.
 - Kubeflow
 - [[Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/TensorFlowServing.md)]
 - AWS SageMaker - Amazon SageMaker is a cloud machine-learning platform that was launched in November 2017. SageMaker enables developers to create, train, and deploy machine-learning models in the cloud. SageMaker also enables developers to deploy ML models on embedded systems and edge-devices.
@@ -68,7 +67,7 @@ Experiment tracking allows us to manage all the experiments along with their com
 <summary>Expand ⬇️</summary>
 <br>
 
-- [MLFlow](https://mlflow.org/)
+- [MLFlow](https://mlflow.org/) is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice.
 - [Comet ML](https://www.comet.com/site/) 
 - [Neptune](https://neptune.ai/)
 - [Weights and Biases](https://wandb.ai/site)
