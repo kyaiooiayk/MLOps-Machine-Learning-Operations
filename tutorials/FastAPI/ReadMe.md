@@ -8,8 +8,9 @@
 
 ## What is FastAPI?
 - FastAPI is a Python web framework that makes it easy for developers to build fast (high-performance), production-ready REST APIs. If you’re a data scientist who works mostly with Python, FastAPI is an excellent tool for deploying your models as REST APIs. 
-- FastAPI is based on Pydantic and type hints to validate, serialize, and deserialize data, and automatically auto-generate OpenAPI documents. 
+- FastAPI is based on Pydantic and type hints to validate, serialise, and deserialise data, and automatically auto-generate OpenAPI documents. 
 - It fully supports asynchronous programming and can run with Uvicorn and Gunicorn. 
+***
 
 ## FastAPI vs. Django vs. Flask
 - Django is usually used for large scale application and takes quite a bit time to set up that.
