@@ -3,7 +3,7 @@
 
 ## What is model serialisation?
 - Serialisation is the process of translating a data structure or object state into a format that can be stored (for example, in a file or memory data buffer) or transmitted (for example, over a computer network) and reconstructed later (possibly in a different computer environment).
-- In other words, serializing is a way to write a python object on the disk that can be transferred anywhere and later de-serialized (read) back by a python script.
+- In other words, serialising is a way to write a python object on the disk that can be transferred anywhere and later de-serialized (read) back by a python script.
 - The reason for that is that the ML model iself should be rendered executable as an independent asset: a Scikit-learn model shoudl be run in a Spark job.  - Essentially, serialisation rended the model language-trained-agnostic and not vendor-specific.
 ***
 
@@ -19,7 +19,7 @@
 - Here are some guidelines for serialization.
   - Use `pickle` to serialize objects with an importable hierarchy.
   - Use `joblib` for objects which contain lots of data in numpy arrays
-  - Use `dill` when pickle or joblib won’t work, or when you have custom functions that need to be serialized as part of the model. In general, dill will provide the most flexibility in terms of getting the model serialized and should be considered the path of least resistance when it comes to serializing ML models for production.
+  - Use `dill` when pickle or joblib won’t work, or when you have custom functions that need to be serialised as part of the model. In general, dill will provide the most flexibility in terms of getting the model serialised and should be considered the path of least resistance when it comes to serialising ML models for production.
 ***
 
 ## Tutorials
