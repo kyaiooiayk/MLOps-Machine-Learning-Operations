@@ -27,7 +27,9 @@
 ***
 
 ## Installation
-- Install can be done with: `pip install fastapi uvicorn`
+- Installation can be done with:
+  - `pip install fastapi`
+  - `pip install uvicorn`
 ***
 
 ## Available tutorials
