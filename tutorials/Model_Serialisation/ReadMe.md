@@ -23,12 +23,14 @@
   - Use `dill` when pickle or joblib won’t work, or when you have custom functions that need to be serialised as part of the model. In general, dill will provide the most flexibility in terms of getting the model serialised and should be considered the path of least resistance when it comes to serialising ML models for production.
 ***
 
-## Tutorials
+## Available tutorials
 - [How to save your Keras model.ipynb](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Model_Serialisation/tutorials/GitHub_MD_rendering/How%20to%20save%20your%20Keras%20model.ipynb)
 - [How to save your model with ONNX](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Model_Serialisation/tutorials/GitHub_MD_rendering/How%20to%20save%20your%20model%20with%20ONNX.ipynb)
 - [Model serialisation with dill](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Model_Serialisation/tutorials/GitHub_MD_rendering/Model%20serialisation%20with%20dill.ipynb)
 - [Save and load ML models](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Model_Serialisation/tutorials/GitHub_MD_rendering/Save%20and%20load%20ML%20models.ipynb)
 - [Model serialisation with pickle, joblib, skops](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Model_Serialisation/tutorials/GitHub_MD_rendering/Model%20serialisation%20with%20pickle%2C%20joblib%2C%20skops.ipynb)
+- [Exporting to ONNX](https://github.com/kyaiooiayk/PyTorch-Notes/blob/main/tutorials/GitHub_MD_rendering/Exporting%20to%20ONNX.ipynb)
+- [PyTorch Lightning, ONNX Runtime](https://github.com/kyaiooiayk/PyTorch-Notes/blob/main/tutorials/GitHub_MD_rendering/PyTorch%20Lightning%2C%20ONNX%20Runtime.ipynb)
 ***
 
 ## References
