@@ -22,6 +22,14 @@ From a very high-level point of view, DVC works as follows:
   - At any time, files can be synced from the remote repository to the local cache `dvc fetch` or from the local cache to the working folder `dvc pull`.
 ***
 
+## Configuring Google Drive as your remote storage
+- Create a folder in your Google Drive called `MLOps-Basics`.
+- Get the ID of this folder and the address will look like something like this: `https://drive.google.com/drive/u/0/folders/1A0zgCLZ1YF` where the ID the last alphanumeric block if this URL.
+- Add this storage: `dvc remote add -d storage gdrive://1A0zgCLZ1YF`
+- Check the contents of the file `.dvc/config` whether the remote storage is configured correctly or not.
+
+***
+
 ## References
 - [Quick presentation on DVC](https://docs.google.com/presentation/d/1jUFz212lZvwqDibiCRoOcm-40ANPXI1dKlF8t7PD1Is/edit#slide=id.gc521574bc2_0_2)
 - [MLOps Basics [Week 3]: Data Version Control - DVC](https://www.ravirajag.dev/blog/mlops-dvc)
