@@ -2,7 +2,8 @@
 ***
 
 ## Introduction
-Hydra operates on top of OmegaConf, which is a YAML based hierarchical configuration system, with support for merging configurations from multiple sources (files, CLI argument, environment variables) providing a consistent API regardless of how the configuration was created.
+- Hydra operates on top of OmegaConf, which is a YAML based hierarchical configuration system, with support for merging configurations from multiple sources (files, CLI argument, environment variables) providing a consistent API regardless of how the configuration was created.
+- The fact it can merge different sources, and overwrite some of them is what makes hydra different from a simple yaml file.
 ***
 
 ## Installation
