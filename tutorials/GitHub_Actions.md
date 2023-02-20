@@ -19,7 +19,7 @@
 ***
 
 ## References
-- [Working example of how to trigger GitHub actions](https://github.com/kyaiooiayk/CI-CD-Pipeline-with-GitHub-Actions)
+- [From notebooks to GitHub Actions](https://github.com/kyaiooiayk/CI-CD-Pipeline-with-GitHub-Actions)
 - [How to Build MLOps Pipelines with GitHub Actions - Step by Step Guide](https://neptune.ai/blog/build-mlops-pipelines-with-github-actions-guide)
 - [MLOps Basics [Week 6]: CI/CD - GitHub Actions](https://www.ravirajag.dev/blog/mlops-github-actions)
 - ***
