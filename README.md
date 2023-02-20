@@ -320,6 +320,10 @@ Hybrid means they are able to process data in batches or continuous streaming. B
 - Version control system (VCS) also known as revision control or source control, records and manages changes to files and folders. [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/VCS/VCS.md)
 - [[Hydra](https://hydra.cc/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/VCS/Hydra)] is a framework to configure complex applications. Effectively, it is used to read in configuration files.
 - [[DVC](https://dvc.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/VCS/DVC)] is a file management system rather than a model management system.
+- [DAGsHub](https://dagshub.com/)
+- [Activeloop](https://www.activeloop.ai/)
+- [Modelstore](https://modelstore.readthedocs.io/en/latest/)
+- [ModelDB](https://github.com/VertaAI/modeldb/)
 </details>
 
 ***
