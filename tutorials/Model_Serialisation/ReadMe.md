@@ -13,7 +13,7 @@
 - **TensorFlow** saves models as `.pb` files; which is the protocol buffer files extension.
 - **Keras** supports exporting in `hdf5` format. 
 - There is also an alternative serialization package `dill` which generalizes pickle at the cost of performance.
-- `ONNX` introduces a new paradigm: converting it to a set of operations that can be executed directly by the framework. This allows to decouple the model from your current python and virtual environment packages. This allows the model to be portable to to many different languages.
+- `ONNX` introduces a new paradigm: converting it to a set of operations that can be executed directly by the framework. This allows to decouple the model from your current python and virtual environment packages. This allows the model to be portable to to many different languages. `ONNX Runtime` is a performance-focused inference engine for ONNX models. ONNX Runtime was designed with a focus on performance and scalability in order to support heavy workloads in high-scale production scenarios.
 ***
 
 ## Guidelines
