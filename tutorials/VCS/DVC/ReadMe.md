@@ -9,9 +9,13 @@
 - Git tracks the metadata file, while DVC handles the remote repository.
 ***
 
+## Installation
+- Installation via pip with: `pip install dvc`
+***
+
 ## DVC workflow
 From a very high-level point of view, DVC works as follows:
-  - A Git project is initialized as a DVC project `dvc init` and a `.dvc` folder is created to handle the configuration (similar to the `.git` folder). Inside it, a cache folder handles the local cache.
+  - Make sure you run the following command in the top level folder (where the hidden `.git` folder is). A Git project is initialised as a DVC project `dvc init` and a `.dvc` and `.dvcignore` folders are created to handle the configuration (similar to the `.git` folder). Inside it, a cache folder handles the local cache.
   - Adding a data file to the DVC version control system: `dvc add <file_path>` moves the file to the local cache, letting Git track only the corresponding `.dvc` file. Further, dvc add this file to `.gitignore` automatically so git will not upload the large file.
   - Add to git only the dvc file as: `git add <file_path.dvc>`. Please note the syntax `name.dvc`.
   - Files in the local cache can be synced with a remote repository `dvc push`.
