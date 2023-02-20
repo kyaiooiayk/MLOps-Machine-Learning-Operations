@@ -82,9 +82,13 @@ Experiment tracking allows us to manage all the experiments along with their com
 <summary>Expand ⬇️</summary>
 <br>
 
-- Serialisation is the process of translating a data structure or object state into a format that can be stored or transmitted and reconstructed later. 
-- Common formats: hdf5, json, pickle, joblib, dill, ONNX
-- [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialisation)
+- Serialisation is the process of translating a data structure or object state into a format that can be stored or transmitted and reconstructed later. | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Model_Serialisation)
+- Common formats:
+  - hdf5
+  - pickle
+  - joblib
+  - dill
+  - ONNX
 </details>
 
 ***
