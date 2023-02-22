@@ -70,8 +70,8 @@ Experiment tracking allows us to manage all the experiments along with their com
 - [MLFlow](https://mlflow.org/) is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice.
 - [Comet ML](https://www.comet.com/site/) 
 - [Neptune](https://neptune.ai/)
-- [Weights and Biases](https://wandb.ai/site)
-- [TensorBoard](https://www.tensorflow.org/tensorboard)
+- [[Weights and Biases](https://wandb.ai/site) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials)]
+- [TensorBoard](https://www.tensorflow.org/tensorboard) 
 </details>
 
 ***
