@@ -269,7 +269,7 @@ Nonrelational “NoSQL” databases or also "not only SQL" represent data in tab
 <summary>Expand ⬇️</summary>
 <br>
 
-- [AWS S3](https://aws.amazon.com/s3/)
+- [[AWS S3](https://aws.amazon.com/s3/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/AWS/AWS_S3/ReadMe.md)] stands for Simple Storage Service and is AWS key-value, object-based storage service.
 - Azure Blob Storage
 - Google Cloud Storage
 </details>
