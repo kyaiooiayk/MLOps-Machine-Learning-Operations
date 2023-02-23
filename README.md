@@ -164,6 +164,7 @@ In modern software development teams, continuous integration (CI) and continuous
 - [[Electron](https://www.electronjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Electron.md)]
 - [[Dash](https://plotly.com/building-machine-learning-web-apps-in-python/)]
 - [[Gradio](https://github.com/gradio-app/gradio)]
+- [[Postman](https://www.postman.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/postman.md)] is a very simple and intuitive API testing tool or application.
 </details>
 
 ***
