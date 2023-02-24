@@ -20,6 +20,7 @@ From a very high-level point of view, DVC works as follows:
   - Add to git only the dvc file as: `git add <file_path.dvc>`. Please note the syntax `name.dvc`.
   - Files in the local cache can be synced with a remote repository `dvc push`.
   - At any time, files can be synced from the remote repository to the local cache `dvc fetch` or from the local cache to the working folder `dvc pull`.
+  - As you can see, `dvc` follows `git` pattern to `commit`, `push` and `pull` data to remote storage.
 ***
 
 ## Configuring Google Drive as your remote storage
