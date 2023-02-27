@@ -22,6 +22,12 @@
 - FastAPI comes with built-in support for Asyncio, GraphQL and Websockets.
 ***
 
+## What is Swagger?
+- Swagger is a set of open-source tools built around the OpenAPI Specification that can help you design, build, document and consume REST APIs. 
+- Swagger provides convenience in API design, development, documentation and testing with the standards and tools it offers.
+- FastAPI automatically generates a Swagger documentation.
+***
+
 ## What is uvicorn and gunicorn?
 - Gunicorn is a mature, fully featured server and process manager. 
 - Uvicorn includes a Gunicorn worker class allowing you to run ASGI applications, with all of Uvicorn's performance benefits, while also giving you Gunicorn's fully-featured process management.
