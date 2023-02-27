@@ -18,7 +18,7 @@
 - FastAPI is lighter weight than Django, offers similar features (along with API style) to Flask but was built with async in mind. 
 - FastAPI is way faster than Flask, not just that it’s also one of the fastest python modules out there.
 - Unlike Flask, FastAPI provides an easier implementation for Data Validation to define the specific data type of the data you send.
-- Automatic Docs to call and test your API(Swagger UI and Redoc).
+- Automatic Docs to call and test your API (Swagger UI and Redoc).
 - FastAPI comes with built-in support for Asyncio, GraphQL and Websockets.
 ***
 
