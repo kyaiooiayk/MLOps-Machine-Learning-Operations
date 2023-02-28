@@ -1,4 +1,4 @@
-# Notes on streamlit
+# Streamlit
 ***
 
 ## Introduction
