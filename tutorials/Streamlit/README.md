@@ -27,7 +27,7 @@ Model deployment is the endpoint of a data science workflow. Models can be deplo
 ## Four Streamlit design principles
 - Embrace Python scripting. Build and grow Streamlit apps line by line.
 - Treat widgets as variables. Widgets are input elements that let users interact with Streamlit apps. They’re presented as basic input text boxes, checkboxes, slider bars, etc.
-- Reuse data and computation. Historically, data and computations had been cached with the @st.cache decorator. This saves computational time for app changes. It can be hundreds of times if you actively revise the app! In 0.89.0 release Streamlit launched two new primitives (st.experimental_memo and st.experimental_singleton) to afford a significant speed improvement to that of @st.cache.
+- Reuse data and computation. Historically, data and computations had been cached with the @st.cache decorator. This saves computational time for app changes. It can be hundreds of times if you actively revise the app!
 - Deploy instantly. Easily and instantly deploy apps with Streamlit Cloud.
 ***
 
