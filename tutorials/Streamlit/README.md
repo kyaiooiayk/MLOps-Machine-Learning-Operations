@@ -16,20 +16,12 @@
 
 ## Types of model deployment
 Model deployment is the endpoint of a data science workflow. Models can be deployed as:
-
-- Jupyter notebooks
-- API
-- Web apps
-
-**Jupyter notebooks**. Jupyter notebooks are commonly used for prototyping the data science workflow and they can be:
-
-- Uploaded to GitHub
-- Shared as a link via Google Colab
-- Shared via Binder
-
-**API**. Models can also be deployed as a REST API using tools such as FastAPI. This approach does not have a frontend for displaying it graphically for ease of use.
-
-**Web apps**. This brings us to deploying machine learning models as web applications. The traditional approach is to wrap the API via the use of web frameworks such as Django and Flask. A much simpler approach is to use a low-code solution such as **Streamlit** to create a web app.
+  - Jupyter notebooks which are commonly used for prototyping the data science workflow and they can be:
+    - Uploaded to GitHub
+    - Shared as a link via Google Colab
+    - Shared via Binder
+  - API: Models can also be deployed as a REST API using tools such as FastAPI. This approach **does not have** a frontend for displaying it graphically for ease of use.
+  - Web apps. The traditional approach is to wrap the API via the use of web frameworks such as Django and Flask. A much simpler approach is to use a low-code solution such as **Streamlit** to create a web app.
 ***
 
 ## Four Streamlit design principles
