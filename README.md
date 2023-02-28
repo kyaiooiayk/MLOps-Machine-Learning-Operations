@@ -231,7 +231,7 @@ Nonrelational “NoSQL” databases or also "not only SQL" represent data in tab
   - [MongoDB](https://www.mongodb.com/) is an open-source, document database designed for ease of development and scaling. It is classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. 
   - [Elastic](https://www.elastic.co/) search & analyze data in real time.
 - Wide column:
-  - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is the right choice when you need scalability and high availability without compromising performance.
+  - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is the right choice when you need scalability and high availability without compromising performance. Cassandra is a free and open-source, distributed, wide-column store, NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.
   - [Apache HBase](https://hbase.apache.org/) is the Hadoop database, a distributed, scalable, big data store.
   - [Google Bigtable](https://cloud.google.com/bigtable) is a fully managed wide-column and key-value NoSQL database service for large analytical and operational workloads
 - Graph
