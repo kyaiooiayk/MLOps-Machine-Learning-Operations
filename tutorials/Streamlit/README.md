@@ -46,6 +46,21 @@ Model deployment is the endpoint of a data science workflow. Models can be deplo
 ****
 
 ## Alternatives
+- Streamlit
+  - Strengths: Quick to learn, easy for simple internal-facing or personal projects
+  - Weakness: Can be slow to run and deploy, limited in features and flexibility
+- Gradio
+  - Strengths: Easily connect to HuggingFace packages
+  - Weaknesses: Doesn’t work well as a standalone app, limited in features and flexibility, basic and dated appearance
+- Plotly Dash
+  - Strengths: Apps are fast, work from a Jupyter notebook, can use R or Julia
+  - Weaknesses: Larger learning curve, need to know some HTML to layout apps
+- Panel
+  - Strengths: Use any plotting or visualisation library no matter how niche, work from a Jupyter notebook
+  - Weaknesses: Basic and dated appearance, larger learning curve, no out-of-the-box cloud hosting
+- Anvil
+  - Strengths: Out-of-the-box instant cloud hosting , drag-and-drop UI builder, more features for complex apps
+  - Weaknesses: Larger learning curve, not all features are available for free
 ***
 
 ## References
