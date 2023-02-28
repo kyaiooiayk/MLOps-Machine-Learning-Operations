@@ -22,7 +22,7 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 ***
 
 ## Data Engineering - Pipelines
-Workflow orchestration is a set of tools for scheduling and monitoring work that you want to complete. Ex: Scheduling ML models training. The purpose of workflow orchestration is to reduce mistakes and gently fail.
+Workflow orchestration is a set of tools for scheduling and monitoring work that you want to complete. Example: Scheduling ML models training. The purpose of workflow orchestration is to reduce mistakes and gently fail. There are pros and cons for each tool listed below but, the all all create a DAG file that schedules a sequence of tasks, which are scripts for model orchestration.
 <details>
 <summary>Expand ⬇️</summary>
 <br>
@@ -31,7 +31,7 @@ Workflow orchestration is a set of tools for scheduling and monitoring work that
 - Argo workflow
 - [Databricks](https://www.databricks.com/) develops a web-based platform for working with Spark, that provides automated cluster management and IPython-style notebooks. | [Databricks vs. Azure databricks](https://www.websitebuilderinsider.com/is-azure-databricks-same-as-databricks/)
 - [Azure databricks](https://azure.microsoft.com/en-us/products/databricks/) is a fast, easy, and collaborative Apache Spark-based big data analytics service designed for data science and data engineering.
-- [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)] Apache is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. 
+- ⭐ [[Apache Airflow](https://airflow.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Airflow)] Apache is a very mature and popular option initially developed to orchestrate data engineering and extract-transform-load (ETL) pipelines for analytics workloads. Airflow has expanded into the machine-learning space as a viable pipeline orchestrator. 
 - [[Terraform](https://www.terraform.io/) | Notes | [Ref#1](https://www.jeremyjordan.me/terraform/) | [Ref#2](https://developer.hashicorp.com/terraform/intro)] is an infrastructure-as-code tool which provides a mechanism for declaratively defining your infrastructure via a set of configuration files. When you first started working with cloud services, you probably just created whatever resources you needed directly in the AWS/GCP/Azure console. However, as the size of your organization or the number of projects grow, this becomes difficult to manage at scale. The core Terraform workflow consists of three stages:
   - **Write**: You define resources, which may be across multiple cloud providers and services. For example, you might create a configuration to deploy an application on virtual machines in a Virtual Private Cloud (VPC) network with security groups and a load balancer.
   - **Plan**: Terraform creates an execution plan describing the infrastructure it will create, update, or destroy based on the existing infrastructure and your configuration.
