@@ -98,7 +98,7 @@ Experiment tracking allows us to manage all the experiments along with their com
 <summary>Expand ⬇️</summary>
 <br>
 
-- [[Streamlit](https://streamlit.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
+- ⭐ [[Streamlit](https://streamlit.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit)]
 - [[Dash](https://plotly.com/building-machine-learning-web-apps-in-python/)]
 - [[Gradio](https://github.com/gradio-app/gradio)]
 - Bokeh
