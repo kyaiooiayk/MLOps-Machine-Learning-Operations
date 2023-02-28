@@ -45,9 +45,13 @@ Model deployment is the endpoint of a data science workflow. Models can be deplo
 - [Diabete prediction app](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Streamlit/tutorials/Diabete_prediction_app)
 ****
 
+## Alternatives
+***
+
 ## References
 - [How to master streamlit for data science](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/)
 - [Build a Data-Annotation Pipeline with Less than Fifty Lines of Code with Streamlit](https://towardsdatascience.com/build-a-data-annotation-pipeline-with-less-than-fifty-lines-of-code-with-streamlit-e72a3a84e259)
 - [Streamlit Guide: How to Build Machine Learning Applications](https://neptune.ai/blog/streamlit-guide-machine-learning)
 - [How to buil an app leveraging the pandas profiling tool](https://github.com/dataprofessor/eda-app)
+- [Streamlit vs Gradio vs Dash vs Panel vs Anvil](https://anvil.works/articles/4-alternatives-streamlit)
 ***
