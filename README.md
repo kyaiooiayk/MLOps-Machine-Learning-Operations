@@ -62,12 +62,12 @@ Workflow orchestration is a set of tools for scheduling and monitoring work that
 ***
 
 ## Experiment Tracking
-Experiment tracking allows us to manage all the experiments along with their components, such as parameters, metrics, and more. It makes easier to track the evolution of your model as learn more and more about the problem.
+Experiment tracking allows us to manage all the experiments along with their components, such as parameters, metrics, and more. It makes easier to track the evolution of your model as learn more and more about the problem. Admitelly, it is highly likely that, some of the tools list here are capable of much more.
 <details>
 <summary>Expand ⬇️</summary>
 <br>
 
-- [MLFlow](https://mlflow.org/) is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice.
+- [MLFlow](https://mlflow.org/) is an open source project that offers experiment tracking and multiframe‐work support including Apache Spark, but limited workflow support. If you need a lightweight, simple way to track experiments and run simple workflows, this may be a good choice. MLflow has more to offer than just experiment tracking: this versatile framework also includes features such as MLflow Projects, the Model Registry, and built-in deployment options.
 - [Comet ML](https://www.comet.com/site/) 
 - [Neptune](https://neptune.ai/)
 - [[Weights and Biases](https://wandb.ai/site) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Weights_and_Biases.md) 
