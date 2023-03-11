@@ -160,7 +160,6 @@ In modern software development teams, continuous integration (CI) and continuous
 - [[Node.js]() | Notes]
 - [[Express.js]() | Notes]
 - [[React](https://reactjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/React)]
-- Redis
 - [[FastAPI](https://fastapi.tiangolo.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/FastAPI)]
 - [[Electron](https://www.electronjs.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Electron.md)]
 - [[Postman](https://www.postman.com/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/postman.md)] is a very simple and intuitive API testing tool or application.
@@ -236,7 +235,7 @@ Nonrelational “NoSQL” databases or also "not only SQL" represent data in tab
 - Graph
   - [Neo4j](https://neo4j.com/) is the world’s leading graph database.
 - Key-value
-  - [Redis](https://redis.io/) is an open source, BSD licensed, advanced key-value cache and store.
+  - [Redis](https://redis.io/) is an open source, advanced key-value cache and store. Redis delivers sub-millisecond response times, enabling millions of requests per second for real-time applications in industries like gaming, ad-tech, financial services, healthcare, and IoT. Today, Redis is one of the most popular open source engines today, named the "Most Loved" database by Stack Overflow for five consecutive years. Because of its fast performance, Redis is a popular choice for caching, session management, gaming, leaderboards, real-time analytics, geospatial, ride-hailing, chat/messaging, media streaming, and pub/sub apps.
   - [Google Bigtable](https://cloud.google.com/bigtable) is a fully managed wide-column and key-value NoSQL database service for large analytical and operational workloads
    - [AWS DynamoDB](https://aws.amazon.com/dynamodb/) is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale.
 </details>
