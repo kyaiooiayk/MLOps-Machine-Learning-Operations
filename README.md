@@ -234,6 +234,7 @@ Nonrelational “NoSQL” databases or also "not only SQL" represent data in tab
   - [Google Bigtable](https://cloud.google.com/bigtable) is a fully managed wide-column and key-value NoSQL database service for large analytical and operational workloads
 - Graph
   - [Neo4j](https://neo4j.com/) is the world’s leading graph database.
+  - [AWS Neptune](https://aws.amazon.com/neptune/)
 - Key-value
   - [Redis](https://redis.io/) is an open source, advanced key-value cache and store. Redis delivers sub-millisecond response times, enabling millions of requests per second for real-time applications in industries like gaming, ad-tech, financial services, healthcare, and IoT. Today, Redis is one of the most popular open source engines today, named the "Most Loved" database by Stack Overflow for five consecutive years. Because of its fast performance, Redis is a popular choice for caching, session management, gaming, leaderboards, real-time analytics, geospatial, ride-hailing, chat/messaging, media streaming, and pub/sub apps.
   - [Google Bigtable](https://cloud.google.com/bigtable) is a fully managed wide-column and key-value NoSQL database service for large analytical and operational workloads
@@ -258,7 +259,7 @@ Nonrelational “NoSQL” databases or also "not only SQL" represent data in tab
 - [Azure Synapse](https://azure.microsoft.com/en-us/products/synapse-analytics/) is a limitless analytics service that brings together data integration, enterprise data warehousing, and big data analytics. It gives you the freedom to query data on your terms, using either serverless or dedicated options—at scale
 - [Google bigquery](https://cloud.google.com/bigquery/?utm_source=google&utm_medium=cpc&utm_campaign=emea-gb-all-en-dr-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_253506573802-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Data%20Analytics%20~%20BigQuery%23v7-KWID_43700053283817151-kwd-63326440124-userloc_9045312&utm_term=KW_google%20bigquery-NET_g-PLAC_&gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT9ZSudPHNYsr7-5adSmRpuTJFpoQjr1_MfOWqoObOa8cA-6KXYMlzgaApS5EALw_wcB&gclsrc=aw.ds) is a fully managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service
 - [[Apache Hive](https://hive.apache.org/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/blob/master/tutorials/Hive.md)] (twice as popular as Pig and developed by Facebook). Hive provides SQL type querying language for the ETL purpose on top of Hadoop file system. 
-- [Apache Impala](https://impala.apache.org/docs/build/html/topics/impala_langref.html)
+- [Apache Impala](https://impala.apache.org/docs/build/html/topics/impala_langref.html) is an open source massively parallel processing SQL query engine for data stored in a computer cluster running Apache Hadoop. Impala has been described as the open-source equivalent of Google F1, which inspired its development in 2012.
 </details>
 
 ***
