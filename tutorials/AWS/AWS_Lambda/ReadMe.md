@@ -77,6 +77,13 @@ def lambda_handler(event, context):
 - Difficult to debug: Debugging is difficult since the developer cannot have the access(ssh) to the machine where the code is running.
 ***
 
+## AWS Step Functions vs AWS Lambda  
+- AWS Lambda is an event-driven compute service; AWS Step Functions is a visual workflow service.
+- Use AWS Lambda as long as you can run your code using the AWS Lambda standard runtime environment and with the resources AWS Lambda provides.
+- AWS Step Functions works well for use cases where the priority is rapid iteration on state transitions. And if AWS Lambda functions perform most or all of the actions in the app. It’s also excellent for delayed or long-running workflows. It enables you to have a workflow for up to a year while implementing the waiting state. In addition, the standard workflow is excellent for business-critical workflows and provides better error-handling logic than Lambda functions. Common use cases include data processing and ETL orchestration, e-commerce, machine learning operations, media processing, microservices orchestration, DevOps, security and IT automation, web apps, transcoding media files, and sequencing batch processing jobs.
+***
+
+
 ## References
 - [Is the AWS Free Tier really free?](https://www.lastweekinaws.com/blog/is-the-aws-free-tier-really-free/)
 - [Serverless Deployment of Machine Learning Models on AWS Lambda](https://towardsdatascience.com/serverless-deployment-of-machine-learning-models-on-aws-lambda-5bd1ca9b5c42)
@@ -84,4 +91,5 @@ def lambda_handler(event, context):
 - [Serverless NLP Inference via HTTP API on AWS](https://towardsdatascience.com/serverless-nlp-inference-via-http-api-on-aws-e27ea41d122b)
 - [Serverless NLP Inference on Amazon SageMaker with Transformer Models from Hugging Face](https://towardsdatascience.com/serverless-nlp-inference-on-amazon-sagemaker-with-transformer-models-from-hugging-face-4843609a7451)
 - [MLOps Basics [Week 8]: Serverless Deployment - AWS Lambda](https://www.ravirajag.dev/blog/mlops-serverless)
+- [AWS Step Functions vs AWS Lambda](https://blog.clearscale.com/aws-step-functions-vs-aws-lambda/)
 ***
