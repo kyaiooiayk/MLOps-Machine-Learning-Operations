@@ -119,7 +119,7 @@ You essentially have two options:
 ***
 
 ## DevOps
-DevOps is a role that integrates the job scope of software developers and operations teams to automate workflows.
+DevOps is a role that integrates the job scope of software developers and operations teams to automate workflows. In DevOps the software engineerings are the end user, and in MLOps the end users are the data scientists.
 <details>
 <summary>Expand ⬇️</summary>
 <br>
@@ -135,7 +135,7 @@ DevOps is a role that integrates the job scope of software developers and operat
 ***
 
 ## CI/CD
-In modern software development teams, continuous integration (CI) and continuous deployment (CD) are standard practices.  CI is about how the project should be built and tested in various runtimes, automatically and continuously. CD is needed so that every new bit of code that passes automated testing can be released into production with no extra effort. 
+In modern software development teams, continuous integration (CI) and continuous deployment (CD) are standard practices. The main goal of CI/CD is to test if the end-user intent is materialising. CI is about how the project should be built and tested in various runtimes, automatically and continuously. CD is needed so that every new bit of code that passes automated testing can be released into production with no extra effort. 
 <details>
 <summary>Expand ⬇️</summary>
 <br>
