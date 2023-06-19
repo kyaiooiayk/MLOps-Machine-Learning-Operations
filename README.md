@@ -277,7 +277,8 @@ Nonrelational “NoSQL” databases or also "not only SQL" represent data in tab
 ***
 
 ## Data processing
-Hybrid means they are able to process data in batches or continuous streaming. Batch data processing is generally done by analytical data warehouse applications.
+- **Hybrid** means they are able to process data in batches or continuous streaming. Batch data processing is generally done by analytical data warehouse applications.
+- **Feature store** acts as a central hub for feature data and metadata across an ML project’s lifecycle. 
 <details>
 <summary>Expand ⬇️</summary>
 <br>
@@ -362,4 +363,5 @@ Hybrid means they are able to process data in batches or continuous streaming. B
 - [Awesome production machine learning](https://github.com/EthicalML/awesome-production-machine-learning/blob/master/README.md)
 - [Best End-to-End MLOps Platforms comparison](https://neptune.ai/blog/end-to-end-mlops-platforms)
 - https://github.com/ml-tooling/best-of-ml-python
+- [What is a features store](https://www.tecton.ai/blog/what-is-a-feature-store/)
 ***
