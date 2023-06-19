@@ -361,4 +361,5 @@ Hybrid means they are able to process data in batches or continuous streaming. B
 - [The MLOps Blog run by neptune.ai](https://neptune.ai/blog)
 - [Awesome production machine learning](https://github.com/EthicalML/awesome-production-machine-learning/blob/master/README.md)
 - [Best End-to-End MLOps Platforms comparison](https://neptune.ai/blog/end-to-end-mlops-platforms)
+- https://github.com/ml-tooling/best-of-ml-python
 ***
