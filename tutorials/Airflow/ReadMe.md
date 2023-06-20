@@ -10,7 +10,7 @@ Apache Airflow is a very mature and popular option initially developed to orches
 ***
 
 ## An example of DAG
-- Let's imagine that a given DAG consists of three tasks, like: 
+- Let's imagine that a given DAG consists of three tasks (represented by a node), like: 
   - T1 - preparing data to make a report 
   - T2 - making the report 
   - T3 - sending an email notification that the report is ready 
