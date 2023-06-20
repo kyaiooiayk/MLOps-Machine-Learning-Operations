@@ -17,6 +17,11 @@ Apache Airflow is a very mature and popular option initially developed to orches
 - You can organize the whole process by defining the rule that T1 runs first and T2 cannot start before the T1 is done. Now, you can also decide that T2 will be restarted 3 times (or more if you wish) if it fails. In case everything goes according to plan, and a report is created, you can schedule an email notification (T3) just after T2 is finished.
 ***
 
+## Airflow operators
+- Operators are the building blocks of Airflow DAGs. They contain the logic of how data is processed in a pipeline. Each task in a DAG is defined by instantiating an operator.
+- There are many different types of operators available in Airflow. Some operators such as Python functions execute general code provided by the user, while other operators perform very specific actions such as transferring data from one system to another.
+***
+
 ## Weakness
 - No versioning of your data pipelines.
 - Not intuitive for new users.
