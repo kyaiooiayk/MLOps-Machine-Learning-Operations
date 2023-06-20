@@ -26,6 +26,10 @@ Apache Airflow is a very mature and popular option initially developed to orches
 - Scheduler as a bottleneck.
 ***
 
+## Installation
+- [Official documentation](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html)
+***
+
 ## Tutorials
 - [Airflow Tutorial for Beginners - Full Course in 2 Hours](https://www.youtube.com/watch?v=K9AnJ9_ZAXE)
 ***
