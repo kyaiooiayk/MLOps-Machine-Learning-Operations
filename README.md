@@ -58,6 +58,7 @@ Workflow orchestration is a set of tools for scheduling and monitoring work that
 
 - [[Pandera](https://pandera.readthedocs.io/en/stable/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Data_validation/Pandera)]
 - [[Great Expectations](https://greatexpectations.io/) | [Notes](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Data_validation/Great_expectations)]
+- [[pydantic](https://docs.pydantic.dev/latest/) | [Notes]()]
 </details>
 
 ***
