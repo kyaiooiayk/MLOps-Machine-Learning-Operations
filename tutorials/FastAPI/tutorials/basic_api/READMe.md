@@ -10,8 +10,8 @@
 - This app will return a simple answer given a user input.
 - Paste the following code in a file named: `basic-app.py`
 
-```
-# Importis
+```python
+# Imports
 from fastapi import FastAPI
 import uvicorn
 
@@ -60,6 +60,6 @@ def hello_name(name : str):
    -  Then shut the process with: `kill PID`
 ***
 
-## Refereces
+## References
 - [Deploying ML Models as API using FastAPI](https://www.geeksforgeeks.org/deploying-ml-models-as-api-using-fastapi/?ref=rp)
 ***
