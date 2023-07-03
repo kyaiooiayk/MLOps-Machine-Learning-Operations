@@ -60,6 +60,6 @@ def hello_name(name : str):
    -  Then shut the process with: `kill PID`
 ***
 
-## Refereces
+## References
 - [Deploying ML Models as API using FastAPI](https://www.geeksforgeeks.org/deploying-ml-models-as-api-using-fastapi/?ref=rp)
 ***
