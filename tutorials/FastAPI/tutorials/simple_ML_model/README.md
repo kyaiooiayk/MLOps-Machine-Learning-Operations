@@ -83,7 +83,7 @@ def predict(data : request_body):
    -  Then shut the process with: `kill PID`
 ***
 
-## Refereces
+## References
 - [Deploying ML Models as API using FastAPI](https://www.geeksforgeeks.org/deploying-ml-models-as-api-using-fastapi/?ref=rp)
 - [What is a model endpoint?](https://medium.com/@starpebble/what-is-a-model-endpoint-101cd264d96f)
 ***
