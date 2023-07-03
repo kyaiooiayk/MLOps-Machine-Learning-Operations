@@ -9,7 +9,7 @@
 ## Create the model
 - Create a file called `ML_model.py` and fit the data.
 - Please note that our goal is to simple get something off the ground, hence we are not following the normal must-do checks like data splitting etc, overfitting checks etc ...
-```
+```python
 # Imports
 from sklearn.datasets import load_iris
 from sklearn.naive_bayes import GaussianNB
@@ -32,7 +32,7 @@ clf.fit(X,Y)
 - To define our request body we’ll use BaseModel, in pydantic module, and define the format of the data we’ll send to the API. 
 - To define our request body, we’ll create a class that inherits BaseModel and define the features as the attributes of that class along with their type hints.
 - What pydantic does is that it defines these type hints during runtime and generates an error when data is invalid.
-```
+```python
 from pydantic import BaseModel
 
 class request_body(BaseModel):
@@ -45,7 +45,7 @@ class request_body(BaseModel):
 ## Creating and end point
 - A model endpoint is a simple way to create inferences.
 - The endpoint willl predict the class and return it as a response.
-```
+```python
 @app.post('/predict')
 def predict(data : request_body):
     test_data = [[
@@ -59,7 +59,7 @@ def predict(data : request_body):
 ```
 ***
 
-## Firying your app
+## Firing your app
 - Run your app with: `uvicorn basic-app:app --reload`
 - `basic-app` refers to the name of the the `*.py` file
 - `app` refers to the FastAPI instantiation name.
@@ -71,7 +71,6 @@ def predict(data : request_body):
 - FastAPI comes with Interactive API docs which can access by adding `/docs` in your path as in: `http://127.0.0.1:8000/docs`. 
 - Here you’ll get a webpage where you can test the endpoints of your API by seeing the output.
 *** 
-
 
 ## Troubleshooting
 - If you get an erro like this: `OSError: [Errno 48] Address already in use` then follow this [link](https://ishaileshmishra.medium.com/the-python-flask-problem-socket-error-errno-48-address-already-in-use-4d074847587e) to resolve it. Essentially this appens, when you fire the app for the first time, you kill the python thread and relaunching it again.
