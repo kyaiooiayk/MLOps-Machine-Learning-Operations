@@ -10,8 +10,8 @@
 - This app will return a simple answer given a user input.
 - Paste the following code in a file named: `basic-app.py`
 
-```
-# Importis
+```python
+# Imports
 from fastapi import FastAPI
 import uvicorn
 
