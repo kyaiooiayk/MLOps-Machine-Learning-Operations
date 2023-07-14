@@ -368,4 +368,5 @@ Nonrelational “NoSQL” databases or also "not only SQL" represent data in tab
 - [Best End-to-End MLOps Platforms comparison](https://neptune.ai/blog/end-to-end-mlops-platforms)
 - https://github.com/ml-tooling/best-of-ml-python
 - [What is a features store](https://www.tecton.ai/blog/what-is-a-feature-store/)
+- [12 Sample DevOps Interview Questions and Answers](https://www.monster.com/career-advice/interviewing/interview-questions/devops-interview-questions)
 ***
