@@ -121,7 +121,7 @@ You essentially have two options:
 ***
 
 ## DevOps
-DevOps is a role that integrates the job scope of software developers and operations teams to automate workflows. In DevOps the software engineerings are the end user, and in MLOps the end users are the data scientists. For a DevOps three concepts are really importants: infrastructure (server, database), automation (terraform) and monitoring.
+DevOps is a role that integrates the job scope of software developers and operations teams to automate workflows. In DevOps the software engineerings are the end user, and in MLOps the end users are the data scientists. For a DevOps three concepts are really importants: infrastructure (such as server, database), automation (such as terraform) and monitoring.
 <details>
 <summary>Expand ⬇️</summary>
 <br>
