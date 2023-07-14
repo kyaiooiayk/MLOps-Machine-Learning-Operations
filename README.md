@@ -130,14 +130,16 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [[Docker](https://www.docker.com/) | [Notes](https://github.com/kyaiooiayk/Docker-Notes)]
 - [[Kubernets](https://kubernetes.io/) | [Notes](https://github.com/kyaiooiayk/Kubernetes-Notes)]
 - [Apache Jmeter](https://jmeter.apache.org/)
-- [Git](https://github.com/kyaiooiayk/Git-Cheatsheet)
+- [[Git](https://git-scm.com/) | [Notes](https://github.com/kyaiooiayk/Git-Cheatsheet)]
 - [Packaging](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/tree/master/tutorials/Packaging)
 </details>
 
 ***
 
 ## CI/CD
-In modern software development teams, continuous integration (CI) and continuous deployment (CD) are standard practices. The main goal of CI/CD is to test if the end-user intent is materialising. CI is about how the project should be built and tested in various runtimes, automatically and continuously. CD is needed so that every new bit of code that passes automated testing can be released into production with no extra effort. 
+- **Continuous integration** ensures that all code is regularly and automatically merged into a shared repository. This helps to decrease the possibility of errors and conflicts that may arise when developers work on the same code. It also allows developers to focus on creating new features and improving existing ones.
+- **Continuous delivery** allows teams to deliver code changes more frequently and reliably. It focuses on automating the process of building, testing, and deploying code changes in a continuous manner so they can be reviewed. This eliminates the need for manual intervention and reduces the risk of errors.
+- **Continuous deployment** is the process of automatically deploying code changes to production as soon as they are tested and deemed safe to go live. This ensures that code changes and new features are released to production quickly and efficiently. It also minimizes downtime and the risk of errors and bugs.”
 <details>
 <summary>Expand ⬇️</summary>
 <br>
@@ -147,7 +149,7 @@ In modern software development teams, continuous integration (CI) and continuous
 - [CI/CD tools comparison](https://neptune.ai/blog/continuous-integration-continuous-deployment-tools-for-machine-learning)
 - [CircleCI](https://circleci.com/)
 - [Travis CI](https://www.travis-ci.com/)
-- [GitLab](https://about.gitlab.com/) GitHub and GitLab are remote server repositories based on GIT. GitHub is a collaboration platform that helps review and manage codes remotely. GitLab is the same but is majorly focused on DevOps and CI/CD. 
+- [GitLab](https://about.gitlab.com/) and [GitHub](https://github.com/) are remote server repositories based on GIT. GitHub is a collaboration platform that helps review and manage codes remotely. GitLab is the same but is majorly focused on DevOps and CI/CD. 
 </details>
 
 ***
