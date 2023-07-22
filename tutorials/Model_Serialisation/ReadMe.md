@@ -11,16 +11,16 @@
 - **Sklearn** recommends using the `joblib` package
 - **Pytorch**'s load and save methods by using their proprietary Torch Script as a `.pt` file. 
 - **TensorFlow** saves models as `.pb` files; which is the protocol buffer files extension.
-- **Keras** supports exporting in `hdf5` format. 
+- **Keras** supports exporting in [hdf5](https://www.hdfgroup.org/solutions/hdf5) format. 
 - There is also an alternative serialization package `dill` which generalizes pickle at the cost of performance.
 - `ONNX` introduces a new paradigm: converting it to a set of operations that can be executed directly by the framework. This allows to decouple the model from your current python and virtual environment packages. This allows the model to be portable to to many different languages. `ONNX Runtime` is a performance-focused inference engine for ONNX models. ONNX Runtime was designed with a focus on performance and scalability in order to support heavy workloads in high-scale production scenarios.
 ***
 
 ## Guidelines
 - Here are some guidelines for serialization.
-  - Use `pickle` to serialize objects with an importable hierarchy.
-  - Use `joblib` for objects which contain lots of data in numpy arrays
-  - Use `dill` when pickle or joblib won’t work, or when you have custom functions that need to be serialised as part of the model. In general, dill will provide the most flexibility in terms of getting the model serialised and should be considered the path of least resistance when it comes to serialising ML models for production.
+  - Use [pickle](https://docs.python.org/3/library/pickle.html#module-pickle) to serialise objects with an importable hierarchy.
+  - Use [joblib](https://joblib.readthedocs.io/en/latest/index.html) for objects which contain lots of data in numpy arrays.
+  - Use [dill](https://pypi.org/project/dill/) when pickle or joblib won’t work, or when you have custom functions that need to be serialised as part of the model. In general, dill will provide the most flexibility in terms of getting the model serialised and should be considered the path of least resistance when it comes to serialising ML models for production.
 ***
 
 ## Available tutorials
