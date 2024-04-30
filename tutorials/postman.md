@@ -21,7 +21,7 @@ Donwload the native App [here](https://www.postman.com/downloads/).
 
 ## Swagger vs. Postman
 - Swagger is another HTTP Client tool where we create API documentation and through swagger, we can also hit the API and get the response.
-- You Can use either Swagger or POSTMAN to test the APIs, and it depends on companies as which client to use.
+- You can use either Swagger or POSTMAN to test the APIs.
 ***
 
 ## Refences
