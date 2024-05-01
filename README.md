@@ -17,6 +17,9 @@ How to create, deploy and manage your ML projects. But what do we mean when we t
 - **IaaC** (Infrastructure as a Code) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. It is a tool for provisioning and managing infrastructure and configurations for those resources. Examples: [Terraform](https://www.terraform.io/) | [Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview) | [Ansible](https://www.ansible.com/) | [Chef](https://docs.chef.io/) | [Pulumi](https://www.pulumi.com/)
 - **BPaaS** (Business Process as a Service) - SaaS + business process (Accounting, Auditing) : Examples: PayPal
 - **MLaaS** (Machine Learning as a Service) - SaaS + ML specific applications. Examples: [Amazon Sagemaker](https://aws.amazon.com/sagemaker/?nc=sn&loc=0&refid=811736de-a95f-4b18-b2e9-a2bad5c010f3) | [Microsoft Azure Machine Learning Studio](https://studio.azureml.net/) | [IBM Watson Machine Learning](https://www.ibm.com/cloud/watson-studio?mhsrc=ibmsearch_a&mhq=watson%20studio)
+
+![image](https://github.com/kyaiooiayk/MLOps-Machine-Learning-Operations/assets/89139139/b2a6687c-73c3-4bc1-a250-a4f78b045904)
+
 </details>
 
 ***
