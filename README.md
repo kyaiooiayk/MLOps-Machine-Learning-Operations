@@ -141,8 +141,8 @@ DevOps is a role that integrates the job scope of software developers and operat
 
 ## CI/CD
 - **Continuous integration** ensures that all code is regularly and automatically merged into a shared repository. This helps to decrease the possibility of errors and conflicts that may arise when developers work on the same code. It also allows developers to focus on creating new features and improving existing ones.
-- **Continuous delivery** allows teams to deliver code changes more frequently and reliably. It focuses on automating the process of building, testing, and deploying code changes in a continuous manner so they can be reviewed. This eliminates the need for manual intervention and reduces the risk of errors.
-- **Continuous deployment** is the process of automatically deploying code changes to production as soon as they are tested and deemed safe to go live. This ensures that code changes and new features are released to production quickly and efficiently. It also minimizes downtime and the risk of errors and bugs.” 
+- **Continuous delivery** [[read more]](https://blog.bytebytego.com/p/a-crash-course-in-cicd?utm_source=substack&utm_medium=email) allows teams to deliver code changes more frequently and reliably. It focuses on automating the process of building, testing, and deploying code changes in a continuous manner so they can be reviewed. This eliminates the need for manual intervention and reduces the risk of errors.
+- **Continuous deployment** [[read more]](https://blog.bytebytego.com/p/a-crash-course-in-cicd?utm_source=substack&utm_medium=email) is the process of automatically deploying code changes to production as soon as they are tested and deemed safe to go live. This ensures that code changes and new features are released to production quickly and efficiently. It also minimizes downtime and the risk of errors and bugs.” 
 <details>
 <summary>Expand ⬇️</summary>
 <br>
