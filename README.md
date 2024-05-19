@@ -49,7 +49,7 @@ Workflow orchestration is a set of tools for scheduling and monitoring work that
 - Google Vertex AI - diret competitor of AWS SageMaker
 - [Tensor Flow Extended (TFX)](https://www.tensorflow.org/tfx) is an open source collection of Python libraries used within a pipeline orchestrator such as Kubeflow Pipelines, Apache Airflow, and MLflow.
 - [Apache PyArrow](https://arrow.apache.org/docs/python/index.html) is a cross-language development platform for in-memory data. It specifies a standardized language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations (store, process and move data fast) on modern hardware. It facilitates communication between many components, for example, reading a parquet file with Python (pandas) and transforming to a Spark dataframe, Falcon Data Visualization or Cassandra without worrying about conversion. It does this by takeing advantage of a columnar buffer to reduce IO and accelerate analytical processing performance. [Ref](https://towardsdatascience.com/a-gentle-introduction-to-apache-arrow-with-apache-spark-and-pandas-bb19ffe0ddae)
-- [Apahce Kafka](https://kafka.apache.org/) is a distributed event store and stream-processing platform. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds.
+- [Aphace Kafka](https://kafka.apache.org/) is a distributed event store and stream-processing platform. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds.
 </details>
 
 ***
