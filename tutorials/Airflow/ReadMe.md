@@ -37,6 +37,7 @@ Apache Airflow is a very mature and popular option initially developed to orches
 
 ## Tutorials
 - [Airflow Tutorial for Beginners - Full Course in 2 Hours](https://www.youtube.com/watch?v=K9AnJ9_ZAXE)
+- [Realtime Data Streaming using Airflow, Spark, Kafka and Cassandra](https://github.com/airscholar/e2e-data-engineering)
 ***
 
 ## References
