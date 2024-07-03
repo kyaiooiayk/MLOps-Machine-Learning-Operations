@@ -152,7 +152,8 @@ DevOps is a role that integrates the job scope of software developers and operat
 - [CI/CD tools comparison](https://neptune.ai/blog/continuous-integration-continuous-deployment-tools-for-machine-learning)
 - [CircleCI](https://circleci.com/)
 - [Travis CI](https://www.travis-ci.com/)
-- [GitLab](https://about.gitlab.com/) and [GitHub](https://github.com/) are remote server repositories based on GIT. GitHub is a collaboration platform that helps review and manage codes remotely. GitLab is the same but is majorly focused on DevOps and CI/CD. 
+- [GitLab](https://about.gitlab.com/) and [GitHub](https://github.com/) are remote server repositories based on GIT. GitHub is a collaboration platform that helps review and manage codes remotely. GitLab is the same but is majorly focused on DevOps and CI/CD.
+- [Difference btw pre-commit | post-commit | post-deploy reviews](https://copyconstruct.medium.com/post-commit-reviews-b4cc2163ac7a)
 </details>
 
 ***
